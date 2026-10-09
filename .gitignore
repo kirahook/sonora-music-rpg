@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.qa/
+.env
+.env.*
+!.env.example
+*.log
+*.zip
+.DS_Store
+Thumbs.db
+asset-prompts.md
+v*-asset-prompts.md
+design-qa.md
+AGENTS.md
