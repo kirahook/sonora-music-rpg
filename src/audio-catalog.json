@@ -1,0 +1,2045 @@
+{
+  "A-021": {
+    "source": "https://music.apple.com/us/album/heaven-or-las-vegas-remastered/258198881?uo=4",
+    "tracks": [
+      {
+        "title": "Cherry-Coloured Funk",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/cherry-coloured-funk/258198881?i=258198956&uo=4",
+        "durationMs": 192467,
+        "id": "258198956",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/3a/8e/b43a8eb4-294a-72c5-13e6-a69fd453824c/mzaf_5977811122488422602.plus.aac.p.m4a",
+        "number": 1
+      },
+      {
+        "title": "Pitch the Baby",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/pitch-the-baby/258198881?i=258199207&uo=4",
+        "durationMs": 194080,
+        "id": "258199207",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/e7/72/1de77258-3c72-feb5-e99f-52133928f57b/mzaf_4830145885933792817.plus.aac.p.m4a",
+        "number": 2
+      },
+      {
+        "title": "Iceblink Luck",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/iceblink-luck/258198881?i=258199466&uo=4",
+        "durationMs": 198667,
+        "id": "258199466",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/6c/fa/b06cfa60-d695-abe9-c012-eddc9d0b72fa/mzaf_11909719853694834015.plus.aac.p.m4a",
+        "number": 3
+      },
+      {
+        "title": "Fifty-Fifty Clown",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/fifty-fifty-clown/258198881?i=258199726&uo=4",
+        "durationMs": 190213,
+        "id": "258199726",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/59/8e/10598e59-14d2-7f24-23d6-6cb3dc5d15ec/mzaf_13584031097082732186.plus.aac.p.m4a",
+        "number": 4
+      },
+      {
+        "title": "Heaven or Las Vegas",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/heaven-or-las-vegas/258198881?i=258200075&uo=4",
+        "durationMs": 298400,
+        "id": "258200075",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/32/ee/2f32ee9d-10cd-459e-b451-abaf4a49b803/mzaf_16630779446858414543.plus.aac.p.m4a",
+        "number": 5
+      },
+      {
+        "title": "I Wear Your Ring",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/i-wear-your-ring/258198881?i=258200406&uo=4",
+        "durationMs": 209347,
+        "id": "258200406",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/15/28/f515289d-6ee2-affb-54b9-f81cdcb39ec2/mzaf_75832071558279376.plus.aac.p.m4a",
+        "number": 6
+      },
+      {
+        "title": "Fotzepolitic",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/fotzepolitic/258198881?i=258200506&uo=4",
+        "durationMs": 210933,
+        "id": "258200506",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/0f/c9/0c0fc92c-0e74-2b72-9df7-bb92c1c482ba/mzaf_12158767261871937110.plus.aac.p.m4a",
+        "number": 7
+      },
+      {
+        "title": "Wolf In the Breast",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/wolf-in-the-breast/258198881?i=258200578&uo=4",
+        "durationMs": 211200,
+        "id": "258200578",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/91/49/77914908-86db-d7a1-b4d1-4c966ec375c8/mzaf_2707130101838484342.plus.aac.p.m4a",
+        "number": 8
+      },
+      {
+        "title": "Road, River and Rail",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/road-river-and-rail/258198881?i=258200718&uo=4",
+        "durationMs": 201147,
+        "id": "258200718",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/30/53/b730536c-1272-2a9e-b237-aff1af2ab655/mzaf_12818420777286383332.plus.aac.p.m4a",
+        "number": 9
+      },
+      {
+        "title": "Frou-Frou Foxes In Midsummer Fires",
+        "artist": "Cocteau Twins",
+        "source": "https://music.apple.com/us/album/frou-frou-foxes-in-midsummer-fires/258198881?i=258200784&uo=4",
+        "durationMs": 338053,
+        "id": "258200784",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/d4/19/5cd41974-3aec-ba45-1298-f222a67ea1d9/mzaf_209303340530814288.plus.aac.p.m4a",
+        "number": 10
+      }
+    ]
+  },
+  "A-041": {
+    "source": "https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743?uo=4",
+    "tracks": [
+      {
+        "title": "Intro",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/intro/1276760743?i=1276760744&uo=4",
+        "durationMs": 47293,
+        "id": "1276760744",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/f6/3c/79f63c7c-cc4c-2b96-a7ca-7e300c3cadff/mzaf_469736941641834030.plus.aac.p.m4a",
+        "number": 1
+      },
+      {
+        "title": "Lost Ones",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/lost-ones/1276760743?i=1276760745&uo=4",
+        "durationMs": 333907,
+        "id": "1276760745",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/26/b3/6f26b358-2e9f-c491-8572-96c20210f378/mzaf_234522386724570896.plus.aac.p.m4a",
+        "number": 2
+      },
+      {
+        "title": "Ex-Factor",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/ex-factor/1276760743?i=1276760746&uo=4",
+        "durationMs": 326533,
+        "id": "1276760746",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/b1/4d/4ab14d71-f15b-db05-4419-a83e2762bc8d/mzaf_9017806609491706778.plus.aac.p.m4a",
+        "number": 3
+      },
+      {
+        "title": "To Zion (feat. Carlos Santana)",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/to-zion-feat-carlos-santana/1276760743?i=1276760747&uo=4",
+        "durationMs": 369293,
+        "id": "1276760747",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c2/6a/f9/c26af99e-75d9-c9bb-249f-e6a30b3abba5/mzaf_9581843583352424577.plus.aac.p.m4a",
+        "number": 4
+      },
+      {
+        "title": "Doo Wop (That Thing)",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/doo-wop-that-thing/1276760743?i=1276760748&uo=4",
+        "durationMs": 320267,
+        "id": "1276760748",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/2c/70/d92c708f-1a4a-d022-e188-a75ecd762b75/mzaf_926740419110213225.plus.aac.p.m4a",
+        "number": 5
+      },
+      {
+        "title": "Superstar",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/superstar/1276760743?i=1276760749&uo=4",
+        "durationMs": 297107,
+        "id": "1276760749",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/66/d0/e266d079-042c-40d1-471e-e8cf89c43e6d/mzaf_16463541324450778786.plus.aac.p.m4a",
+        "number": 6
+      },
+      {
+        "title": "Final Hour",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/final-hour/1276760743?i=1276760750&uo=4",
+        "durationMs": 256000,
+        "id": "1276760750",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/8b/c7/738bc78a-3ca1-aa44-eed7-41f002e2b68e/mzaf_4440459192975725229.plus.aac.p.m4a",
+        "number": 7
+      },
+      {
+        "title": "When It Hurts so Bad",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/when-it-hurts-so-bad/1276760743?i=1276760751&uo=4",
+        "durationMs": 342200,
+        "id": "1276760751",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c8/aa/2f/c8aa2f41-c417-92c8-1e3e-f2336496b249/mzaf_8431726513405920710.plus.aac.p.m4a",
+        "number": 8
+      },
+      {
+        "title": "I Used to Love Him (feat. Mary J. Blige)",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/i-used-to-love-him-feat-mary-j-blige/1276760743?i=1276760752&uo=4",
+        "durationMs": 339867,
+        "id": "1276760752",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/48/82/96488278-52cd-370e-93fd-e9e1bba6c984/mzaf_13526997238433189525.plus.aac.p.m4a",
+        "number": 9
+      },
+      {
+        "title": "Forgive Them Father",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/forgive-them-father/1276760743?i=1276760753&uo=4",
+        "durationMs": 315293,
+        "id": "1276760753",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/3a/65/213a658c-2d5a-9ac6-2b8a-5b91d615989c/mzaf_8761738494342150520.plus.aac.p.m4a",
+        "number": 10
+      },
+      {
+        "title": "Every Ghetto, Every City",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/every-ghetto-every-city/1276760743?i=1276760754&uo=4",
+        "durationMs": 314707,
+        "id": "1276760754",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/6c/57/ed6c57ef-dfd0-e783-5615-fd56f169815a/mzaf_8178778849138388034.plus.aac.p.m4a",
+        "number": 11
+      },
+      {
+        "title": "Nothing Even Matters (feat. D'Angelo)",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/nothing-even-matters-feat-dangelo/1276760743?i=1276760755&uo=4",
+        "durationMs": 350533,
+        "id": "1276760755",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/c8/0d/93c80d73-90e8-d164-90aa-175ca4140638/mzaf_13412943923084857885.plus.aac.p.m4a",
+        "number": 12
+      },
+      {
+        "title": "Everything Is Everything",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/everything-is-everything/1276760743?i=1276760756&uo=4",
+        "durationMs": 293267,
+        "id": "1276760756",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/a3/c2/2ea3c2b5-35f4-de31-4e5f-6c8c27f44917/mzaf_4677134408750449004.plus.aac.p.m4a",
+        "number": 13
+      },
+      {
+        "title": "The Miseducation of Lauryn Hill",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743?i=1276760757&uo=4",
+        "durationMs": 235467,
+        "id": "1276760757",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/28/e4/a5/28e4a57b-2409-4679-b910-19e6e4fd1671/mzaf_1899250437694222298.plus.aac.p.m4a",
+        "number": 14
+      },
+      {
+        "title": "Can't Take My Eyes Off of You (I Love You Baby)",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/cant-take-my-eyes-off-of-you-i-love-you-baby/1276760743?i=1276760758&uo=4",
+        "durationMs": 221467,
+        "id": "1276760758",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/68/f0/0b68f0ee-3355-a22d-92a5-0a2085879b85/mzaf_12954119042381142514.plus.aac.p.m4a",
+        "number": 15
+      },
+      {
+        "title": "Tell Him",
+        "artist": "Lauryn Hill",
+        "source": "https://music.apple.com/us/album/tell-him/1276760743?i=1276760759&uo=4",
+        "durationMs": 280760,
+        "id": "1276760759",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/0b/8d/dc0b8d59-7281-9680-1168-7e4bceb73f20/mzaf_15506751040565953098.plus.aac.p.m4a",
+        "number": 16
+      }
+    ]
+  },
+  "A-034": {
+    "source": "https://music.apple.com/us/album/promises-feat-london-symphony-orchestra/1550697816?uo=4",
+    "tracks": [
+      {
+        "title": "Movement 1 (feat. London Symphony Orchestra)",
+        "artist": "Floating Points & Pharoah Sanders",
+        "source": "https://music.apple.com/us/album/movement-1-feat-london-symphony-orchestra/1550697816?i=1550697824&uo=4",
+        "durationMs": 384152,
+        "id": "1550697824",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b4/37/ac/b437ac0b-02fa-ddbf-7078-e8228509d69e/mzaf_6484617864198800316.plus.aac.p.m4a",
+        "number": 1
+      },
+      {
+        "title": "Movement 2 (feat. London Symphony Orchestra)",
+        "artist": "Floating Points & Pharoah Sanders",
+        "source": "https://music.apple.com/us/album/movement-2-feat-london-symphony-orchestra/1550697816?i=1550697832&uo=4",
+        "durationMs": 151328,
+        "id": "1550697832",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/77/3b/be773bcf-9e2c-f57d-894a-841f49a64f80/mzaf_7025339630370006594.plus.aac.p.m4a",
+        "number": 2
+      },
+      {
+        "title": "Movement 3 (feat. London Symphony Orchestra)",
+        "artist": "Floating Points & Pharoah Sanders",
+        "source": "https://music.apple.com/us/album/movement-3-feat-london-symphony-orchestra/1550697816?i=1550697836&uo=4",
+        "durationMs": 152089,
+        "id": "1550697836",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/eb/a7/52eba74e-d765-da8d-143b-176fb724ab4e/mzaf_316254419635882695.plus.aac.p.m4a",
+        "number": 3
+      },
+      {
+        "title": "Movement 4 (feat. London Symphony Orchestra)",
+        "artist": "Floating Points & Pharoah Sanders",
+        "source": "https://music.apple.com/us/album/movement-4-feat-london-symphony-orchestra/1550697816?i=1550697840&uo=4",
+        "durationMs": 151771,
+        "id": "1550697840",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/88/1f/28881fde-72dd-692b-c610-a8649d923e24/mzaf_16220153797832071754.plus.aac.p.m4a",
+        "number": 4
+      },
+      {
+        "title": "Movement 5 (feat. London Symphony Orchestra)",
+        "artist": "Floating Points & Pharoah Sanders",
+        "source": "https://music.apple.com/us/album/movement-5-feat-london-symphony-orchestra/1550697816?i=1550697845&uo=4",
+        "durationMs": 265224,
+        "id": "1550697845",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/7e/b1/b37eb1d0-703c-c10d-cd4a-c9fedd768d80/mzaf_3796056162844087460.plus.aac.p.m4a",
+        "number": 5
+      },
+      {
+        "title": "Movement 6 (feat. London Symphony Orchestra)",
+        "artist": "Floating Points & Pharoah Sanders",
+        "source": "https://music.apple.com/us/album/movement-6-feat-london-symphony-orchestra/1550697816?i=1550698064&uo=4",
+        "durationMs": 530894,
+        "id": "1550698064",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/e4/7e/bee47e73-9ab8-f6b6-9bfd-c1ba28ce442b/mzaf_18199821760916637300.plus.aac.p.m4a",
+        "number": 6
+      },
+      {
+        "title": "Movement 7 (feat. London Symphony Orchestra)",
+        "artist": "Floating Points & Pharoah Sanders",
+        "source": "https://music.apple.com/us/album/movement-7-feat-london-symphony-orchestra/1550697816?i=1550698069&uo=4",
+        "durationMs": 568934,
+        "id": "1550698069",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/c2/d1/c6c2d111-3979-e2f1-45dc-aff438f0158d/mzaf_7231555074429506812.plus.aac.p.m4a",
+        "number": 7
+      },
+      {
+        "title": "Movement 8 (feat. London Symphony Orchestra)",
+        "artist": "Floating Points & Pharoah Sanders",
+        "source": "https://music.apple.com/us/album/movement-8-feat-london-symphony-orchestra/1550697816?i=1550698074&uo=4",
+        "durationMs": 442961,
+        "id": "1550698074",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/68/1e/ea/681eea47-c6af-a307-9db3-0baa9364b071/mzaf_14803693908674535246.plus.aac.p.m4a",
+        "number": 8
+      },
+      {
+        "title": "Movement 9 (feat. London Symphony Orchestra)",
+        "artist": "Floating Points & Pharoah Sanders",
+        "source": "https://music.apple.com/us/album/movement-9-feat-london-symphony-orchestra/1550697816?i=1550698079&uo=4",
+        "durationMs": 150092,
+        "id": "1550698079",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/a9/0c/68a90c26-469c-da90-c6e5-6cc9b676c823/mzaf_18431772157316225714.plus.aac.p.m4a",
+        "number": 9
+      }
+    ]
+  },
+  "A-017": {
+    "source": "https://music.apple.com/us/album/dummy/1440653096?uo=4",
+    "tracks": [
+      {
+        "title": "Mysterons",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/mysterons/1440653096?i=1440653098&uo=4",
+        "durationMs": 305240,
+        "id": "1440653098",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/a8/96/4da89648-aab8-f129-983c-88eadbc41127/mzaf_10046411872083790441.plus.aac.p.m4a",
+        "number": 1
+      },
+      {
+        "title": "Sour Times",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/sour-times/1440653096?i=1440653101&uo=4",
+        "durationMs": 252267,
+        "id": "1440653101",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/f6/e3/7ef6e383-ff78-f34f-4824-78be29bc7aae/mzaf_2959336855850238077.plus.aac.p.m4a",
+        "number": 2
+      },
+      {
+        "title": "Strangers",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/strangers/1440653096?i=1440653106&uo=4",
+        "durationMs": 237600,
+        "id": "1440653106",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/ee/e7/a8eee7c5-b311-a657-ce85-6448c43c787a/mzaf_16776633165317330451.plus.aac.p.m4a",
+        "number": 3
+      },
+      {
+        "title": "It Could Be Sweet",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/it-could-be-sweet/1440653096?i=1440653107&uo=4",
+        "durationMs": 257160,
+        "id": "1440653107",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/78/82/987882c0-5b71-8e93-2baa-0483aa4aa25f/mzaf_15168525430095011375.plus.aac.p.m4a",
+        "number": 4
+      },
+      {
+        "title": "Wandering Star",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/wandering-star/1440653096?i=1440653108&uo=4",
+        "durationMs": 293200,
+        "id": "1440653108",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/e8/5d/89e85d4c-6631-fe68-7c4e-a3e84dd03ee0/mzaf_6423228021913800423.plus.aac.p.m4a",
+        "number": 5
+      },
+      {
+        "title": "It's a Fire",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/its-a-fire/1440653096?i=1440653109&uo=4",
+        "durationMs": 226200,
+        "id": "1440653109",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/dd/1b/a5dd1b66-d89e-0e1c-9c71-473f262c304f/mzaf_15608238577360154209.plus.aac.p.m4a",
+        "number": 6
+      },
+      {
+        "title": "Numb",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/numb/1440653096?i=1440653110&uo=4",
+        "durationMs": 235800,
+        "id": "1440653110",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/8d/42/8a8d42dc-9bb4-14e1-ff97-1cc5c72cffb9/mzaf_14671208066758137299.plus.aac.p.m4a",
+        "number": 7
+      },
+      {
+        "title": "Roads",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/roads/1440653096?i=1440653203&uo=4",
+        "durationMs": 303973,
+        "id": "1440653203",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/94/3f/f4943f50-be3b-629b-3612-68e32a1a7c8f/mzaf_12088733510844922268.plus.aac.p.m4a",
+        "number": 8
+      },
+      {
+        "title": "Pedestal",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/pedestal/1440653096?i=1440653204&uo=4",
+        "durationMs": 220400,
+        "id": "1440653204",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/79/0a/de790a43-e116-ba7f-7720-357f1a60505e/mzaf_2285304572877661197.plus.aac.p.m4a",
+        "number": 9
+      },
+      {
+        "title": "Biscuit",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/biscuit/1440653096?i=1440653205&uo=4",
+        "durationMs": 302600,
+        "id": "1440653205",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/df/1c/badf1c88-c5e4-40d8-b14c-65b4801d0711/mzaf_8837222660693281886.plus.aac.p.m4a",
+        "number": 10
+      },
+      {
+        "title": "Glory Box",
+        "artist": "Portishead",
+        "source": "https://music.apple.com/us/album/glory-box/1440653096?i=1440653206&uo=4",
+        "durationMs": 308627,
+        "id": "1440653206",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/b2/a4/40b2a45b-eacf-818f-7af6-f7f8b3885230/mzaf_16256497095178600689.plus.aac.p.m4a",
+        "number": 11
+      }
+    ]
+  },
+  "A-063": {
+    "source": "https://music.apple.com/us/album/vespertine/20920260?uo=4",
+    "tracks": [
+      {
+        "title": "Hidden Place",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/hidden-place/20920260?i=20920267&uo=4",
+        "durationMs": 328573,
+        "id": "20920267",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/d2/28/a9d2289a-96c7-5c5f-c2af-1ae378dabda0/mzaf_16682265255260732607.plus.aac.p.m4a",
+        "number": 1
+      },
+      {
+        "title": "Cocoon",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/cocoon/20920260?i=20920271&uo=4",
+        "durationMs": 268093,
+        "id": "20920271",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/b3/eb/09b3ebf2-5fa0-6bef-3315-963cb53819a0/mzaf_308381991948468198.plus.aac.p.m4a",
+        "number": 2
+      },
+      {
+        "title": "It's Not Up to You",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/its-not-up-to-you/20920260?i=20920281&uo=4",
+        "durationMs": 308933,
+        "id": "20920281",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/8f/31/dd8f31b4-5d8a-4d90-e212-2c89d934ae02/mzaf_4963661389856105225.plus.aac.p.m4a",
+        "number": 3
+      },
+      {
+        "title": "Undo",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/undo/20920260?i=20920285&uo=4",
+        "durationMs": 338467,
+        "id": "20920285",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/8d/f9/4c8df949-2223-7820-5ef6-9abf4f9ed379/mzaf_8602029987037386843.plus.aac.p.m4a",
+        "number": 4
+      },
+      {
+        "title": "Pagan Poetry",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/pagan-poetry/20920260?i=20920290&uo=4",
+        "durationMs": 314773,
+        "id": "20920290",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/67/8a/67678ad9-f8f0-5dc2-67b6-ecda24c2b3c8/mzaf_13130523085148599654.plus.aac.p.m4a",
+        "number": 5
+      },
+      {
+        "title": "Frosti",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/frosti/20920260?i=20920304&uo=4",
+        "durationMs": 101067,
+        "id": "20920304",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/00/d3/6200d3d6-4dee-4866-6d30-608996cf147f/mzaf_9833396470382591510.plus.aac.p.m4a",
+        "number": 6
+      },
+      {
+        "title": "Aurora",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/aurora/20920260?i=20920316&uo=4",
+        "durationMs": 279667,
+        "id": "20920316",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/88/28/ed88280c-6041-a0aa-8e35-e1cebfc1477b/mzaf_11649919895160109935.plus.aac.p.m4a",
+        "number": 7
+      },
+      {
+        "title": "An Echo, a Stain",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/an-echo-a-stain/20920260?i=20920324&uo=4",
+        "durationMs": 244440,
+        "id": "20920324",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/0b/7c/0a0b7cba-0d1a-f621-2249-87a474853b6f/mzaf_8814338114365394555.plus.aac.p.m4a",
+        "number": 8
+      },
+      {
+        "title": "Sun In My Mouth",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/sun-in-my-mouth/20920260?i=20920341&uo=4",
+        "durationMs": 160227,
+        "id": "20920341",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/a1/8d/76a18d98-99a9-9a90-79e6-87f9b31498f1/mzaf_15923761799029317045.plus.aac.p.m4a",
+        "number": 9
+      },
+      {
+        "title": "Heirloom",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/heirloom/20920260?i=20920348&uo=4",
+        "durationMs": 312040,
+        "id": "20920348",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/f2/10/46f21028-a58d-db11-b802-1774db3b12a1/mzaf_1532453227391282645.plus.aac.p.m4a",
+        "number": 10
+      },
+      {
+        "title": "Harm of Will",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/harm-of-will/20920260?i=20920355&uo=4",
+        "durationMs": 276933,
+        "id": "20920355",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/32/d8/4e32d8b9-79aa-29ed-de28-bdc0a2f235be/mzaf_14610698407278541475.plus.aac.p.m4a",
+        "number": 11
+      },
+      {
+        "title": "Unison",
+        "artist": "Björk",
+        "source": "https://music.apple.com/us/album/unison/20920260?i=20920362&uo=4",
+        "durationMs": 405760,
+        "id": "20920362",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e6/85/b2/e685b250-d01b-b65a-12aa-e35fda17396b/mzaf_691768318757759363.plus.aac.p.m4a",
+        "number": 12
+      }
+    ]
+  },
+  "A-028": {
+    "source": "https://music.apple.com/us/album/in-rainbows/1109714933?uo=4",
+    "tracks": [
+      {
+        "title": "15 Step",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/15-step/1109714933?i=1109715066&uo=4",
+        "durationMs": 237293,
+        "id": "1109715066",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/79/90/a579906e-5bc2-24a8-43b6-81d2a042eb18/mzaf_14665977354765177718.plus.aac.p.m4a",
+        "number": 1
+      },
+      {
+        "title": "Bodysnatchers",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/bodysnatchers/1109714933?i=1109715161&uo=4",
+        "durationMs": 242293,
+        "id": "1109715161",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e4/2a/01/e42a018f-ec7b-e7fa-5034-6050d339a5ef/mzaf_5464120641250363278.plus.aac.p.m4a",
+        "number": 2
+      },
+      {
+        "title": "Nude",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/nude/1109714933?i=1109715165&uo=4",
+        "durationMs": 255387,
+        "id": "1109715165",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/d6/9d/b0d69d33-0683-8f06-b768-95f0056af16f/mzaf_17403465269284578717.plus.aac.p.m4a",
+        "number": 3
+      },
+      {
+        "title": "Weird Fishes / Arpeggi",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/weird-fishes-arpeggi/1109714933?i=1109715168&uo=4",
+        "durationMs": 318187,
+        "id": "1109715168",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/12/eb/3a12ebaf-89c1-1ac9-6821-3a1de510ef51/mzaf_14543910941982290973.plus.aac.p.m4a",
+        "number": 4
+      },
+      {
+        "title": "All I Need",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/all-i-need/1109714933?i=1109715293&uo=4",
+        "durationMs": 228747,
+        "id": "1109715293",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/c3/d5/8ec3d546-17d7-3322-662d-e09a89fbefd8/mzaf_7126755987197906481.plus.aac.p.m4a",
+        "number": 5
+      },
+      {
+        "title": "Faust Arp",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/faust-arp/1109714933?i=1109715308&uo=4",
+        "durationMs": 129680,
+        "id": "1109715308",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/82/92/9c82920e-c90a-1e0a-1e60-bf604bae80d9/mzaf_3298592383350408547.plus.aac.p.m4a",
+        "number": 6
+      },
+      {
+        "title": "Reckoner",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/reckoner/1109714933?i=1109715309&uo=4",
+        "durationMs": 290213,
+        "id": "1109715309",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/84/2b/d9842b3d-350e-3c36-3681-df31588ab202/mzaf_1179366535087719219.plus.aac.p.m4a",
+        "number": 7
+      },
+      {
+        "title": "House of Cards",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/house-of-cards/1109714933?i=1109715467&uo=4",
+        "durationMs": 328293,
+        "id": "1109715467",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/7f/49/e77f4904-d37a-deed-9237-6fd6f88615e3/mzaf_9468509769421853320.plus.aac.p.m4a",
+        "number": 8
+      },
+      {
+        "title": "Jigsaw Falling Into Place",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/jigsaw-falling-into-place/1109714933?i=1109715469&uo=4",
+        "durationMs": 248893,
+        "id": "1109715469",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/0b/04/760b0415-ed76-cc02-b688-1a49789dbc34/mzaf_10830186063789872228.plus.aac.p.m4a",
+        "number": 9
+      },
+      {
+        "title": "Videotape",
+        "artist": "Radiohead",
+        "source": "https://music.apple.com/us/album/videotape/1109714933?i=1109715479&uo=4",
+        "durationMs": 279634,
+        "id": "1109715479",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/04/26/8f0426ef-4d1b-c1e7-dcde-dfb868f2c52a/mzaf_6071995543397747319.plus.aac.p.m4a",
+        "number": 10
+      }
+    ]
+  },
+  "A-012": {
+    "source": "https://music.apple.com/us/album/moon-safari/693063670?uo=4",
+    "tracks": [
+      {
+        "title": "La Femme d'argent",
+        "artist": "Air",
+        "source": "https://music.apple.com/us/album/la-femme-dargent/693063670?i=693063876&uo=4",
+        "durationMs": 426614,
+        "id": "693063876",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/65/30/ab65300f-3134-9391-4f1a-329e2bbd946b/mzaf_743568926842265821.plus.aac.p.m4a",
+        "number": 1
+      },
+      {
+        "title": "Sexy Boy",
+        "artist": "Air",
+        "source": "https://music.apple.com/us/album/sexy-boy/693063670?i=693063918&uo=4",
+        "durationMs": 298467,
+        "id": "693063918",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/43/5e/09/435e094d-4b3c-07a4-5484-f81467ca7cb3/mzaf_13111533954141408106.plus.aac.p.m4a",
+        "number": 2
+      },
+      {
+        "title": "All I Need",
+        "artist": "Air & Beth Hirsch",
+        "source": "https://music.apple.com/us/album/all-i-need/693063670?i=693063920&uo=4",
+        "durationMs": 268307,
+        "id": "693063920",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/30/7f/77307f8e-2f86-6354-213f-a65d8ff5ca7b/mzaf_6039890285325898305.plus.aac.p.m4a",
+        "number": 3
+      },
+      {
+        "title": "Kelly Watch the Stars",
+        "artist": "Air",
+        "source": "https://music.apple.com/us/album/kelly-watch-the-stars/693063670?i=693063922&uo=4",
+        "durationMs": 226293,
+        "id": "693063922",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/ea/4a/35ea4a79-eac7-84f9-ca0e-e1b88e604c5a/mzaf_15516080064013562689.plus.aac.p.m4a",
+        "number": 4
+      },
+      {
+        "title": "Talisman",
+        "artist": "Air",
+        "source": "https://music.apple.com/us/album/talisman/693063670?i=693063924&uo=4",
+        "durationMs": 256707,
+        "id": "693063924",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/57/3c/fd/573cfd92-19ca-63e8-1a34-1b38b55187a3/mzaf_15307040571643057281.plus.aac.p.m4a",
+        "number": 5
+      },
+      {
+        "title": "Remember",
+        "artist": "Air",
+        "source": "https://music.apple.com/us/album/remember/693063670?i=693063927&uo=4",
+        "durationMs": 154293,
+        "id": "693063927",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/94/97/b0949746-66a8-ce39-4e56-8297ac6953bb/mzaf_7693422952131618504.plus.aac.p.m4a",
+        "number": 6
+      },
+      {
+        "title": "You Make It Easy",
+        "artist": "Air & Beth Hirsch",
+        "source": "https://music.apple.com/us/album/you-make-it-easy/693063670?i=693063928&uo=4",
+        "durationMs": 241533,
+        "id": "693063928",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/fc/1e/12fc1e4b-6e83-a113-c829-21b0780a4815/mzaf_6800297428760540203.plus.aac.p.m4a",
+        "number": 7
+      },
+      {
+        "title": "Ce Matin-Là",
+        "artist": "Air",
+        "source": "https://music.apple.com/us/album/ce-matin-l%C3%A0/693063670?i=693064050&uo=4",
+        "durationMs": 219040,
+        "id": "693064050",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/cd/f1/c3cdf1f8-a854-861f-5df6-ddd59360e0d1/mzaf_2951600548722604251.plus.aac.p.m4a",
+        "number": 8
+      },
+      {
+        "title": "New Star In the Sky",
+        "artist": "Air",
+        "source": "https://music.apple.com/us/album/new-star-in-the-sky/693063670?i=693064052&uo=4",
+        "durationMs": 340600,
+        "id": "693064052",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/a2/d4/dca2d4d3-fe12-4ecb-0a46-b20dbabeabc6/mzaf_16429838087610713095.plus.aac.p.m4a",
+        "number": 9
+      },
+      {
+        "title": "Le voyage de Pénélope",
+        "artist": "Air",
+        "source": "https://music.apple.com/us/album/le-voyage-de-p%C3%A9n%C3%A9lope/693063670?i=693064053&uo=4",
+        "durationMs": 190867,
+        "id": "693064053",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/40/8e/a7408edd-8b8c-d346-21fc-6ce336246081/mzaf_10361395817904437527.plus.aac.p.m4a",
+        "number": 10
+      }
+    ]
+  },
+  "A-004": {
+    "source": "https://music.apple.com/us/album/blue-train/1468202477?uo=4",
+    "tracks": [
+      {
+        "title": "Blue Train (Remastered)",
+        "artist": "John Coltrane",
+        "source": "https://music.apple.com/us/album/blue-train-remastered/1468202477?i=1468202479&uo=4",
+        "durationMs": 643128,
+        "id": "1468202479",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/74/bd/4274bd86-1026-af36-de93-ba8ac03e9f8d/mzaf_9135411222931316696.plus.aac.p.m4a",
+        "number": 1
+      },
+      {
+        "title": "Moment's Notice (Remastered)",
+        "artist": "John Coltrane",
+        "source": "https://music.apple.com/us/album/moments-notice-remastered/1468202477?i=1468202480&uo=4",
+        "durationMs": 550189,
+        "id": "1468202480",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/ce/27/5cce27ee-9e85-22fa-a9ee-d4b58419156a/mzaf_1849383418212950843.plus.aac.p.m4a",
+        "number": 2
+      },
+      {
+        "title": "Locomotion (Remastered)",
+        "artist": "John Coltrane",
+        "source": "https://music.apple.com/us/album/locomotion-remastered/1468202477?i=1468202482&uo=4",
+        "durationMs": 434624,
+        "id": "1468202482",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/95/02/ec95024a-5cd2-fd8b-c3e4-2c956d6dbac9/mzaf_3564519483171032333.plus.aac.p.m4a",
+        "number": 3
+      },
+      {
+        "title": "I'm Old Fashioned (Remastered)",
+        "artist": "John Coltrane",
+        "source": "https://music.apple.com/us/album/im-old-fashioned-remastered/1468202477?i=1468202483&uo=4",
+        "durationMs": 479024,
+        "id": "1468202483",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/56/ab/5256ab61-0cc7-2815-44b3-63d20c132713/mzaf_7589924622666780795.plus.aac.p.m4a",
+        "number": 4
+      },
+      {
+        "title": "Lazy Bird (Remastered)",
+        "artist": "John Coltrane",
+        "source": "https://music.apple.com/us/album/lazy-bird-remastered/1468202477?i=1468202484&uo=4",
+        "durationMs": 427342,
+        "id": "1468202484",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/80/ac/7b80acd9-0f01-e2e4-e26d-78b84e4f08fc/mzaf_1990400803837147500.plus.aac.p.m4a",
+        "number": 5
+      }
+    ]
+  },
+  "A-052": {
+    "source": "https://music.apple.com/us/album/selected-ambient-works-85-92/1668862636?uo=4",
+    "tracks": [
+      {
+        "title": "Xtal",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/xtal/1668862636?i=1668862649&uo=4",
+        "durationMs": 293752,
+        "id": "1668862649",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/a9/59/a1a9593a-f705-ca02-495f-2d83f83e4e49/mzaf_282027520707936830.plus.aac.p.m4a",
+        "number": 1
+      },
+      {
+        "title": "Tha",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/tha/1668862636?i=1668862659&uo=4",
+        "durationMs": 547133,
+        "id": "1668862659",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/15/c9/9e15c90b-2e0f-6eb2-4b9e-4de32f6f2187/mzaf_9367593830771247302.plus.aac.p.m4a",
+        "number": 2
+      },
+      {
+        "title": "Pulsewidth",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/pulsewidth/1668862636?i=1668862662&uo=4",
+        "durationMs": 228053,
+        "id": "1668862662",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/cd/9d/21cd9d00-0aae-da50-5ec7-0c34b7687a5a/mzaf_10714632442958168667.plus.aac.p.m4a",
+        "number": 3
+      },
+      {
+        "title": "Ageispolis",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/ageispolis/1668862636?i=1668863098&uo=4",
+        "durationMs": 323187,
+        "id": "1668863098",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/9e/be/289ebe7a-9756-75f5-115e-55d843554072/mzaf_515429008736154046.plus.aac.p.m4a",
+        "number": 4
+      },
+      {
+        "title": "I",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/i/1668862636?i=1668863102&uo=4",
+        "durationMs": 77347,
+        "id": "1668863102",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/bc/f3/77bcf3a2-98fb-898d-dd25-55347fe44b02/mzaf_16535097978956282040.plus.aac.p.m4a",
+        "number": 5
+      },
+      {
+        "title": "Green Calx",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/green-calx/1668862636?i=1668863345&uo=4",
+        "durationMs": 365160,
+        "id": "1668863345",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/58/c7/4f58c7c4-52aa-5ce9-1c01-36348e948e5d/mzaf_12790600363845396574.plus.aac.p.m4a",
+        "number": 6
+      },
+      {
+        "title": "Heliosphan",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/heliosphan/1668862636?i=1668863391&uo=4",
+        "durationMs": 293800,
+        "id": "1668863391",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/65/a4/2d65a461-7498-053f-b314-a95d36b1f966/mzaf_15671727500416736455.plus.aac.p.m4a",
+        "number": 7
+      },
+      {
+        "title": "We Are the Music Makers",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/we-are-the-music-makers/1668862636?i=1668863395&uo=4",
+        "durationMs": 463520,
+        "id": "1668863395",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/ab/f3/7aabf3eb-f556-5d11-a7fa-5c8c54de745e/mzaf_6080855233070260279.plus.aac.p.m4a",
+        "number": 8
+      },
+      {
+        "title": "Schottkey 7th Path",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/schottkey-7th-path/1668862636?i=1668863404&uo=4",
+        "durationMs": 308720,
+        "id": "1668863404",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/3b/ce/e93bcee1-1536-6267-d08b-ba5d473a2918/mzaf_9518680915702378883.plus.aac.p.m4a",
+        "number": 9
+      },
+      {
+        "title": "Ptolemy",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/ptolemy/1668862636?i=1668863717&uo=4",
+        "durationMs": 434307,
+        "id": "1668863717",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/82/94/b4829489-0806-768f-712c-6e3bc3a6e725/mzaf_11971622633218935419.plus.aac.p.m4a",
+        "number": 10
+      },
+      {
+        "title": "Hedphelym",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/hedphelym/1668862636?i=1668863726&uo=4",
+        "durationMs": 363920,
+        "id": "1668863726",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/66/d0/ce66d017-1c10-4329-9a03-697ea487e24a/mzaf_18296267451859543717.plus.aac.p.m4a",
+        "number": 11
+      },
+      {
+        "title": "Delphium",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/delphium/1668862636?i=1668863961&uo=4",
+        "durationMs": 329267,
+        "id": "1668863961",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/dd/b9/9eddb974-629d-0feb-3327-95822226a624/mzaf_15143997980692183371.plus.aac.p.m4a",
+        "number": 12
+      },
+      {
+        "title": "Actium",
+        "artist": "Aphex Twin",
+        "source": "https://music.apple.com/us/album/actium/1668862636?i=1668863965&uo=4",
+        "durationMs": 455000,
+        "id": "1668863965",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/64/8d/da/648dda49-1d00-3e48-e4f7-20d4b4b11927/mzaf_12284700623402907071.plus.aac.p.m4a",
+        "number": 13
+      }
+    ]
+  },
+  "A-071": {
+    "source": "https://music.apple.com/us/album/kind-of-blue/268443092?uo=4",
+    "tracks": [
+      {
+        "artist": "Miles Davis",
+        "title": "So What",
+        "durationMs": 547983,
+        "number": 1,
+        "id": "268443097",
+        "source": "https://music.apple.com/us/album/so-what/268443092?i=268443097&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/e8/0a/54e80a8b-1d60-6b59-e908-6fd65c4ff783/mzaf_2469862574651846302.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Miles Davis",
+        "title": "Freddie Freeloader",
+        "durationMs": 588411,
+        "number": 2,
+        "id": "268443113",
+        "source": "https://music.apple.com/us/album/freddie-freeloader/268443092?i=268443113&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/a1/16/47a116d0-40e5-a1ed-6a52-d8af1e21deb0/mzaf_8345337894870074911.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Miles Davis",
+        "title": "Blue In Green",
+        "durationMs": 335939,
+        "number": 3,
+        "id": "268443131",
+        "source": "https://music.apple.com/us/album/blue-in-green/268443092?i=268443131&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/5d/60/af5d603d-d0db-c066-3fe6-54bb2b51bdfb/mzaf_1714770531795139058.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Miles Davis",
+        "title": "All Blues",
+        "durationMs": 692897,
+        "number": 4,
+        "id": "268443200",
+        "source": "https://music.apple.com/us/album/all-blues/268443092?i=268443200&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/fd/e6/68fde6cb-d822-989b-b355-66cf8f8a67a4/mzaf_15826989764965426693.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Miles Davis",
+        "title": "Flamenco Sketches",
+        "durationMs": 561105,
+        "number": 5,
+        "id": "268443216",
+        "source": "https://music.apple.com/us/album/flamenco-sketches/268443092?i=268443216&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/50/34/f15034d6-05e2-952c-3e86-f767c079c8bb/mzaf_6910963868402689544.plus.aac.p.m4a"
+      }
+    ]
+  },
+  "A-082": {
+    "source": "https://music.apple.com/us/album/discovery/697194953?uo=4",
+    "tracks": [
+      {
+        "artist": "Daft Punk",
+        "title": "One More Time",
+        "durationMs": 320357,
+        "number": 1,
+        "id": "697195462",
+        "source": "https://music.apple.com/us/album/one-more-time/697194953?i=697195462&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/93/d8/5d93d83f-ad1e-da4d-1d79-9937bdff24ec/mzaf_14396932211949300852.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Aerodynamic",
+        "durationMs": 212547,
+        "number": 2,
+        "id": "697195570",
+        "source": "https://music.apple.com/us/album/aerodynamic/697194953?i=697195570&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/ab/8f/0eab8f87-87db-9501-110a-ad681b23ca0f/mzaf_16233060439128880755.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Digital Love",
+        "durationMs": 301373,
+        "number": 3,
+        "id": "697195633",
+        "source": "https://music.apple.com/us/album/digital-love/697194953?i=697195633&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/43/5b/df435bbf-129a-ec94-cebb-8c83e3a261e2/mzaf_13417326183095861767.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Harder Better Faster Stronger",
+        "durationMs": 224693,
+        "number": 4,
+        "id": "697195787",
+        "source": "https://music.apple.com/us/album/harder-better-faster-stronger/697194953?i=697195787&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/a4/4e/8da44e8f-9705-6182-686c-332714c54671/mzaf_17406318046701183138.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Crescendolls",
+        "durationMs": 211640,
+        "number": 5,
+        "id": "697195813",
+        "source": "https://music.apple.com/us/album/crescendolls/697194953?i=697195813&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/23/e9/e523e9ba-033e-b879-da3d-461d9b8b78bc/mzaf_8375481395149044603.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Nightvision",
+        "durationMs": 104467,
+        "number": 6,
+        "id": "697195819",
+        "source": "https://music.apple.com/us/album/nightvision/697194953?i=697195819&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/00/b2/8d00b2e1-0672-03f0-df9f-cc011626fe06/mzaf_18422326861735268875.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Superheroes",
+        "durationMs": 237800,
+        "number": 7,
+        "id": "697195890",
+        "source": "https://music.apple.com/us/album/superheroes/697194953?i=697195890&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/88/90/ae88903e-3f28-527f-1df2-f80a20b9adff/mzaf_9476856611102807301.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "High Life",
+        "durationMs": 201800,
+        "number": 8,
+        "id": "697195929",
+        "source": "https://music.apple.com/us/album/high-life/697194953?i=697195929&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/60/bc/2060bcff-569f-9f03-b5ab-d000d235896f/mzaf_152906689635921771.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Something About Us",
+        "durationMs": 232667,
+        "number": 9,
+        "id": "697195941",
+        "source": "https://music.apple.com/us/album/something-about-us/697194953?i=697195941&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/6e/07/e56e0775-d44c-fc79-a8d8-78b46a825738/mzaf_9538225478116277548.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Voyager",
+        "durationMs": 227867,
+        "number": 10,
+        "id": "697195991",
+        "source": "https://music.apple.com/us/album/voyager/697194953?i=697195991&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/d3/cf/60d3cf87-d9ac-03e5-a057-032b94cfd59e/mzaf_11149912225012968836.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Veridis Quo",
+        "durationMs": 345187,
+        "number": 11,
+        "id": "697196125",
+        "source": "https://music.apple.com/us/album/veridis-quo/697194953?i=697196125&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/cc/c4/e0ccc4af-ad90-59fe-9a7c-9c32d1a3c380/mzaf_2643765405421046671.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Short Circuit",
+        "durationMs": 206867,
+        "number": 12,
+        "id": "697196212",
+        "source": "https://music.apple.com/us/album/short-circuit/697194953?i=697196212&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/a1/84/85a18405-2694-c9e2-c4eb-aa696b33d170/mzaf_11653878276245735503.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Face to Face",
+        "durationMs": 240173,
+        "number": 13,
+        "id": "697196420",
+        "source": "https://music.apple.com/us/album/face-to-face/697194953?i=697196420&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/7e/7e/ab7e7e17-1803-4bb9-ff55-e3e8409925ca/mzaf_13376909038790853248.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Daft Punk",
+        "title": "Too Long",
+        "durationMs": 600293,
+        "number": 14,
+        "id": "697196490",
+        "source": "https://music.apple.com/us/album/too-long/697194953?i=697196490&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/b5/06/cbb506be-6759-9384-04a5-51fd5295cd9c/mzaf_13436507164328567604.plus.aac.p.m4a"
+      }
+    ]
+  },
+  "A-093": {
+    "source": "https://music.apple.com/us/album/mezzanine/724466069?uo=4",
+    "tracks": [
+      {
+        "artist": "Massive Attack",
+        "title": "Angel",
+        "durationMs": 379533,
+        "number": 1,
+        "id": "724466660",
+        "source": "https://music.apple.com/us/album/angel/724466069?i=724466660&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/db/af/6e/dbaf6e32-911f-be9d-e2b0-0e48189d14fe/mzaf_14963447783895938076.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Risingson",
+        "durationMs": 298827,
+        "number": 2,
+        "id": "724466687",
+        "source": "https://music.apple.com/us/album/risingson/724466069?i=724466687&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/6a/09/996a092b-0015-4f14-310c-9549172411b3/mzaf_16594643020511362626.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Teardrop",
+        "durationMs": 330773,
+        "number": 3,
+        "id": "724466700",
+        "source": "https://music.apple.com/us/album/teardrop/724466069?i=724466700&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/a6/91/a3a691b0-8e49-399d-2585-ddcd6694c9f2/mzaf_16325826545413166648.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Inertia Creeps",
+        "durationMs": 357133,
+        "number": 4,
+        "id": "724466834",
+        "source": "https://music.apple.com/us/album/inertia-creeps/724466069?i=724466834&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/e9/da/4ce9da64-212a-e2e5-a672-b210d02d9fad/mzaf_11327992466087346448.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Exchange",
+        "durationMs": 251200,
+        "number": 5,
+        "id": "724466848",
+        "source": "https://music.apple.com/us/album/exchange/724466069?i=724466848&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/25/6a/89256a32-039f-91b5-de15-c962e54bd259/mzaf_10138659454767135392.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Dissolved Girl",
+        "durationMs": 366893,
+        "number": 6,
+        "id": "724466943",
+        "source": "https://music.apple.com/us/album/dissolved-girl/724466069?i=724466943&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/87/c5/a687c5fb-a5bd-d58d-6500-9562a6364647/mzaf_11222454263760705284.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Man Next Door",
+        "durationMs": 356267,
+        "number": 7,
+        "id": "724467000",
+        "source": "https://music.apple.com/us/album/man-next-door/724466069?i=724467000&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/70/36/2b/70362b63-af8f-0537-59d2-cc4af65cda2d/mzaf_2709754439249049342.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Black Milk",
+        "durationMs": 381667,
+        "number": 8,
+        "id": "724467020",
+        "source": "https://music.apple.com/us/album/black-milk/724466069?i=724467020&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d6/9b/b0/d69bb032-c485-d05b-7eb5-65e825b2f9e4/mzaf_12628356775361599904.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Mezzanine",
+        "durationMs": 356800,
+        "number": 9,
+        "id": "724467035",
+        "source": "https://music.apple.com/us/album/mezzanine/724466069?i=724467035&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/23/e5/f6/23e5f60a-f497-dfc4-1db6-ec0bb88e24a5/mzaf_18094856939554462923.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "Group Four",
+        "durationMs": 492267,
+        "number": 10,
+        "id": "724467042",
+        "source": "https://music.apple.com/us/album/group-four/724466069?i=724467042&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/15/0d/ed150d79-8d5b-b7d6-bce8-007f80d041bd/mzaf_17884173441420242604.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Massive Attack",
+        "title": "(Exchange)",
+        "durationMs": 250867,
+        "number": 11,
+        "id": "724467179",
+        "source": "https://music.apple.com/us/album/exchange/724466069?i=724467179&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/36/cb/af36cbc1-1151-2fd8-03ce-4730e4dccdb2/mzaf_14532977003784903264.plus.aac.p.m4a"
+      }
+    ]
+  },
+  "A-104": {
+    "source": "https://music.apple.com/us/album/souvlaki/292885238?uo=4",
+    "tracks": [
+      {
+        "artist": "Slowdive",
+        "title": "Alison",
+        "durationMs": 230987,
+        "number": 1,
+        "id": "292885253",
+        "source": "https://music.apple.com/us/album/alison/292885238?i=292885253&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/9e/4f/1d9e4fa6-4efd-01d4-da8b-6778b096c6cb/mzaf_9036332438135022718.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Slowdive",
+        "title": "Machine Gun",
+        "durationMs": 266707,
+        "number": 2,
+        "id": "292885254",
+        "source": "https://music.apple.com/us/album/machine-gun/292885238?i=292885254&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/c2/48/43c248f2-c54c-5ebd-71dc-7ae5a07dd6ad/mzaf_14388236390373904622.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Slowdive",
+        "title": "40 Days",
+        "durationMs": 194120,
+        "number": 3,
+        "id": "292885255",
+        "source": "https://music.apple.com/us/album/40-days/292885238?i=292885255&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/d3/32/9ad3328f-2bdd-8c93-4ccc-1b9498afa352/mzaf_13018330625077271470.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Slowdive",
+        "title": "Sing",
+        "durationMs": 288493,
+        "number": 4,
+        "id": "292885257",
+        "source": "https://music.apple.com/us/album/sing/292885238?i=292885257&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/54/5a/e3545aa3-9553-54f5-1432-dbc1c3aae35c/mzaf_9566724164055813533.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Slowdive",
+        "title": "Here She Comes",
+        "durationMs": 137853,
+        "number": 5,
+        "id": "292885258",
+        "source": "https://music.apple.com/us/album/here-she-comes/292885238?i=292885258&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/fc/0d/3cfc0d2d-4c4e-1b2a-6f04-c75fd971b426/mzaf_15634603165647568339.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Slowdive",
+        "title": "Souvlaki Space Station",
+        "durationMs": 357373,
+        "number": 6,
+        "id": "292885260",
+        "source": "https://music.apple.com/us/album/souvlaki-space-station/292885238?i=292885260&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/f8/26/b9f8264d-2b39-ea2d-61da-46442df9cb02/mzaf_7335197569818085118.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Slowdive",
+        "title": "When the Sun Hits",
+        "durationMs": 285907,
+        "number": 7,
+        "id": "292885262",
+        "source": "https://music.apple.com/us/album/when-the-sun-hits/292885238?i=292885262&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/d6/29/8cd62943-9c69-3f1b-79b9-fad0883a0e9a/mzaf_9349941370226318512.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Slowdive",
+        "title": "Altogether",
+        "durationMs": 221133,
+        "number": 8,
+        "id": "292885264",
+        "source": "https://music.apple.com/us/album/altogether/292885238?i=292885264&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/39/11/b5391141-8d85-6c76-0832-9de0a3317715/mzaf_4435292773920446171.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Slowdive",
+        "title": "Melon Yellow",
+        "durationMs": 232947,
+        "number": 9,
+        "id": "292885265",
+        "source": "https://music.apple.com/us/album/melon-yellow/292885238?i=292885265&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/bf/12/2fbf1245-e9b3-589b-6111-7286b778cd5a/mzaf_13161458279479983025.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Slowdive",
+        "title": "Dagger",
+        "durationMs": 218253,
+        "number": 10,
+        "id": "292885267",
+        "source": "https://music.apple.com/us/album/dagger/292885238?i=292885267&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/92/90/7c9290d8-5201-756d-ec49-4d68872486ff/mzaf_8395830664840938312.plus.aac.p.m4a"
+      }
+    ]
+  },
+  "A-115": {
+    "source": "https://music.apple.com/us/album/the-wall/1065975633?uo=4",
+    "tracks": [
+      {
+        "artist": "Pink Floyd",
+        "title": "In the Flesh?",
+        "durationMs": 198800,
+        "number": 1,
+        "id": "1065975634",
+        "source": "https://music.apple.com/us/album/in-the-flesh/1065975633?i=1065975634&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/dc/60/d8dc60bf-2cdc-318f-d19b-3e812565eb38/mzaf_10364795718198879546.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "The Thin Ice",
+        "durationMs": 146933,
+        "number": 2,
+        "id": "1065975635",
+        "source": "https://music.apple.com/us/album/the-thin-ice/1065975633?i=1065975635&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/8d/81/6f8d8120-3558-4b9a-112f-2023fcb6fa76/mzaf_11174410923013868204.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Another Brick In the Wall, Pt. 1",
+        "durationMs": 191293,
+        "number": 3,
+        "id": "1065975636",
+        "source": "https://music.apple.com/us/album/another-brick-in-the-wall-pt-1/1065975633?i=1065975636&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/67/63/a46763de-89bb-f19c-c505-0e86f78f302a/mzaf_18424597729040339680.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "The Happiest Days of Our Lives",
+        "durationMs": 111107,
+        "number": 4,
+        "id": "1065975637",
+        "source": "https://music.apple.com/us/album/the-happiest-days-of-our-lives/1065975633?i=1065975637&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/14/7d/e9147dcc-e840-c8b3-accc-5927ff9cbc72/mzaf_9722664896969374407.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Another Brick In the Wall, Pt. 2",
+        "durationMs": 238947,
+        "number": 5,
+        "id": "1065975638",
+        "source": "https://music.apple.com/us/album/another-brick-in-the-wall-pt-2/1065975633?i=1065975638&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/21/41/8a214193-f9e0-fbeb-aad5-6ca8b8420dbb/mzaf_2628810625325580575.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Mother",
+        "durationMs": 334880,
+        "number": 6,
+        "id": "1065976152",
+        "source": "https://music.apple.com/us/album/mother/1065975633?i=1065976152&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/d1/50/17d15057-532b-07f7-86e7-2994212fb1d0/mzaf_1892162169393826551.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Goodbye Blue Sky",
+        "durationMs": 167293,
+        "number": 7,
+        "id": "1065976153",
+        "source": "https://music.apple.com/us/album/goodbye-blue-sky/1065975633?i=1065976153&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/53/f7/4053f7c2-043f-a22d-1087-10cf373b5c04/mzaf_11014176182714869781.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Empty Spaces",
+        "durationMs": 127787,
+        "number": 8,
+        "id": "1065976154",
+        "source": "https://music.apple.com/us/album/empty-spaces/1065975633?i=1065976154&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/b2/54/07b25400-9969-f03b-78b4-e551eeb62467/mzaf_2743959703620767685.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Young Lust",
+        "durationMs": 209787,
+        "number": 9,
+        "id": "1065976155",
+        "source": "https://music.apple.com/us/album/young-lust/1065975633?i=1065976155&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/fb/06/11fb0689-6f45-ed46-77e6-9095c9835e1e/mzaf_7829671742669570845.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "One of My Turns",
+        "durationMs": 216947,
+        "number": 10,
+        "id": "1065976159",
+        "source": "https://music.apple.com/us/album/one-of-my-turns/1065975633?i=1065976159&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/a2/46/8ba246a9-9459-ca64-48da-4624fcd9c4d0/mzaf_6285596776074193297.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Don't Leave Me Now",
+        "durationMs": 255813,
+        "number": 11,
+        "id": "1065976160",
+        "source": "https://music.apple.com/us/album/dont-leave-me-now/1065975633?i=1065976160&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/eb/ac/27ebac5a-bd07-b50c-25d5-a5fd8aa16ef0/mzaf_7223833338892656397.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Another Brick In the Wall, Pt. 3",
+        "durationMs": 74533,
+        "number": 12,
+        "id": "1065976161",
+        "source": "https://music.apple.com/us/album/another-brick-in-the-wall-pt-3/1065975633?i=1065976161&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/e5/74/9fe5742c-df39-5847-5171-f3cf9eca1c93/mzaf_14071750718956976687.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Goodbye Cruel World",
+        "durationMs": 74307,
+        "number": 13,
+        "id": "1065976162",
+        "source": "https://music.apple.com/us/album/goodbye-cruel-world/1065975633?i=1065976162&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/15/5f/18155f61-6e2f-8fdb-92af-fbb4be80cbe7/mzaf_13663847453648198032.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Hey You",
+        "durationMs": 279640,
+        "number": 1,
+        "id": "1065976163",
+        "source": "https://music.apple.com/us/album/hey-you/1065975633?i=1065976163&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/8b/07/de8b0756-b9be-79d0-cd73-60ee3fd12973/mzaf_17754900632443928998.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Is There Anybody Out There?",
+        "durationMs": 161787,
+        "number": 2,
+        "id": "1065976164",
+        "source": "https://music.apple.com/us/album/is-there-anybody-out-there/1065975633?i=1065976164&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/e8/01/c7e801aa-0d53-9323-88e4-4e1277360ede/mzaf_4500436591973326865.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Nobody Home",
+        "durationMs": 202640,
+        "number": 3,
+        "id": "1065976165",
+        "source": "https://music.apple.com/us/album/nobody-home/1065975633?i=1065976165&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/3c/06/d33c063d-fbb4-5fef-3dd8-c77bd2c39a6c/mzaf_4521932782633559262.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Vera",
+        "durationMs": 93147,
+        "number": 4,
+        "id": "1065976166",
+        "source": "https://music.apple.com/us/album/vera/1065975633?i=1065976166&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fb/ca/79/fbca79d1-6bd1-0827-7b9c-fb287abf445e/mzaf_988734400076760510.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Bring the Boys Back Home",
+        "durationMs": 87573,
+        "number": 5,
+        "id": "1065976167",
+        "source": "https://music.apple.com/us/album/bring-the-boys-back-home/1065975633?i=1065976167&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/06/d5/e6/06d5e63a-5c3d-7c56-81c1-daeb391d7348/mzaf_16818073269127094427.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Comfortably Numb",
+        "durationMs": 382280,
+        "number": 6,
+        "id": "1065976170",
+        "source": "https://music.apple.com/us/album/comfortably-numb/1065975633?i=1065976170&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/1b/39/af1b3957-d1d3-06c9-d547-633cb081b677/mzaf_3421307010114212683.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "The Show Must Go On",
+        "durationMs": 96333,
+        "number": 7,
+        "id": "1065976171",
+        "source": "https://music.apple.com/us/album/the-show-must-go-on/1065975633?i=1065976171&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/75/79/a1757946-f45d-d79b-2293-b4d5adb0a13b/mzaf_8392602110779081563.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "In the Flesh",
+        "durationMs": 255907,
+        "number": 8,
+        "id": "1065976172",
+        "source": "https://music.apple.com/us/album/in-the-flesh/1065975633?i=1065976172&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/59/cb/b059cb57-4f68-69c5-c8e8-17ed7d011cc3/mzaf_11185182136828393949.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Run Like Hell",
+        "durationMs": 263387,
+        "number": 9,
+        "id": "1065976173",
+        "source": "https://music.apple.com/us/album/run-like-hell/1065975633?i=1065976173&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b8/3e/c2/b83ec2c5-8626-d710-1e9a-d1aded84d564/mzaf_12490191425958667052.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Waiting for the Worms",
+        "durationMs": 237133,
+        "number": 10,
+        "id": "1065976174",
+        "source": "https://music.apple.com/us/album/waiting-for-the-worms/1065975633?i=1065976174&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/d0/92/3dd09240-955b-718e-3d0c-552b930f6c4e/mzaf_10564816134658273259.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Stop",
+        "durationMs": 30733,
+        "number": 11,
+        "id": "1065976175",
+        "source": "https://music.apple.com/us/album/stop/1065975633?i=1065976175&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/c2/ce/f9c2ce34-59ed-536e-c819-d6bf1d5d1ce2/mzaf_4326555348800132978.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "The Trial",
+        "durationMs": 318640,
+        "number": 12,
+        "id": "1065976176",
+        "source": "https://music.apple.com/us/album/the-trial/1065975633?i=1065976176&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/0c/5d/ef0c5dcd-3f0f-3804-7ef6-98115ed1ff53/mzaf_14364431966576005075.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Pink Floyd",
+        "title": "Outside the Wall",
+        "durationMs": 103747,
+        "number": 13,
+        "id": "1065976177",
+        "source": "https://music.apple.com/us/album/outside-the-wall/1065975633?i=1065976177&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/2d/e3/362de377-4b90-c745-836a-b95ff9d398e9/mzaf_15962788810775752035.plus.aac.p.m4a"
+      }
+    ]
+  },
+  "A-126": {
+    "source": "https://music.apple.com/us/album/metaphorical-music/1078898175?uo=4",
+    "tracks": [
+      {
+        "artist": "Nujabes",
+        "title": "Blessing It (feat. Substantial & Pase Rock) [Remix]",
+        "durationMs": 203707,
+        "number": 1,
+        "id": "1078898187",
+        "source": "https://music.apple.com/us/album/blessing-it-feat-substantial-pase-rock-remix/1078898175?i=1078898187&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/5a/87/a35a87c1-e273-1e8e-7f15-5e756b108a6e/mzaf_11505875512232080884.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Horn In the Middle",
+        "durationMs": 248600,
+        "number": 2,
+        "id": "1078898190",
+        "source": "https://music.apple.com/us/album/horn-in-the-middle/1078898175?i=1078898190&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/6c/87/5b6c871d-c241-d528-e5cb-6cfa7ca11c32/mzaf_14305919479808153768.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Lady Brown (feat. Cise Starr)",
+        "durationMs": 199160,
+        "number": 3,
+        "id": "1078898191",
+        "source": "https://music.apple.com/us/album/lady-brown-feat-cise-starr/1078898175?i=1078898191&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/4c/92/e44c9282-02c7-7ca0-0770-04c852dbe194/mzaf_7003140947040832170.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Kumomi",
+        "durationMs": 233627,
+        "number": 4,
+        "id": "1078898192",
+        "source": "https://music.apple.com/us/album/kumomi/1078898175?i=1078898192&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/62/dd/fc62ddca-82b4-d15e-56e0-7e295c3a0d5c/mzaf_10959188462752254031.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Highs 2 Lows (feat. Cise Starr)",
+        "durationMs": 277960,
+        "number": 5,
+        "id": "1078898193",
+        "source": "https://music.apple.com/us/album/highs-2-lows-feat-cise-starr/1078898175?i=1078898193&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/f2/26/e9f22672-15b5-230d-ec49-0832d8b8b2b2/mzaf_2400213916910514895.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Beat Laments the World",
+        "durationMs": 263373,
+        "number": 6,
+        "id": "1078898194",
+        "source": "https://music.apple.com/us/album/beat-laments-the-world/1078898175?i=1078898194&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/5a/54/635a5475-b479-7558-72d7-b4e883c34b42/mzaf_4399215651538106843.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Letter from Yokosuka",
+        "durationMs": 189347,
+        "number": 7,
+        "id": "1078898195",
+        "source": "https://music.apple.com/us/album/letter-from-yokosuka/1078898175?i=1078898195&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a0/19/17/a0191708-1d6c-658f-d4e2-4b69c3918064/mzaf_9616163114646399036.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Think Different (feat. Substantial)",
+        "durationMs": 197293,
+        "number": 8,
+        "id": "1078898196",
+        "source": "https://music.apple.com/us/album/think-different-feat-substantial/1078898175?i=1078898196&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/1e/62/261e6292-1489-a1b1-9215-756d3aea3079/mzaf_8405483389712597826.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "A Day by Atmosphere Supreme",
+        "durationMs": 239693,
+        "number": 9,
+        "id": "1078898197",
+        "source": "https://music.apple.com/us/album/a-day-by-atmosphere-supreme/1078898175?i=1078898197&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/dc/3c/8adc3cca-1f7c-ebcb-c77e-d9f9e6022fdf/mzaf_5923375345331080531.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Next View (feat. Uyama Hiroto)",
+        "durationMs": 275693,
+        "number": 10,
+        "id": "1078898198",
+        "source": "https://music.apple.com/us/album/next-view-feat-uyama-hiroto/1078898175?i=1078898198&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6e/d7/6b/6ed76bc7-412e-5447-820b-7d43418813e5/mzaf_7727083493257470162.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Latitude (feat. Five Deez) [Remix]",
+        "durationMs": 236533,
+        "number": 11,
+        "id": "1078898199",
+        "source": "https://music.apple.com/us/album/latitude-feat-five-deez-remix/1078898175?i=1078898199&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/89/44/e28944a3-abcc-1529-e6a6-9806e1c1622a/mzaf_11478291288259951634.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "F.I.L.O. (feat. Shing02)",
+        "durationMs": 211227,
+        "number": 12,
+        "id": "1078898200",
+        "source": "https://music.apple.com/us/album/f-i-l-o-feat-shing02/1078898175?i=1078898200&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/02/cb/62/02cb6267-d8b3-219c-e442-239a3aef3cb0/mzaf_7725050856579569454.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Summer Gypsy",
+        "durationMs": 259587,
+        "number": 13,
+        "id": "1078898291",
+        "source": "https://music.apple.com/us/album/summer-gypsy/1078898175?i=1078898291&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/40/33/d94033c8-20c5-aaac-f3f6-53b752677ad6/mzaf_9594335533083606580.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "The Final View",
+        "durationMs": 214947,
+        "number": 14,
+        "id": "1078898293",
+        "source": "https://music.apple.com/us/album/the-final-view/1078898175?i=1078898293&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/5b/fa/d55bfabc-beca-b836-c212-3cec8fce3080/mzaf_14015571417650588109.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Nujabes",
+        "title": "Peaceland",
+        "durationMs": 499120,
+        "number": 15,
+        "id": "1078898294",
+        "source": "https://music.apple.com/us/album/peaceland/1078898175?i=1078898294&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/45/d9/ce45d9d5-b7f6-edfa-e546-d478785612a9/mzaf_13744996303325295496.plus.aac.p.m4a"
+      }
+    ]
+  },
+  "A-137": {
+    "source": "https://music.apple.com/us/album/bloom/509665145?uo=4",
+    "tracks": [
+      {
+        "artist": "Beach House",
+        "title": "Myth",
+        "durationMs": 258653,
+        "number": 1,
+        "id": "509665325",
+        "source": "https://music.apple.com/us/album/myth/509665145?i=509665325&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a3/d1/3c/a3d13c15-969d-c248-5993-27dad812df09/mzaf_11045108390724848951.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Beach House",
+        "title": "Wild",
+        "durationMs": 298320,
+        "number": 2,
+        "id": "509665326",
+        "source": "https://music.apple.com/us/album/wild/509665145?i=509665326&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/59/4c/60594ca8-4444-bf78-02bb-2032f568fa72/mzaf_10013701976644793890.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Beach House",
+        "title": "Lazuli",
+        "durationMs": 301867,
+        "number": 3,
+        "id": "509665327",
+        "source": "https://music.apple.com/us/album/lazuli/509665145?i=509665327&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/0f/d5/1c0fd5b0-a9b9-e2ba-b703-036098ba8ecf/mzaf_13075501241790612486.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Beach House",
+        "title": "Other People",
+        "durationMs": 264627,
+        "number": 4,
+        "id": "509665361",
+        "source": "https://music.apple.com/us/album/other-people/509665145?i=509665361&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/9b/13/ed9b13ba-d70d-a51c-5bcc-e9db19a500d1/mzaf_18253004036434711360.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Beach House",
+        "title": "The Hours",
+        "durationMs": 251720,
+        "number": 5,
+        "id": "509665469",
+        "source": "https://music.apple.com/us/album/the-hours/509665145?i=509665469&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/8b/bd/d88bbd77-cd99-41c5-5dec-59fbd2942084/mzaf_12497544767221859861.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Beach House",
+        "title": "Troublemaker",
+        "durationMs": 295547,
+        "number": 6,
+        "id": "509665470",
+        "source": "https://music.apple.com/us/album/troublemaker/509665145?i=509665470&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/e3/ae/7be3ae30-f728-05cd-72aa-f44c12926c66/mzaf_12265833931402963963.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Beach House",
+        "title": "New Year",
+        "durationMs": 325760,
+        "number": 7,
+        "id": "509665493",
+        "source": "https://music.apple.com/us/album/new-year/509665145?i=509665493&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/66/4d/f4664d41-b42a-9015-5215-009024f8c3f3/mzaf_11589916721960022847.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Beach House",
+        "title": "Wishes",
+        "durationMs": 286960,
+        "number": 8,
+        "id": "509665549",
+        "source": "https://music.apple.com/us/album/wishes/509665145?i=509665549&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/fa/0c/f3fa0c76-99ae-1b9d-e9ae-8f2432191a82/mzaf_5609209913508688003.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Beach House",
+        "title": "On the Sea",
+        "durationMs": 332467,
+        "number": 9,
+        "id": "509665551",
+        "source": "https://music.apple.com/us/album/on-the-sea/509665145?i=509665551&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/c2/b7/d8c2b7e4-d25e-ac36-6032-33df8b5cd41d/mzaf_3305981616136244762.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Beach House",
+        "title": "Irene",
+        "durationMs": 1017000,
+        "number": 10,
+        "id": "509665638",
+        "source": "https://music.apple.com/us/album/irene/509665145?i=509665638&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/43/80/b14380b1-b5ea-1736-0f73-8afff885bda2/mzaf_13317644886122950598.plus.aac.p.m4a"
+      }
+    ]
+  },
+  "A-148": {
+    "source": "https://music.apple.com/us/album/black-sands/416292276?uo=4",
+    "tracks": [
+      {
+        "artist": "Bonobo",
+        "title": "Prelude",
+        "durationMs": 78267,
+        "number": 1,
+        "id": "416292277",
+        "source": "https://music.apple.com/us/album/prelude/416292276?i=416292277&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/98/f0/8698f0e2-939a-c620-9764-633eddb67820/mzaf_15208554611917254298.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "Kiara",
+        "durationMs": 230307,
+        "number": 2,
+        "id": "416292278",
+        "source": "https://music.apple.com/us/album/kiara/416292276?i=416292278&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/31/ab/c3/31abc3dc-79ac-adab-e8d7-9df3928e1fc1/mzaf_8321749889646442017.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "Kong",
+        "durationMs": 237827,
+        "number": 3,
+        "id": "416292279",
+        "source": "https://music.apple.com/us/album/kong/416292276?i=416292279&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/2d/9f/f62d9fe0-164e-6cf2-8c16-ce63f4e7f075/mzaf_5946886472247314660.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "Eyesdown (feat. Andreya Triana)",
+        "durationMs": 326240,
+        "number": 4,
+        "id": "416292280",
+        "source": "https://music.apple.com/us/album/eyesdown-feat-andreya-triana/416292276?i=416292280&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/71/04/42710489-61c9-b962-44a5-f12a5b3a4ea2/mzaf_17883776149795484561.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "El Toro",
+        "durationMs": 224293,
+        "number": 5,
+        "id": "416292281",
+        "source": "https://music.apple.com/us/album/el-toro/416292276?i=416292281&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5f/cb/8e/5fcb8ed1-8301-0d27-79f9-7523312fee3d/mzaf_5694006547617355541.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "We Could Forever",
+        "durationMs": 259840,
+        "number": 6,
+        "id": "416292282",
+        "source": "https://music.apple.com/us/album/we-could-forever/416292276?i=416292282&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/fb/72/80fb721a-bba7-c209-39f6-5b60adab18ae/mzaf_4421809404732999718.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "1009",
+        "durationMs": 270427,
+        "number": 7,
+        "id": "416292283",
+        "source": "https://music.apple.com/us/album/1009/416292276?i=416292283&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/b1/53/97b1532d-8e50-9aaf-5b87-e21c6f0db3d1/mzaf_16759727895463705715.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "All In Forms",
+        "durationMs": 291733,
+        "number": 8,
+        "id": "416292284",
+        "source": "https://music.apple.com/us/album/all-in-forms/416292276?i=416292284&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/31/2e/93312e09-adfc-7a9c-014d-3fed43bbaca0/mzaf_12561634445521099581.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "The Keeper (feat. Andreya Triana)",
+        "durationMs": 288933,
+        "number": 9,
+        "id": "416292285",
+        "source": "https://music.apple.com/us/album/the-keeper-feat-andreya-triana/416292276?i=416292285&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/c4/d8/13c4d8cd-34a0-c156-fe28-58bb6a155ea8/mzaf_12208205870980147808.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "Stay the Same (feat. Andreya Triana)",
+        "durationMs": 284800,
+        "number": 10,
+        "id": "416292286",
+        "source": "https://music.apple.com/us/album/stay-the-same-feat-andreya-triana/416292276?i=416292286&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/93/8e/b1938e61-26b2-a31b-a951-1572b310d717/mzaf_17043125322936875748.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "Animals",
+        "durationMs": 405040,
+        "number": 11,
+        "id": "416292288",
+        "source": "https://music.apple.com/us/album/animals/416292276?i=416292288&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/0c/eb/100ceb57-b14f-23b8-9ac0-2abec29093cd/mzaf_4878211272303207761.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Bonobo",
+        "title": "Black Sands",
+        "durationMs": 408960,
+        "number": 12,
+        "id": "416292289",
+        "source": "https://music.apple.com/us/album/black-sands/416292276?i=416292289&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/54/23/925423f7-7fdd-353b-cd78-33b600c6696a/mzaf_16125294307195651651.plus.aac.p.m4a"
+      }
+    ]
+  },
+  "A-159": {
+    "source": "https://music.apple.com/us/album/music-has-the-right-to-children/281116024?uo=4",
+    "tracks": [
+      {
+        "artist": "Boards of Canada",
+        "title": "Wildlife Analysis",
+        "durationMs": 75627,
+        "number": 1,
+        "id": "281116027",
+        "source": "https://music.apple.com/us/album/wildlife-analysis/281116024?i=281116027&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/f8/e4/b6f8e4c1-a93d-9de4-93aa-00ce9f3c4561/mzaf_2223660226193301278.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "An Eagle In Your Mind",
+        "durationMs": 385520,
+        "number": 2,
+        "id": "281116029",
+        "source": "https://music.apple.com/us/album/an-eagle-in-your-mind/281116024?i=281116029&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/60/ab/a460abce-ffe9-5a7d-acd0-1d861c3a81b2/mzaf_9320711111158771327.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "The Color of the Fire",
+        "durationMs": 105627,
+        "number": 3,
+        "id": "281116031",
+        "source": "https://music.apple.com/us/album/the-color-of-the-fire/281116024?i=281116031&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/d0/eb/e6d0eb58-e913-18d6-4780-98055a8f88bf/mzaf_11716829092682369557.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Telephasic Workshop",
+        "durationMs": 395480,
+        "number": 4,
+        "id": "281116033",
+        "source": "https://music.apple.com/us/album/telephasic-workshop/281116024?i=281116033&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/63/6f/80636f15-b4e8-b31f-ca76-e456d3a356b0/mzaf_3468214693850366020.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Triangles & Rhombuses",
+        "durationMs": 110413,
+        "number": 5,
+        "id": "281116035",
+        "source": "https://music.apple.com/us/album/triangles-rhombuses/281116024?i=281116035&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/6f/63/1b6f63b6-54f7-98cc-f367-2fb7dcc50783/mzaf_4506864379663644010.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Sixtyten",
+        "durationMs": 348347,
+        "number": 6,
+        "id": "281116038",
+        "source": "https://music.apple.com/us/album/sixtyten/281116024?i=281116038&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f2/ca/45/f2ca4586-9dbd-d462-e03f-16e324a4ad85/mzaf_3822842337666291184.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Turquoise Hexagon Sun",
+        "durationMs": 307880,
+        "number": 7,
+        "id": "281116078",
+        "source": "https://music.apple.com/us/album/turquoise-hexagon-sun/281116024?i=281116078&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/2e/d3/912ed3b4-d723-2fc4-2b70-cb70aa6abfd8/mzaf_8698823237019668128.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Kaini Industries",
+        "durationMs": 59293,
+        "number": 8,
+        "id": "281116079",
+        "source": "https://music.apple.com/us/album/kaini-industries/281116024?i=281116079&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/06/f7/77/06f777d7-db5a-7511-4f97-4db82feb78ae/mzaf_11381975302585194406.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Bocuma",
+        "durationMs": 95973,
+        "number": 9,
+        "id": "281116080",
+        "source": "https://music.apple.com/us/album/bocuma/281116024?i=281116080&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/25/e9/9c25e9b4-b87d-1e84-d87b-fa245606fd98/mzaf_17756186111261384458.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Roygbiv",
+        "durationMs": 151520,
+        "number": 10,
+        "id": "281116081",
+        "source": "https://music.apple.com/us/album/roygbiv/281116024?i=281116081&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f3/e0/de/f3e0def5-52bf-f0e1-beea-523cbf8f6c1e/mzaf_15520357652152223442.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Rue the Whirl",
+        "durationMs": 399493,
+        "number": 11,
+        "id": "281116085",
+        "source": "https://music.apple.com/us/album/rue-the-whirl/281116024?i=281116085&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/6c/16/a76c168d-5f58-aa1f-928e-1b37e5fc09f7/mzaf_14508790130421266658.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Aquarius",
+        "durationMs": 358080,
+        "number": 12,
+        "id": "281116087",
+        "source": "https://music.apple.com/us/album/aquarius/281116024?i=281116087&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/97/07/30970733-e131-4d78-ab8a-b501b2572f04/mzaf_10757745761663015312.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Olson",
+        "durationMs": 91707,
+        "number": 13,
+        "id": "281116088",
+        "source": "https://music.apple.com/us/album/olson/281116024?i=281116088&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/ec/7c/72ec7c16-ca9a-eadc-5870-15867f4d9ce2/mzaf_16590395784266831112.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Pete Standing Alone",
+        "durationMs": 367720,
+        "number": 14,
+        "id": "281116090",
+        "source": "https://music.apple.com/us/album/pete-standing-alone/281116024?i=281116090&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/79/88/ac798890-f944-ca0c-509e-a79067b70cc9/mzaf_6085567412892859555.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Smokes Quantity",
+        "durationMs": 187320,
+        "number": 15,
+        "id": "281116091",
+        "source": "https://music.apple.com/us/album/smokes-quantity/281116024?i=281116091&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/e8/df/62e8df1d-63d5-50b4-c489-58d469fc7f27/mzaf_13325440771360543715.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Open the Light",
+        "durationMs": 265027,
+        "number": 16,
+        "id": "281116092",
+        "source": "https://music.apple.com/us/album/open-the-light/281116024?i=281116092&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/a1/69/baa16904-e992-7a60-aec7-1d1837642c31/mzaf_13243436013067542687.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "One Very Important Thought",
+        "durationMs": 85053,
+        "number": 17,
+        "id": "281116094",
+        "source": "https://music.apple.com/us/album/one-very-important-thought/281116024?i=281116094&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ff/0a/fd/ff0afd6f-5176-4d99-75e9-1192dfa8ffa7/mzaf_15793408910464336115.plus.aac.p.m4a"
+      },
+      {
+        "artist": "Boards of Canada",
+        "title": "Happy Cycling",
+        "durationMs": 472520,
+        "number": 18,
+        "id": "281116096",
+        "source": "https://music.apple.com/us/album/happy-cycling/281116024?i=281116096&uo=4",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/ac/84/dfac84a1-48af-bf99-4f8d-4e3a58df7eab/mzaf_15044770400802195945.plus.aac.p.m4a"
+      }
+    ]
+  }
+}

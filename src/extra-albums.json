@@ -1,0 +1,122 @@
+[
+  {
+    "region": 0,
+    "code": "A-170",
+    "genre": "JAZZ",
+    "title": "Time Out",
+    "year": "1959",
+    "cover": "/assets/A-170.jpg",
+    "note": "不规则拍号的爵士实验，让港口的钟摆学会新舞步。",
+    "artist": "The Dave Brubeck Quartet"
+  },
+  {
+    "region": 0,
+    "code": "A-181",
+    "genre": "FUNK",
+    "title": "Songs in the Key of Life",
+    "year": "1976",
+    "cover": "/assets/A-181.jpg",
+    "note": "明亮铜管、灵魂和放克，装满一整袋生活的色彩。",
+    "artist": "Stevie Wonder"
+  },
+  {
+    "region": 0,
+    "code": "A-192",
+    "genre": "WORLD",
+    "title": "Buena Vista Social Club",
+    "year": "1997",
+    "cover": "/assets/A-192.jpg",
+    "note": "沿着古巴街巷寻找木吉他、铜管和温暖的手鼓。",
+    "artist": "Buena Vista Social Club"
+  },
+  {
+    "region": 1,
+    "code": "A-203",
+    "genre": "BREAKBEAT",
+    "title": "The Fat of the Land",
+    "year": "1997",
+    "cover": "/assets/A-203.jpg",
+    "note": "破碎鼓点与粗粝能量，把电波站的灯一盏盏点亮。",
+    "artist": "The Prodigy"
+  },
+  {
+    "region": 1,
+    "code": "A-214",
+    "genre": "SYNTH POP",
+    "title": "Computer World (Remastered)",
+    "year": "1981",
+    "cover": "/assets/A-214.jpg",
+    "note": "机器也会唱歌：精确脉冲组成一座复古未来城市。",
+    "artist": "Kraftwerk"
+  },
+  {
+    "region": 2,
+    "code": "A-225",
+    "genre": "DUBSTEP",
+    "title": "Untrue",
+    "year": "2007",
+    "cover": "/assets/A-225.jpg",
+    "note": "夜行街灯、残缺人声与低频，拼出雨中的城市记忆。",
+    "artist": "Burial"
+  },
+  {
+    "region": 5,
+    "code": "A-236",
+    "genre": "AMBIENT",
+    "title": "Ambient 1: Music for Airports",
+    "year": "1978",
+    "cover": "/assets/A-236.jpg",
+    "note": "候机室里缓慢呼吸的音符，把等待变成一片宁静海域。",
+    "artist": "Brian Eno"
+  },
+  {
+    "region": 3,
+    "code": "A-247",
+    "genre": "FOLK",
+    "title": "Five Leaves Left (Remastered)",
+    "year": "1969",
+    "cover": "/assets/A-247.jpg",
+    "note": "木吉他与轻柔弦乐，像写在秋日落叶上的私人日记。",
+    "artist": "Nick Drake"
+  },
+  {
+    "region": 3,
+    "code": "A-258",
+    "genre": "INDIE FOLK",
+    "title": "Carrie & Lowell",
+    "year": "2015",
+    "cover": "/assets/A-258.jpg",
+    "note": "克制而细腻的民谣，把记忆与湖面微光编织在一起。",
+    "artist": "Sufjan Stevens"
+  },
+  {
+    "region": 4,
+    "code": "A-269",
+    "genre": "METAL",
+    "title": "Master of Puppets (Expanded Edition)",
+    "year": "1986",
+    "cover": "/assets/A-269.jpg",
+    "note": "疾速吉他和沉重鼓击，在黑石剧场开启另一种能量。",
+    "artist": "Metallica"
+  },
+  {
+    "region": 2,
+    "code": "A-280",
+    "genre": "REGGAE",
+    "title": "Exodus (2013 Remaster)",
+    "year": "1977",
+    "cover": "/assets/A-280.jpg",
+    "note": "反拍节奏与温暖低音，让迷雾渡船驶向阳光海岸。",
+    "artist": "Bob Marley & The Wailers"
+  },
+  {
+    "region": 5,
+    "code": "A-291",
+    "genre": "CLASSICAL",
+    "title": "Glassworks (Expanded Edition)",
+    "year": "2003",
+    "cover": "/assets/A-291.jpg",
+    "note": "重复音型与极简管弦乐，让冰川折射出不同的秩序。",
+    "artist": "Philip Glass, Michael Reisman & The Philip Glass Ensemble"
+  }
+]

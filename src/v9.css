@@ -1,0 +1,167 @@
+/* Held objects rotate about their actual grip; the original glove occludes the hilt. */
+.wardrobe-avatar .avatar-weapon,.wardrobe-avatar .avatar-shield{height:auto;aspect-ratio:1;right:auto;image-rendering:pixelated}
+.avatar-weapon{z-index:2}
+.avatar-weapon[data-pixel="4"],.avatar-weapon[data-pixel="5"],.avatar-weapon[data-pixel="6"],.avatar-weapon[data-pixel="7"],.gear-art[data-pixel="4"],.gear-art[data-pixel="5"],.gear-art[data-pixel="6"],.gear-art[data-pixel="7"]{clip-path:inset(12% 0 0 0)}
+.avatar-shield{z-index:3}
+.avatar-hand{position:absolute;inset:0;z-index:4;background-image:url('/assets/v7-knight-wardrobe.png');background-size:400% 200%;background-repeat:no-repeat;image-rendering:pixelated;clip-path:polygon(26% 55%,41% 54%,44% 60%,41% 64%,36% 66%,28% 64%,25% 60%);pointer-events:none}
+
+/* One compact, editorial scrapbook sheet on all screen sizes. */
+.single-handbook{container-type:inline-size;padding:24px;background:#fbfbf8;border-color:#d8d8d0}
+.single-handbook .play-panel-heading h3{font-family:Georgia,'Songti SC',serif;letter-spacing:0;font-size:25px}
+.single-handbook .handbook-intro{font-size:12px;margin:12px 0 16px}
+.single-handbook .book-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:0;gap:4px;padding:0 3px 5px}
+.single-handbook .book-tabs button{font-size:10px;padding:8px 7px;min-height:32px;flex:1 0 auto;border-radius:4px 4px 0 0}
+.single-handbook .book-tabs button[aria-pressed=true]{transform:translateY(-2px)}
+.journal-sheet{perspective:1200px;filter:drop-shadow(0 8px 9px #26364a16)}
+.journal-page{padding:28px 28px 26px;background:#ecdfc2 url('/assets/v9-notebook-paper.png') center/100% 100% no-repeat;color:#26394a;font-family:Georgia,'Songti SC','SimSun',serif;border-radius:3px 8px 8px 3px;min-width:0}
+.journal-masthead{display:flex;gap:12px;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid #51698244;font:8px/1.5 'DM Mono',monospace;letter-spacing:.08em;position:relative;z-index:1}
+.journal-lead{display:grid;grid-template-columns:minmax(0,1fr) 110px;gap:12px;align-items:center;margin:16px 0 4px}
+.journal-en{font-family:Georgia,serif;font-weight:600;font-size:clamp(18px,5.6cqw,30px);letter-spacing:-.04em;line-height:1.05;margin:0 0 7px;overflow-wrap:anywhere}
+.journal-lead h4{font-size:22px;font-weight:500;letter-spacing:.03em;margin:0 0 8px}
+.journal-origin{font-size:10px;line-height:1.6;color:#72725c;margin:0 0 12px}
+.journal-tape{display:inline-block;padding:5px 8px;background:#9bafaa40;transform:rotate(-2deg);font:8px monospace;letter-spacing:.08em;color:#61746e;border-bottom:1px solid #79949033}
+.journal-art{text-align:center;background:#f6edd439;transform:rotate(2deg);padding:5px 0;border-bottom:1px solid #776d4533}
+.journal-art .book-plate{width:87px;height:116px;max-width:none;margin:0 auto;background-size:400% 200%}
+.journal-art small{font:6px/1.5 monospace;letter-spacing:.04em;color:#727e80}
+.journal-page[aria-label="摇滚单页手账"] .book-plate{clip-path:inset(0 0 0 12%)}
+.journal-summary{font-size:12px;line-height:1.8;margin:13px 0;color:#3b4545;text-align:justify}
+.journal-how{display:grid;grid-template-columns:58px 1fr;gap:10px;border-top:1px dashed #a9a486;border-bottom:1px dashed #a9a486;padding:10px 0;margin-bottom:15px;font-size:11px;line-height:1.7}
+.journal-how b{color:#597e7b;font-weight:500}
+.journal-how p{margin:0;color:#596257}
+.journal-section-label{display:flex;gap:6px;justify-content:space-between;align-items:center;margin-bottom:11px}
+.journal-section-label b{font-weight:500;font-size:13px}
+.journal-section-label span{font:6px monospace;color:#738785;letter-spacing:.06em}
+.journal-history .genre-timeline{padding:0;border:0}
+.journal-history .genre-timeline li{display:grid;grid-template-columns:75px minmax(0,1fr);gap:10px;position:relative;margin:0 0 11px;padding-left:0}
+.journal-history .genre-timeline li::before{display:none}
+.journal-history .genre-timeline li>span{font:9px/1.5 'DM Mono',monospace;color:#787f6b;padding-top:2px;border-top:1px solid #8f9c973f}
+.journal-history .genre-timeline b{font-size:12px;font-weight:600;line-height:1.5}
+.journal-history .genre-timeline p{font-size:10px;line-height:1.7;color:#667168;margin:3px 0 0}
+.journal-tail{display:grid;grid-template-columns:minmax(0,1fr) 108px;gap:12px;align-items:end;border-top:1px solid #75878230;margin-top:12px;padding-top:10px}
+.journal-tail .history-caveat{font-size:8px;margin:0 0 6px;color:#8a8875}
+.journal-tail .book-sources{font:9px/1.6 sans-serif;margin:4px 0}
+.journal-tail .book-listen{font:10px sans-serif;border-color:#7d969246;background:#7da6aa15;color:#466969;border-radius:4px;min-height:30px;padding:7px 9px}
+.journal-tail .stamp-space{min-height:112px;border-top:0;border-left:1px dashed #a7aaa04d;margin:0;border-radius:2px}
+.journal-tail .stamp-space>span{font-size:5px;text-align:center;white-space:normal;color:#919080}
+.journal-tail .placed-postmark{width:76px;height:101px}
+.single-handbook .book-navigation{margin:15px 0 12px;font-size:10px}
+.single-handbook .book-navigation button,.single-handbook .stamp-tools button{font-size:10px;padding:8px 10px;min-height:34px;border-radius:6px}
+.single-handbook .stamp-tools{gap:6px}
+.single-handbook .stamp-tools label,.single-handbook .stamp-tools select{font-size:10px}
+.single-handbook .stamp-tools select{padding:8px 4px}
+.single-handbook .stamp-hint{font-size:9px;line-height:1.7;min-height:0;margin:10px 0 13px}
+.single-handbook .handbook-notes{font-size:11px}
+.journal-sheet.turn-forward .journal-page{animation:single-turn-forward .35s ease-out;transform-origin:left center}
+.journal-sheet.turn-back .journal-page{animation:single-turn-back .35s ease-out;transform-origin:right center}
+@keyframes single-turn-forward{from{opacity:.25;transform:rotateY(-13deg) translateX(8px)}to{opacity:1;transform:none}}
+@keyframes single-turn-back{from{opacity:.25;transform:rotateY(13deg) translateX(-8px)}to{opacity:1;transform:none}}
+
+/* Counts live in HTML; illustrated landforms are decorative, not fake telemetry. */
+.sound-landscape{margin:58px 0 30px;padding:30px 28px 20px;border-radius:26px;background:#e4efea;border:1px solid #c5d9d2;box-shadow:0 6px 22px #365e5410;overflow:hidden;scroll-margin-top:24px}
+.landscape-heading{display:flex;justify-content:space-between;gap:20px;align-items:start}
+.landscape-heading .eyebrow{color:#698980;font-size:9px}
+.landscape-heading h2{font-family:Georgia,'Songti SC',serif;font-size:28px;letter-spacing:0;font-weight:500;margin:8px 0 6px;color:#26483e}
+.landscape-heading p:not(.eyebrow){font-size:12px;color:#789387;line-height:1.7}
+.landscape-controls{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.landscape-range{display:flex;border:1px solid #abc5ba;border-radius:999px;padding:3px;background:#eff5f1}
+.landscape-range button{border:0;background:none;color:#688576;font-size:11px;padding:7px 14px;border-radius:999px}
+.landscape-range button[aria-pressed=true]{background:#3a6656;color:#fff}
+.landscape-pause{font-size:9px;border:0;border-bottom:1px dashed #a0b9aa;background:none;color:#748e81;padding:5px 0}
+.landscape-summary{display:flex;align-items:center;gap:26px;border-top:1px solid #c4d7cc;border-bottom:1px solid #c4d7cc;margin:22px 0 6px;padding:14px 0;color:#789182;font-size:10px;flex-wrap:wrap}
+.landscape-summary>span{display:flex;gap:8px;align-items:center}
+.landscape-summary b{font:26px/1 'DM Mono',monospace;font-weight:400;color:#36574b}
+.landscape-summary small{margin-left:auto;font:9px monospace;color:#91a596}
+.terrain-deck{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;padding-top:16px;background-image:linear-gradient(transparent 97%,#a4c3b11d 97%),linear-gradient(90deg,transparent 97%,#a4c3b11d 97%);background-size:26px 26px}
+.terrain-station{min-width:0;border:0;border-right:1px solid #bfd4c755;border-radius:6px;background:transparent;position:relative;display:flex;flex-direction:column;align-items:center;padding:8px 9px 16px;color:#49675b;cursor:pointer;transition:background .2s}
+.terrain-station:last-child{border-right:0}
+.terrain-station:hover,.terrain-station.selected{background:#f1f8f38c}
+.terrain-station:focus-visible{outline:2px solid #658b7a;outline-offset:-2px}
+.terrain-index{font:7px/1.5 'DM Mono',monospace;letter-spacing:.01em;color:#7f9a8d;align-self:start;min-height:20px}
+.terrain-stage{width:100%;max-width:180px;height:270px;position:relative;isolation:isolate}
+.terrain-shadow{position:absolute;bottom:10px;left:11%;width:80%;height:33px;background:#3b695522;transform:skewX(-30deg) rotate(-5deg);filter:blur(4px)}
+.terrain-support{position:absolute;bottom:30px;left:31%;width:43%;background:linear-gradient(90deg,#85a89b66,#f2f6dc77);transform:skewY(-12deg);border:1px solid #8faea48c;z-index:1;transition:height .7s ease}
+.terrain-art{position:absolute;left:0;bottom:calc(25px + var(--lift));width:100%;aspect-ratio:1;background-image:url('/assets/v9-sound-terrains.png');background-size:300% 200%;background-repeat:no-repeat;z-index:2;transition:bottom .7s ease,transform .3s;filter:saturate(.78)}
+.terrain-station:hover .terrain-art{transform:translateY(-5px);filter:saturate(1)}
+.terrain-count{position:absolute;bottom:7px;left:50%;transform:translateX(-50%);z-index:3;font:17px/1 'DM Mono',monospace;background:#eff5e8;color:#426250;border:1px solid #b8c7b4;min-width:29px;padding:5px 6px;border-radius:5px;box-shadow:0 3px 5px #3956370c}
+.terrain-station strong{font-size:13px;font-weight:500;letter-spacing:.02em;margin:7px 0 5px}
+.terrain-count-label{font:6px/1.7 monospace;color:#8c9e91;text-align:center;min-height:20px}
+.terrain-meter{height:3px;width:70%;background:#cadacf;display:block;margin-top:5px;overflow:hidden;border-radius:4px}
+.terrain-meter i{display:block;height:100%;background:var(--terrain-color);transition:width .7s ease}
+.sound-playing .terrain-art{animation:terrain-breathe 3s var(--float-delay) ease-in-out infinite alternate}
+.sound-paused .terrain-art{animation:none}
+@keyframes terrain-breathe{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+.landscape-detail{display:flex;gap:22px;align-items:start;position:relative;border-top:1px solid #c4d7cc;background:#f4f8f0a1;padding:18px 20px;margin:12px -8px 0;border-radius:12px;color:#527160}
+.landscape-detail>div{flex:1;min-width:0}
+.landscape-detail .eyebrow{font-size:8px;margin:0 0 8px;color:#91a08f}
+.landscape-detail h3{font-size:15px;font-weight:500;margin:0 0 9px}
+.landscape-detail h3 span{font:9px monospace;opacity:.65;margin-left:10px}
+.landscape-genres{display:flex;flex-wrap:wrap;gap:6px}
+.landscape-genres>span{font:9px monospace;background:#fff8;padding:6px 8px;border:1px solid #c5d4c4;border-radius:5px;display:flex;gap:10px}
+.landscape-genres b{font-weight:500;color:#3e6853}
+.landscape-genres p,.landscape-detail details>p{font-size:11px;color:#94a28f;line-height:1.7;margin:0}
+.landscape-detail details{width:40%;font-size:11px}
+.landscape-detail summary{cursor:pointer;color:#6e8c7a;min-height:25px}
+.landscape-detail ul{list-style:none;margin:10px 0 0;padding:0;max-height:180px;overflow:auto}
+.landscape-detail li{display:flex;gap:10px;justify-content:space-between;align-items:start;padding:8px 0;border-bottom:1px solid #c7d9c7;font-size:10px;line-height:1.6}
+.landscape-detail li small{display:block;font:8px monospace;color:#98a290;margin-top:3px}
+.landscape-detail li time{white-space:nowrap;font:8px monospace;opacity:.7}
+.other-sounds{font-size:9px;background:none;border:1px solid #b9cbb6;border-radius:5px;padding:7px;color:#6d876d}
+.other-sounds[aria-pressed=true]{background:#d3e0d1}
+.landscape-note{display:flex;flex-wrap:wrap;gap:6px 24px;font:8px/1.8 monospace;color:#91a08e;padding-top:13px}
+.landscape-note span:last-child{margin-left:auto}
+@media(max-width:1050px){.terrain-stage{height:235px}.terrain-index{font-size:6px}.terrain-station strong{font-size:11px}.terrain-count-label{font-size:5px}.landscape-heading h2{font-size:25px}}
+@media(max-width:700px){
+ .single-handbook{padding:22px 18px}
+ .journal-page{padding:28px 27px 24px}
+ .sound-landscape{padding:23px 18px 18px;margin-top:40px;border-radius:22px}
+ .landscape-heading{flex-wrap:wrap;gap:13px}
+ .landscape-heading h2{font-size:24px}
+ .landscape-heading p:not(.eyebrow){font-size:11px}
+ .landscape-controls{width:100%;justify-content:space-between}
+ .landscape-summary{gap:15px 18px;margin-top:16px;font-size:9px}
+ .landscape-summary b{font-size:22px}
+ .landscape-summary small{margin-left:0;width:100%}
+ .terrain-deck{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:14px}
+ .terrain-station:nth-child(3){border-right:0}
+ .terrain-stage{height:235px;max-width:140px}
+ .terrain-index{font-size:6px}
+ .terrain-count-label{font-size:6px}
+ .landscape-detail{flex-wrap:wrap;padding:14px;margin-inline:0;gap:14px}
+ .landscape-detail>div,.landscape-detail details{flex-basis:100%;width:100%}
+ .landscape-note{font-size:7px}
+ .landscape-note span:last-child{margin-left:0}
+}
+@media(max-width:480px){
+ .single-handbook{padding:20px 14px}
+ .single-handbook .book-tabs button{flex:1 0 21%;padding:7px 4px;font-size:9px}
+ .journal-page{padding:24px 23px 22px}
+ .journal-masthead{font-size:6px;gap:6px}
+ .journal-lead{grid-template-columns:minmax(0,1fr) 80px;gap:9px;margin-top:13px}
+ .journal-lead h4{font-size:20px}
+ .journal-art .book-plate{width:72px;height:96px}
+ .journal-origin{font-size:9px}
+ .journal-art small{font-size:5px}
+ .journal-summary{font-size:11px;line-height:1.85}
+ .journal-how{font-size:10px;grid-template-columns:46px 1fr;gap:8px;padding:9px 0}
+ .journal-history .genre-timeline li{grid-template-columns:64px 1fr;gap:8px;margin-bottom:10px}
+ .journal-history .genre-timeline li>span{font-size:8px}
+ .journal-history .genre-timeline b{font-size:11px}
+ .journal-history .genre-timeline p{font-size:10px}
+ .journal-section-label span{font-size:5px}
+ .journal-tail{grid-template-columns:minmax(0,1fr) 82px;gap:8px}
+ .journal-tail .placed-postmark{width:65px;height:87px}
+ .journal-tail .stamp-space{min-height:100px}
+ .journal-tail .book-listen{font-size:9px;padding:6px}
+ .single-handbook .stamp-tools button{padding:8px;font-size:9px}
+ .terrain-station{padding-inline:5px}
+ .terrain-stage{height:210px}
+ .terrain-index{min-height:25px;font-size:5px;overflow-wrap:anywhere}
+ .terrain-station strong{font-size:10px}
+ .terrain-count-label{font-size:5px}
+ .terrain-count{font-size:13px;padding:4px;min-width:24px}
+}
+@media(prefers-reduced-motion:reduce){.journal-sheet .journal-page,.sound-playing .terrain-art{animation:none!important}.terrain-art,.terrain-support,.terrain-meter i{transition:none!important}}
+/* Reserve the maximum 60px lift at any tile width, instead of fixed mobile whitespace. */
+.terrain-station{container-type:inline-size;--terrain-cap:180px}
+.terrain-stage{max-width:var(--terrain-cap);height:calc(min(var(--terrain-cap),100cqw) + 95px)}
+@media(max-width:700px){.terrain-station{--terrain-cap:140px}}

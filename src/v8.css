@@ -1,0 +1,103 @@
+/* Atlas cells are 384×512: keep every character layer on a true 3:4 canvas. */
+.wardrobe-avatar,.wardrobe-preview .wardrobe-avatar{height:auto;aspect-ratio:3/4}
+.knight-body{container-type:size}
+.knight-body>.crt-avatar{width:calc(min(190px,95cqh)*.75);height:min(190px,95cqh);max-height:none;aspect-ratio:3/4;flex:0 0 auto}
+.wardrobe-avatar .avatar-weapon{width:52%;height:auto;aspect-ratio:1;left:-9%;top:26%}
+.wardrobe-avatar .avatar-shield{width:44%;height:auto;aspect-ratio:1;right:8%;top:42%}
+.knight-body .screen-stats{position:relative;z-index:3;flex:0 0 28%}
+.comic-grid img{object-fit:contain;background:#eee5ce}
+.comic-library{scroll-margin-top:24px}
+.comic-library .episode-tabs{flex-wrap:wrap}
+.voyage-column{min-width:0;display:flex;flex-direction:column;gap:24px}
+.book-jump{border:0;border-bottom:1px dashed #b6c0a9;background:none;padding:8px 0;color:#698061;font-size:11px;margin-top:10px;cursor:pointer}
+.music-handbook{scroll-margin-top:20px}
+.music-handbook{min-width:0;border:1px solid #deddd5;border-radius:26px;background:#fff;padding:28px;box-shadow:0 8px 22px #35302505}
+.music-handbook .play-panel-heading{gap:12px;flex-wrap:wrap}
+.music-handbook .play-panel-heading h3{font-size:26px}
+.handbook-intro{font-size:13px;color:#747a6f;line-height:1.8;margin:18px 0}
+.book-tabs{display:flex;gap:4px;flex-wrap:wrap;padding:0 4px;margin:18px 0 0;align-items:flex-end}
+.book-tabs button{font:11px var(--mono,monospace);background:#e4dfcf;color:#354a42;border:0;border-top:3px solid var(--tab-color);border-radius:5px 5px 0 0;padding:10px 8px;min-height:38px;transition:transform .2s}
+.book-tabs button[aria-pressed=true]{background:var(--tab-color);color:#fff;transform:translateY(-4px)}
+.book-spread{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:28px;background:#eadcba url('/assets/v8-handbook-paper.png') center/100% 100% no-repeat;padding:28px 24px 34px;border-radius:6px 10px 10px 6px;box-shadow:0 9px 14px #28281820;border:1px solid #c6b98e;perspective:1000px}
+.book-leaf{min-width:0;color:#454534;position:relative;font-family:Georgia,'Songti SC',serif}
+.book-kicker{font:8px monospace;letter-spacing:1px;color:#727963}
+.book-leaf h4{font-size:23px;line-height:1.3;margin:12px 0 8px;font-weight:500}
+.book-leaf h4 span{display:block;font-size:10px;letter-spacing:2px;color:#72745b;margin-top:4px}
+.book-origin{font-size:10px;line-height:1.5;color:#7b7b5d;margin:0}
+.book-plate{width:112px;height:149px;max-width:100%;aspect-ratio:3/4;background-image:url('/assets/v8-handbook-plates.png');background-size:400% 200%;background-repeat:no-repeat;margin:4px auto}
+.book-copy{font-size:12px;line-height:1.85;margin:10px 0}
+.listen-note{font-size:11px;line-height:1.7;padding:10px 0;border-top:1px dashed #a9a181;margin:10px 0}
+.listen-note b{display:block;color:#5a654a;font-weight:500}
+.book-listen{border:1px solid #9aa185;border-radius:5px;background:#ece5c6;color:#4f654f;padding:8px;font-size:10px;min-height:35px}
+.book-leaf .timeline-heading{font-size:18px;margin-bottom:18px}
+.genre-timeline{list-style:none;margin:0;padding:0 0 0 12px;border-left:1px solid #969f85}
+.genre-timeline li{position:relative;margin:0 0 15px}
+.genre-timeline li::before{content:'';position:absolute;left:-16px;top:3px;width:6px;height:6px;border-radius:50%;background:#677b60;border:1px solid #ece1c2}
+.genre-timeline span{display:block;font:10px monospace;color:#7c7956;margin-bottom:4px}
+.genre-timeline b{font-size:12px;font-weight:600;display:block;line-height:1.5}
+.genre-timeline p{font-size:11px;line-height:1.6;margin:4px 0}
+.history-caveat{font-size:9px;line-height:1.6;color:#7a785f}
+.book-sources{font:10px/1.6 sans-serif;margin:10px 0;color:#5c7056}
+.book-sources summary{cursor:pointer;min-height:25px}
+.book-sources a{display:block;color:#47695e;margin:6px 0;overflow-wrap:anywhere}
+.stamp-space{position:relative;min-height:126px;border-top:1px dashed #b9ae85;margin-top:14px;overflow:hidden}
+.stamp-space>span{font:8px monospace;color:#929077;display:block;padding-top:8px}
+.placed-postmark{position:absolute;width:88px;height:117px;--stamp-ink:#a65b45;transform:translate(-50%,-50%) rotate(-12deg);pointer-events:none;animation:stamp-press .28s ease-out}
+.placed-postmark::before{content:'';position:absolute;inset:0;background:var(--stamp-ink);mask-image:url('/assets/v8-postmarks.png');mask-size:400% 200%;mask-repeat:no-repeat;mask-position:var(--stamp-pos)}
+.placed-postmark.ink-green{--stamp-ink:#557451}
+.placed-postmark.ink-blue{--stamp-ink:#4c618b}
+.placed-postmark small{position:absolute;bottom:16%;left:0;width:100%;text-align:center;font:8px monospace;color:#774533;background:#e7dcb5c9}
+.stamp-armed .stamp-space{cursor:crosshair;background:#a1772810;outline:1px dashed #9e795a;outline-offset:-3px}
+.book-navigation{display:flex;justify-content:space-between;align-items:center;margin:18px 0;gap:8px;font:11px monospace;color:#828675}
+.book-navigation button,.stamp-tools button{border:1px solid #d0d4c6;border-radius:8px;padding:10px 12px;background:#f4f6ec;color:#4b6047;font-size:11px;min-height:38px}
+.book-navigation button:disabled{opacity:.4;cursor:default}
+.stamp-tools{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.stamp-tools label{font-size:11px;color:#6a7660;display:flex;gap:8px;align-items:center}
+.stamp-tools select{border:1px solid #d3d7ca;padding:9px 5px;border-radius:6px;background:#fff;color:#676c57;font-size:11px;max-width:75px}
+.stamp-tools button[aria-pressed=true]{background:#e1e8d8;border-color:#7f9978}
+.stamp-hint{font-size:10px;line-height:1.8;color:#848b7e;min-height:36px;margin:12px 0}
+.handbook-notes{font-size:12px;color:#64735c;border-top:1px solid #e5e7de;padding-top:12px}
+.handbook-notes summary{cursor:pointer;min-height:28px}
+.handbook-notes textarea{box-sizing:border-box;width:100%;height:100px;margin:10px 0 0;padding:12px;border:1px solid #ced4c0;border-radius:10px;background:#f9faf4;resize:vertical;line-height:1.7;color:#4d5949;font:12px/1.7 sans-serif}
+.mobile-leaf{display:none}
+.turn-forward .book-right{animation:book-turn .42s ease-out;transform-origin:left center}
+.turn-back .book-left{animation:book-turn .42s ease-out;transform-origin:right center}
+@keyframes book-turn{from{transform:rotateY(-15deg);opacity:.35}to{transform:rotateY(0);opacity:1}}
+@keyframes stamp-press{from{transform:translate(-50%,-50%) rotate(-12deg) scale(1.3);opacity:.1}to{transform:translate(-50%,-50%) rotate(-12deg) scale(1);opacity:1}}
+@media(max-width:700px){
+ .music-handbook{padding:20px 16px;border-radius:22px}
+ .music-handbook .play-panel-heading h3{font-size:24px}
+ .music-handbook .capsule{font-size:9px}
+ .book-spread{gap:20px;padding:24px 16px}
+}
+@media(max-width:480px){
+ .mobile-leaf{display:flex;gap:6px;margin:10px 0}
+ .mobile-leaf button{flex:1;border:1px solid #cbcdb8;border-radius:6px;font-size:10px;padding:9px 4px;color:#67755a;background:#f4f4e9}
+ .mobile-leaf button[aria-pressed=true]{background:#dce4ce}
+ .book-spread{display:block;padding:24px 28px 22px;background-size:200% 100%;background-position:0 center;min-height:475px}
+ .book-spread.show-history{background-position:100% center}
+ .show-learn .book-right,.show-history .book-left{display:none}
+ .book-plate{width:115px;max-height:none;height:153px}
+ .book-copy{font-size:13px}
+ .genre-timeline b{font-size:14px}
+ .genre-timeline p{font-size:12px}
+ .book-tabs{gap:3px}
+ .book-tabs button{padding:9px 6px;font-size:10px;flex:1 0 22%;min-height:38px}
+ .book-navigation button{padding:10px;font-size:10px}
+ .stamp-tools button{padding:9px}
+ .knight-body>.crt-avatar{width:calc(min(190px,95cqh)*.75);height:min(190px,95cqh)}
+}
+@media(prefers-reduced-motion:reduce){.turn-forward .book-right,.turn-back .book-left,.placed-postmark{animation:none}.book-tabs button{transition:none}}
+@media(max-width:370px){
+ .knight-display{padding:3px 0}
+ .screen-title h2{font-size:clamp(10px,5cqw,17px);margin-top:2px}
+ .screen-title p{font-size:5px;letter-spacing:.05em}
+ .screen-top{padding-bottom:3px}
+ .screen-bottom{padding-top:3px}
+ .knight-body .screen-stats{padding:4px;gap:1px}
+ .screen-stats>span{font-size:4px;letter-spacing:0}
+ .screen-stats strong{font-size:clamp(13px,9cqw,24px);margin-bottom:1px}
+ .screen-stats b{font-size:clamp(6px,3cqw,9px);margin-bottom:1px}
+ .screen-xp{font-size:4px;margin-top:2px}
+ .screen-meter{height:3px;margin-top:2px}
+}
