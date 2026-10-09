@@ -1,0 +1,86 @@
+[
+  {
+    "id": "A-170",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7a/e3/06/7ae30672-0c73-a4d4-0a74-624eefc2843b/dj.ytdbjvto.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/time-out/193085545?uo=4",
+    "title": "Time Out",
+    "artist": "The Dave Brubeck Quartet"
+  },
+  {
+    "id": "A-181",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/eb/1f/12/eb1f12ec-474c-63aa-43af-09282f423b9d/00602537004737.rgb.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/songs-in-the-key-of-life/1440788438?uo=4",
+    "title": "Songs in the Key of Life",
+    "artist": "Stevie Wonder"
+  },
+  {
+    "id": "A-192",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/93/8b/5a938b3e-a74d-9c8b-dcf1-c9c1f83498da/4050538455618.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/buena-vista-social-club/1716598034?uo=4",
+    "title": "Buena Vista Social Club",
+    "artist": "Buena Vista Social Club"
+  },
+  {
+    "id": "A-203",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/96/8b/08/968b08e4-cb2b-54c2-32bb-dba77ad1c2ca/634904912161.png/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/the-fat-of-the-land/500162127?uo=4",
+    "title": "The Fat of the Land",
+    "artist": "The Prodigy"
+  },
+  {
+    "id": "A-214",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/ac/34/2d/ac342dcf-8349-676f-9510-c1bd27e932d2/dj.ajlyslln.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/computer-world-remastered/830083942?uo=4",
+    "title": "Computer World (Remastered)",
+    "artist": "Kraftwerk"
+  },
+  {
+    "id": "A-225",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9d/0f/1c/9d0f1c2b-2fae-d8ac-3920-ce9ec5bc85b5/7982.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/untrue/893175779?uo=4",
+    "title": "Untrue",
+    "artist": "Burial"
+  },
+  {
+    "id": "A-236",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ee/71/42/ee71425d-6bc9-3df8-c90b-8539f59144ab/00724386649553.rgb.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/ambient-1-music-for-airports/724435863?uo=4",
+    "title": "Ambient 1: Music for Airports",
+    "artist": "Brian Eno"
+  },
+  {
+    "id": "A-247",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/be/97/b3/be97b362-d4aa-c0d5-368f-e3a154a94671/00042284291521.rgb.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/five-leaves-left-remastered/1440656068?uo=4",
+    "title": "Five Leaves Left (Remastered)",
+    "artist": "Nick Drake"
+  },
+  {
+    "id": "A-258",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ba/61/bc/ba61bcaf-2034-f13e-6f66-fdb578d618dc/656605609966.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/carrie-lowell/955572616?uo=4",
+    "title": "Carrie & Lowell",
+    "artist": "Sufjan Stevens"
+  },
+  {
+    "id": "A-269",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ed/ee/7f/edee7f18-85b6-ebb4-0620-89cbe56fe205/858978005554.png/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/master-of-puppets-expanded-edition/1275551221?uo=4",
+    "title": "Master of Puppets (Expanded Edition)",
+    "artist": "Metallica"
+  },
+  {
+    "id": "A-280",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/23/fa/f8/23faf820-c4fa-2bf1-d672-846971f5cf5c/06UMGIM31355.rgb.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/exodus-2013-remaster/1625213430?uo=4",
+    "title": "Exodus (2013 Remaster)",
+    "artist": "Bob Marley & The Wailers"
+  },
+  {
+    "id": "A-291",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/cf/07/b3/cf07b334-2a4c-a068-1794-feacd2a253f7/dj.pvjwdybz.jpg/600x600bb.jpg",
+    "source": "https://music.apple.com/us/album/glassworks-expanded-edition/203258539?uo=4",
+    "title": "Glassworks (Expanded Edition)",
+    "artist": "Philip Glass, Michael Reisman & The Philip Glass Ensemble"
+  }
+]

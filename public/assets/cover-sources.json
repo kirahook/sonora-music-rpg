@@ -1,0 +1,128 @@
+[
+  {
+    "id": "A-004",
+    "source": "https://music.apple.com/us/album/blue-train/1468202477?uo=4",
+    "artist": "John Coltrane",
+    "title": "Blue Train",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/6e/1a/13/6e1a134d-8f6f-d90f-b855-ea69436a2e8b/17UM1IM45370.rgb.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "A-012",
+    "source": "https://music.apple.com/us/album/moon-safari/693063670?uo=4",
+    "artist": "Air",
+    "title": "Moon Safari",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d1/f9/26/d1f926e7-e996-7166-3744-0710a82177ac/017046664455.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "A-017",
+    "source": "https://music.apple.com/us/album/dummy/1440653096?uo=4",
+    "artist": "Portishead",
+    "title": "Dummy",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c1/71/93/c1719342-df7d-e9c5-c87c-53dae5afb289/00042282855329.rgb.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "A-021",
+    "source": "https://music.apple.com/us/album/heaven-or-las-vegas-remastered/258198881?uo=4",
+    "artist": "Cocteau Twins",
+    "title": "Heaven Or Las Vegas (Remastered)",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/76/cd/61/76cd61e7-0714-dce5-c48e-0f05f8fcb84b/652637001280.png/600x600bb.jpg"
+  },
+  {
+    "id": "A-028",
+    "source": "https://music.apple.com/us/album/in-rainbows/1109714933?uo=4",
+    "artist": "Radiohead",
+    "title": "In Rainbows",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/dd/50/c7/dd50c790-99ac-d3d0-5ab8-e3891fb8fd52/634904032463.png/600x600bb.jpg"
+  },
+  {
+    "id": "A-034",
+    "source": "https://music.apple.com/us/album/promises-feat-london-symphony-orchestra/1550697816?uo=4",
+    "artist": "Floating Points, Pharoah Sanders, London Symphony Orchestra & Sam Shepherd",
+    "title": "Promises (feat. London Symphony Orchestra)",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/af/dc/6b/afdc6b88-b275-de4e-3098-63dff171dffb/680899009720.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "A-041",
+    "source": "https://music.apple.com/us/album/the-miseducation-of-lauryn-hill/1276760743?uo=4",
+    "artist": "Lauryn Hill",
+    "title": "The Miseducation of Lauryn Hill",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/09/6b/55/096b55c4-ee8f-23bd-df8f-0ca0821f3028/886446727189.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "A-052",
+    "source": "https://music.apple.com/us/album/selected-ambient-works-85-92/1668862636?uo=4",
+    "artist": "Aphex Twin",
+    "title": "Selected Ambient Works 85-92",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5f/b3/e0/5fb3e08d-c2cd-3da4-6ad7-c5dc61803683/cover.jpg/600x600bb.jpg"
+  },
+  {
+    "id": "A-063",
+    "source": "https://music.apple.com/us/album/vespertine/20920260?uo=4",
+    "artist": "Björk",
+    "title": "Vespertine",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/32/d6/28/32d62861-0e24-2111-d3ed-3b54f23083d5/081227607265.jpg/600x600bb.jpg"
+  },
+  {
+    "artist": "Miles Davis",
+    "title": "Kind of Blue",
+    "source": "https://music.apple.com/us/album/kind-of-blue/268443092?uo=4",
+    "id": "A-071",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/9f/d6/mzi.vtnaewef.jpg/600x600bb.jpg"
+  },
+  {
+    "artist": "Daft Punk",
+    "title": "Discovery",
+    "source": "https://music.apple.com/us/album/discovery/697194953?uo=4",
+    "id": "A-082",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/4a/77/fd4a77db-0ebc-d043-41a2-f32fa1bb0fb4/dj.qrikkdwj.jpg/600x600bb.jpg"
+  },
+  {
+    "artist": "Massive Attack",
+    "title": "Mezzanine",
+    "source": "https://music.apple.com/us/album/mezzanine/724466069?uo=4",
+    "id": "A-093",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0a/98/55/0a98555b-8d9d-3b46-660a-b91261557d17/00724384559953.rgb.jpg/600x600bb.jpg"
+  },
+  {
+    "artist": "Slowdive",
+    "title": "Souvlaki",
+    "source": "https://music.apple.com/us/album/souvlaki/292885238?uo=4",
+    "id": "A-104",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1b/50/ad/1b50adc8-139b-1ad9-8500-cc2eb93faf17/888880730831.jpg/600x600bb.jpg"
+  },
+  {
+    "artist": "Pink Floyd",
+    "title": "The Wall",
+    "source": "https://music.apple.com/us/album/the-wall/1065975633?uo=4",
+    "id": "A-115",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3e/17/ec/3e17ec6d-f980-c64f-19e0-a6fd8bbf0c10/886445635850.jpg/600x600bb.jpg"
+  },
+  {
+    "artist": "Nujabes",
+    "title": "Metaphorical Music",
+    "source": "https://music.apple.com/us/album/metaphorical-music/1078898175?uo=4",
+    "id": "A-126",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f3/20/32/f3203208-39f4-3d87-2bfb-918d7593bc38/HPD4.jpg/600x600bb.jpg"
+  },
+  {
+    "artist": "Beach House",
+    "title": "Bloom",
+    "source": "https://music.apple.com/us/album/bloom/509665145?uo=4",
+    "id": "A-137",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8b/b7/08/8bb7086b-cdb5-1ffe-926b-e7637bda6a0d/BeachHouse_Bloom_iTunes.jpg/600x600bb.jpg"
+  },
+  {
+    "artist": "Bonobo",
+    "title": "Black Sands",
+    "source": "https://music.apple.com/us/album/black-sands/416292276?uo=4",
+    "id": "A-148",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c1/bf/c2/c1bfc295-9310-5e5d-0322-7deee6dd4128/5021392584195.png/600x600bb.jpg"
+  },
+  {
+    "artist": "Boards of Canada",
+    "title": "Music Has the Right to Children",
+    "source": "https://music.apple.com/us/album/music-has-the-right-to-children/281116024?uo=4",
+    "id": "A-159",
+    "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/b5/4c/c2/b54cc20d-03f5-f2c4-4a0d-9b51ad65af89/dj.txuslqgv.jpg/600x600bb.jpg"
+  }
+]
