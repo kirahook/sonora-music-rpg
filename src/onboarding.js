@@ -1,0 +1,23 @@
+export const guideStorageKey='sonora-onboarding-v1';
+export const guideVersion=1;
+export const guideSteps=[
+ {id:'welcome',label:'启程',en:'A SMALL GUIDE TO A BIG WORLD',title:'先听见，再走远。',lead:'你是声之旷野的骑士。音乐是旅途，唱片是岛屿，每一次真实聆听都会留下足迹。',target:'terminal',action:'去骑士终端',cards:[['LISTEN','聆听声音','从一张唱片开始，不需要登录或付费订阅才能使用本工具。'],['GROW','带着声音成长','聆听与查阅积攒待结算经验，每 2000 XP 升一级；换装和探索构成你的旅程。'],['WANDER','没有标准路线','按自己的节奏探索六片海域；这不是一个必须赶进度的游戏。']]},
+ {id:'listen',label:'听歌',en:'01 / LISTENING IS THE FIRST STEP',title:'按下播放，声音才算数。',lead:'终端会自动开机。选择 MUSIC 或一首曲目，亲手按下播放，开始真实聆听。',target:'terminal',action:'去播放音乐',cards:[['20 SEC','达标才记一首','真实播放 20 秒，或听满短曲的 80%，获得 +120 XP 待结算；拖动进度不算聆听。'],['ON / OFF','终端也是播放器','可切换骑士与音乐画面、荧光色、亮度、音量；关闭电源会暂停音乐。'],['PREVIEW / LOCAL','试听与本地文件','内置为官方短试听，不是完整专辑串流；导入自己的音频可播放完整时长，文件不会上传。']]},
+ {id:'archive',label:'唱片',en:'02 / A RECORD IS A NEW ISLAND',title:'从唱片架，找到下一座岛。',lead:'30 张唱片、367 段官方试听。按音乐人、专辑或流派搜索，也可以让心情向导为你选片。',target:'archive',action:'去唱片档案',cards:[['FIND','找到唱片','筛选流派或输入关键词。查阅一张新 CD，当日记 +30 XP 待结算。'],['LOAD','装载到终端','点选唱片查看说明，再点 OPEN IN TERMINAL；装载不会擅自播放。'],['DISCOVER','发现新声音','第一次达标聆听未发现的流派，可获得 +180 XP 待结算；同首同日只记一次。']]},
+ {id:'gear',label:'装备',en:'03 / WEAR WHAT YOU HEAR',title:'把喜欢的声音，穿在身上。',lead:'武器、护具、旅途饰物各有自己的位置。选择已拥有的装备，首页角色与单色 CRT 会实时同步。',target:'armory',action:'去选择装备',cards:[['24 ITEMS','三种装备槽','24 件像素装备，初始可选 10 件。锁定装备要从收获或区域故事中获得。'],['REAL EFFECT','不仅是外观','武器提高共鸣伤害，护具减少受击；部分饰物提高每日经验回馈。'],['6 SHARDS','用碎片强化','6 枚碎片可强化一级。重复的每日装备会转成额外 4 枚碎片，不会丢失。']]},
+ {id:'world',label:'地图',en:'04 / SOME SOUNDS ARE STILL IN THE FOG',title:'用一枚钥匙，换一片远方。',lead:'蓝调港湾、电子星海、迷雾群岛与更远的三片海域，拥有不同地貌和音乐。点选图钉查看详情。',target:'world',action:'去音乐世界',cards:[['3 / 6','从已知的海开始','初始已发现三片海域，持有一枚探索钥匙；熟悉的声音也有新的故事。'],['1 KEY','沿航线解锁','只能依次解锁下一片迷雾海域，每次消耗 1 枚钥匙。这里的演示不会使用你的钥匙。'],['DRAG / ZOOM','让地图更好读','可以放大、复位与横向滚动；海域图钉和小怪兽图钉通往不同内容。']]},
+ {id:'harvest',label:'结算',en:'05 / BRING SOMETHING HOME',title:'一天的声音，一张归航战报。',lead:'积攒的听歌、查阅和新流派经验，要在「每日结算」领取。奖励按本次经验分档，不按历史总经验。',target:'settlement',action:'去每日结算',cards:[['ONCE A DAY','每日只领取一次','先多听一会儿，再决定结算；当天领完后不能追加新的结算奖励。'],['4 TIERS','不同收获等级','旅人、探险家、领航者与传奇，带回不同装备、钥匙、强化与碎片。'],['KEEP IT','战报可以重看','同一天再次打开战报不会重复发奖；新一天刷新每日清单，原有装备、收藏和经验仍保留。']]},
+ {id:'tales',label:'奇闻',en:'06 / A STRANGER WITH A SIDE STORY',title:'不是每一次相遇，都只为交战。',lead:'六只音乐小怪兽，二十四段区域故事。先用回声斩或守拍赢得共鸣，再接取它们的寻声委托。',target:'field-notes',action:'去世界海奇闻录',cards:[['BATTLE','先赢得共鸣','每只怪兽首次获胜奖励 90 XP。体力耗尽可以重新挑战，不能靠重复交战刷奖励。'],['SIDE QUEST','接取后再聆听','按要求听曲目、不同流派或不同专辑；接取前听过的音乐不会自动完成新委托。'],['24 COMICS','收藏你的远行','完成章节获得经验、碎片和独立漫画；依次推进初遇、回响、终章和番外，终章还有区域装备。']]},
+ {id:'quests',label:'远征',en:'07 / MORE WAYS TO WANDER',title:'让三首歌，连成一次小冒险。',lead:'每日声音花园是三封探索来信；三曲远征则把你选的三首不同音乐连成一条路线。',target:'adventure',action:'去每日委托与远征',cards:[['GARDEN','三项每日委托','听一首、跨越两种流派、到访三张唱片，达标后分别手动领取 60 / 120 / 180 XP。'],['THREE TRACKS','按顺序驶过三站','选择三首不同曲目，开启远征后按顺序真实达标聆听；不能跳过前一站。'],['+300 / +1','抵达后领取宝箱','完成远征，手动领取 +300 XP 与 1 枚钥匙。委托、远征与每日结算是三种独立奖励，每日各限领一次。']]},
+ {id:'journal',label:'手账',en:'08 / EVERY LISTEN LEAVES A TRACE',title:'把声音的来处，留在纸上。',lead:'八页音乐流派手账，收录发展线索、听法和一手来源。翻页、盖章、夹书签，也写下自己的聆听笔记。',target:'sound-handbook',action:'去翻开声音手账',cards:[['READ / STAMP','阅读不必赶路','邮戳可以选三色印泥并改变位置，笔记自动保存。阅读和盖章不消耗钥匙，也不发放经验。'],['SOUND LANDSCAPE','让记录长成地形','页尾可看今日 / 累计达标记录；每首每日首次达标记一条，本地和未知流派单独归类。'],['LOCAL SAVE','你的浏览器，你的旅程','目前没有账号与云存档。不同设备、浏览器的进度不互通；清除网站数据会清除存档，本地音频刷新后需重新导入。']]},
+];
+const statuses=['new','in-progress','completed','skipped'];
+export function cleanGuide(value){
+ if(!value||value.version!==guideVersion||!statuses.includes(value.status))return {version:guideVersion,status:'new',step:0,paused:false};
+ return {version:guideVersion,status:value.status,step:Number.isInteger(value.step)?Math.max(0,Math.min(guideSteps.length-1,value.step)):0,paused:value.paused===true};
+}
+export function readGuide(storage){try{return cleanGuide(JSON.parse(storage.getItem(guideStorageKey)));}catch{return cleanGuide(null);}}
+export function saveGuide(storage,value){try{storage.setItem(guideStorageKey,JSON.stringify(cleanGuide(value)));return true;}catch{return false;}}
+export function shouldOpenGuide(value){return ['new','in-progress'].includes(cleanGuide(value).status);}
+export function moveGuide(value,step){return {...cleanGuide(value),status:'in-progress',step:Math.max(0,Math.min(guideSteps.length-1,Math.trunc(Number(step))||0))};}
+export function finishGuide(value,status='completed'){return {...cleanGuide(value),status:status==='skipped'?'skipped':'completed'};}

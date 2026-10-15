@@ -11,6 +11,7 @@ import {Adventure,allTracks} from './Adventure';
 import {turnPage,bookmarkPage,stampPage,notePage} from './handbook';
 import {SoundLandscape} from './SoundLandscape';
 import {MobileDock,mobileDestinations} from './MobileDock';
+import {Onboarding,useOnboarding} from './Onboarding.jsx';
 import {recordSound,archiveSound} from './soundHistory';
 import {gameFor,recordAdventure,claimQuest,editVoyage,beginVoyage,cancelVoyage,claimVoyage} from './gameplay';
 
@@ -30,6 +31,7 @@ function SectionTitle({number,icon,title,subtitle,children}){return <div classNa
 
 export function App(){
   const [state,setState]=useState(readState);
+  const tour=useOnboarding();
   const [albumIndex,setAlbumIndex]=useState(4);
   const [power,setPower]=useState('booting');
   const [screen,setScreen]=useState('knight');
@@ -106,7 +108,7 @@ export function App(){
   return <main className="app-shell">
     <audio ref={player.audio} {...player.events} preload="metadata" playsInline/>
     <input className="visually-hidden" type="file" ref={fileInput} multiple accept="audio/*,.mp3,.m4a,.aac,.wav,.ogg,.flac" onChange={e=>{player.importFiles(e.target.files);e.target.value='';setScreen('music');}} aria-label="导入本地音乐文件"/>
-    <header className="topbar"><a href="#terminal" className="brand" onClick={e=>{e.preventDefault();navigate('terminal');}}><Icon name="spark"/><span>SONORA<small>声之旷野 / MUSIC RPG</small></span></a><nav aria-label="主导航">{[['terminal','knight','TERMINAL','骑士终端'],['archive','audio','ARCHIVE','专辑档案'],['world','world','EXPLORE','音乐世界'],['adventure','play','PLAY','玩法远征']].map(([id,icon,en,cn])=><button key={id} aria-current={nav===id?'location':undefined} className={nav===id?'active':''} onClick={()=>navigate(id)}><Icon name={icon}/><span>{en}<small>{cn}</small></span></button>)}</nav><span className={`system-state ${power==='on'?'online':''}`}><i/>{statusLabel}</span></header>
+    <header className="topbar"><a href="#terminal" className="brand" onClick={e=>{e.preventDefault();navigate('terminal');}}><Icon name="spark"/><span>SONORA<small>声之旷野 / MUSIC RPG</small></span></a><nav aria-label="主导航">{[['terminal','knight','TERMINAL','骑士终端'],['archive','audio','ARCHIVE','专辑档案'],['world','world','EXPLORE','音乐世界'],['adventure','play','PLAY','玩法远征']].map(([id,icon,en,cn])=><button key={id} aria-current={nav===id?'location':undefined} className={nav===id?'active':''} onClick={()=>navigate(id)}><Icon name={icon}/><span>{en}<small>{cn}</small></span></button>)}</nav><button className="guide-launcher" onClick={tour.replay}>旅人指南 ↗</button><span className={`system-state ${power==='on'?'online':''}`}><i/>{statusLabel}</span></header>
 
     <section className="intro"><div><p className="eyebrow">A PERSONAL SOUND EXPLORATION SYSTEM — VOL. 003</p><h1>LISTEN. LEVEL UP.<br/><span>GO BEYOND.</span></h1></div><div className="intro-aside"><p>把每一次聆听，<br/>变成向世界边界迈出的一步。</p><div className="color-key"><span><i className="green"/>在线 / 已解锁</span><span><i className="amber"/>待领取</span><span><i/>锁定 / 待机</span></div></div></section>
 
@@ -171,10 +173,11 @@ export function App(){
     <SoundLandscape state={state} playing={player.playing}/>
 
     <section className="icon-directory"><div><p className="eyebrow">SYSTEM LANGUAGE / 符号与颜色</p><h2>SMALL SIGNALS.<br/>CLEAR MEANING.</h2><p>圆点构成符号，颜色说明状态。</p></div><div className="icon-grid">{[['audio','LISTEN','真实聆听','green'],['world','DISCOVER','探索海域','green'],['knight','UPGRADE','经验与装备','amber'],['search','SEARCH','搜索唱片',''],['play','PLAY','播放音轨','green'],['power','POWER','终端电源',''],['lock','LOCKED','迷雾与锁定','muted'],['spark','GUIDE','音乐向导','amber']].map(([icon,title,desc,color])=><div key={icon} className={color}><Icon name={icon}/><span>{title}<small>{desc}</small></span></div>)}</div></section>
-    <footer className="footer"><span>SONORA SYSTEMS © 2026</span><span>官方试听由 Apple 提供 / 本地文件不会上传</span><button onClick={()=>{player.audio.current?.pause();setState(fresh());setNotice('探索进度已重置：3 片已发现海域，1 枚初始钥匙。');}}>重置探索进度</button><span>KEEP YOUR EARS OPEN.</span></footer>
+    <footer className="footer"><button onClick={tour.replay}>重看新手引导</button><span>SONORA SYSTEMS © 2026</span><span>官方试听由 Apple 提供 / 本地文件不会上传</span><button onClick={()=>{player.audio.current?.pause();setState(fresh());setNotice('探索进度已重置：3 片已发现海域，1 枚初始钥匙。');}}>重置探索进度</button><span>KEEP YOUR EARS OPEN.</span></footer>
     {notice&&<div className="toast" role="status"><Icon name="spark"/>{notice}</div>}
     <MobileDock player={player} power={power} album={displayAlbum} nav={nav} onNavigate={navigate} onDisplay={()=>setScreen('music')} Icon={Icon}/>
     <HarvestCard open={receiptOpen} onClose={()=>setReceiptOpen(false)} state={state} onExplore={()=>{setReceiptOpen(false);navigate('world');}}/>
     <ComicCard id={comicId} onClose={()=>setComicId(null)}/>
+    <Onboarding tour={tour} state={state} onNavigate={navigate}/>
   </main>;
 }

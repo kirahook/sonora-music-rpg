@@ -9,6 +9,7 @@ import "./v7.css";
 import "./v8.css";
 import "./v9.css";
 import "./mobile.css";
+import "./onboarding.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
