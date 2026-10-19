@@ -1,0 +1,157 @@
+@font-face{font-family:SonoraFraktur;src:url('/assets/UnifrakturCook-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+/* The two columns share a grid row. The interlude fills only the unused left space. */
+.play-grid{align-items:stretch}
+.quest-column{display:flex;flex-direction:column;gap:24px;min-width:0}
+.quest-column>.quest-panel{flex:0 0 auto}
+.sound-interlude{display:flex;flex-direction:column;flex:1;min-width:0;min-height:530px;border:1px solid #d8d9d2;border-radius:26px;padding:24px;background:#fafbf9;overflow:hidden;color:#272d29;box-shadow:0 8px 22px #35302505}
+.sound-interlude>header{display:flex;justify-content:space-between;gap:12px;font:8px/1.6 'DM Mono',monospace;letter-spacing:.05em;color:#7f8c81;border-bottom:1px solid #dadfd6;padding-bottom:14px}
+.interlude-main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:38px 8px}
+.interlude-device{width:min(85%,340px);aspect-ratio:1;perspective:700px}
+.interlude-device img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;filter:hue-rotate(var(--channel-hue)) saturate(.78);transform-origin:50% 80%;animation:interlude-float 6s ease-in-out infinite;will-change:transform;transition:filter .6s ease}
+.interlude-copy{width:100%;max-width:350px;text-align:center}
+.interlude-frequency{font:54px/1 'DM Mono',monospace;letter-spacing:-.07em;color:#28382e;position:relative}
+.interlude-frequency>span{display:block;font:7px/1.8 'DM Mono',monospace;letter-spacing:.18em;color:#96a18e;margin-top:9px}
+.interlude-copy h3{font:23px/1.6 Georgia,'SimSun',serif;font-weight:400;margin:22px 0 10px;letter-spacing:.01em}
+.interlude-copy>p:last-child{font-size:12px;line-height:1.9;color:#86907f;margin-inline:auto;max-width:290px}
+.sound-interlude>footer{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:18px;border-top:1px solid #dadfd6;padding-top:17px}
+.sound-interlude>footer span{display:block;font:8px/1.7 'DM Mono',monospace;color:#6e7c69;letter-spacing:.02em}
+.sound-interlude>footer small{display:block;font-size:9px;color:#979f90;line-height:1.7;margin-top:6px}
+.interlude-actions{display:flex;gap:7px;flex-wrap:wrap}
+.interlude-actions button{background:#f1f4eb;border:1px solid #d4dbc9;border-radius:8px;color:#64795a;padding:9px 12px;min-height:44px;font-size:11px}
+.interlude-actions button:last-child{background:#293b31;color:#fffdf3;border-color:#293b31}
+.interlude-actions button:focus-visible{outline:2px solid #a0734b;outline-offset:3px}
+.interlude-paused .interlude-device img{animation-play-state:paused}
+@keyframes interlude-float{0%,100%{transform:translateY(3px) rotate(-2deg)}35%{transform:translateY(-13px) rotate(1.5deg)}70%{transform:translateY(-5px) rotate(-.5deg)}}
+
+/* Illuminated sound bestiary: full header, dense left record, tall right illustration. */
+.single-handbook .journal-sheet{filter:drop-shadow(0 5px 7px #3036271c)}
+.single-handbook .journal-page{background:#f4f3ec url('/assets/v13-codex-paper.png') center/100% 100% no-repeat;border:1px solid #a8a78d;border-radius:1px;padding:7.5% 4.2% 6.6% 10.4%;color:#293029;font-family:Georgia,'Songti SC','SimSun',serif}
+.codex-heading{display:grid;grid-template-columns:28px minmax(0,1fr) 34px;align-items:center;gap:8px;text-align:center;margin-bottom:5px}
+.codex-index{display:flex;flex-direction:column;gap:5px;align-items:center;align-self:start;padding-top:5px}
+.codex-index>span,.codex-index>small{display:grid;place-items:center;width:21px;min-height:24px;background:#3c4437;color:#f3f3e8;font:16px/1 Georgia,serif;border:1px solid #92977c;box-shadow:inset 0 0 0 2px #3c4437}
+.codex-index>small{background:transparent;color:#5f6b4f;font-size:10px;border-color:#92977c;box-shadow:none;min-height:20px}
+.codex-the{display:block;font:700 clamp(14px,3.4cqw,20px)/1 SonoraFraktur,Georgia,serif;margin-bottom:-1px;color:#30352b}
+.codex-heading h4{font:700 clamp(24px,7.2cqw,42px)/1.02 SonoraFraktur,Georgia,serif;font-weight:700;letter-spacing:0;margin:0;color:#222a24;overflow-wrap:normal}
+.codex-heading p{font-size:11px;line-height:1.5;margin:5px 0 0;letter-spacing:.07em}
+.codex-volume{font:6px/1.6 'DM Mono',monospace;text-align:left;color:#7d836d;letter-spacing:.03em}
+.codex-subtitle{text-align:center;font-size:10px;line-height:1.45;margin:7px 0 13px;color:#59614e}
+.codex-subtitle>span{display:block;font:6px/1.8 'DM Mono',monospace;letter-spacing:.12em;margin-top:3px;color:#848b75}
+.codex-body{display:grid;grid-template-columns:minmax(0,.96fr) minmax(0,1.04fr);gap:9px;align-items:stretch}
+.codex-copy{min-width:0}
+.codex-copy h5{font:bold 10px/1.45 Georgia,'SimSun',serif;letter-spacing:.02em;color:#30372c;margin:0 0 4px}
+.codex-copy h5>span{font-size:9px;font-weight:400;letter-spacing:0;display:block;color:#65705b}
+.codex-property,.codex-ability{margin:0 0 11px}
+.codex-copy .journal-summary{font-size:11px;line-height:1.55;text-align:left;color:#41493c;margin:0;letter-spacing:0}
+.codex-ability>p,.codex-origin>p{font-size:11px;line-height:1.55;color:#41493c;margin:0}
+.codex-copy .journal-section-label{display:block;margin-bottom:0;padding:5px 4px 3px;border:1px solid #a4ab95;border-bottom:0;text-align:center;background:#dce0d020}
+.codex-copy .journal-section-label h5{margin:0;font-size:9px}
+.codex-copy .journal-section-label h5>span{display:inline;margin-left:4px;font-size:8px}
+.codex-copy .genre-timeline{border:1px solid #a4ab95;padding:0;margin-bottom:12px}
+.codex-copy .genre-timeline li{display:block;margin:0;padding:6px 5px;border-bottom:1px solid #b1b6a03d}
+.codex-copy .genre-timeline li:nth-child(odd){background:#717c6320}
+.codex-copy .genre-timeline li:last-child{border-bottom:0}
+.codex-copy .genre-timeline li>span{font:8px/1.4 'DM Mono',monospace;border:0;margin:0 0 3px;padding:0;color:#79816b}
+.codex-copy .genre-timeline li b{font:600 11px/1.4 Georgia,'SimSun',serif;color:#303b2f}
+.codex-copy .genre-timeline li p{font-size:10px;line-height:1.5;color:#59614e;margin:3px 0 0}
+.codex-detail{margin:0 0 9px}
+.codex-detail>div{position:relative;height:74px;overflow:hidden;background:#172d31;border:2px solid #697656;outline:1px solid #9a9d7f;outline-offset:2px}
+.codex-detail img,.codex-knight-art img{position:absolute;left:50%;top:var(--codex-top);height:200%;width:auto;max-width:none;transform:translateX(var(--codex-shift));pointer-events:none}
+.codex-detail img{height:600%}
+.codex-detail figcaption{font:6px/1.6 'DM Mono',monospace;color:#777f68;margin-top:6px;letter-spacing:0}
+.codex-origin h5{font-size:9px}
+.codex-origin h5>span{display:inline;font-size:8px;margin-left:3px}
+.codex-origin .history-caveat{font-size:9px;line-height:1.5;margin:5px 0 0;color:#858b75}
+.codex-portrait{margin:0;display:flex;flex-direction:column;min-width:0;border:1px solid #66754c;outline:1px solid #a3a68b;outline-offset:2px;padding:3px;background:#edf0e5;align-self:stretch}
+.codex-knight-art{position:relative;min-height:460px;flex:1;overflow:hidden;background:#172f33}
+.codex-portrait figcaption{text-align:center;font:5px/1.7 'DM Mono',monospace;color:#6f795d;padding-top:5px;letter-spacing:0}
+.codex-portrait figcaption>span{display:block;font-size:7px;line-height:1.7}
+.single-handbook .journal-tail{grid-template-columns:minmax(0,1fr) 94px;gap:9px;margin-top:12px;padding-top:9px;border-color:#7b896747}
+.single-handbook .journal-tail>div>.history-caveat{display:none}
+.single-handbook .journal-tail .book-sources{font:10px/1.5 Georgia,'SimSun',serif;margin:0 0 5px;color:#657456}
+.single-handbook .journal-tail .book-sources summary{min-height:30px;padding-top:4px}
+.single-handbook .journal-tail .book-listen{font:10px/1.5 Georgia,'SimSun',serif;min-height:36px;border-radius:2px;color:#4a6040;background:#dce3ca4d;border-color:#a0ac8c;padding:8px}
+.single-handbook .journal-tail .stamp-space{min-height:82px;border:1px dashed #959e7b66;background:transparent}
+.single-handbook .journal-tail .stamp-space>span{font-size:5px;line-height:1.8;padding:5px}
+.single-handbook .journal-tail .placed-postmark{width:61px;height:81px}
+.codex-colophon{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding-top:7px;border-top:1px solid #adb49844;font:6px/1.6 'DM Mono',monospace;color:#879074}
+@media(max-width:1100px) and (min-width:901px){
+ .sound-interlude{padding:20px}
+ .sound-interlude>header{font-size:7px}
+ .codex-heading{grid-template-columns:22px minmax(0,1fr) 26px;gap:4px}
+ .codex-heading h4{font-size:30px}
+ .codex-volume{font-size:5px}
+ .codex-body{gap:8px}
+ .codex-copy .journal-summary,.codex-ability>p,.codex-origin>p{font-size:10px;line-height:1.55}
+ .codex-copy .genre-timeline li b{font-size:10px}
+ .codex-copy .genre-timeline li p{font-size:9px}
+}
+@media(max-width:900px){
+ .quest-column{gap:20px}
+ .sound-interlude{min-height:340px;flex:none}
+ .interlude-main{flex-direction:row;gap:24px;padding:30px 8px}
+ .interlude-device{width:45%;max-width:280px;flex-shrink:0}
+ .interlude-copy{max-width:300px;text-align:left}
+ .interlude-copy h3{font-size:22px;margin-top:17px}
+ .interlude-frequency{font-size:45px}
+ .interlude-copy>p:last-child{margin:0}
+ .codex-knight-art{min-height:560px}
+ .codex-copy .journal-summary,.codex-ability>p,.codex-origin>p{font-size:13px;line-height:1.7}
+ .codex-copy .genre-timeline li b{font-size:13px}
+ .codex-copy .genre-timeline li p{font-size:12px;line-height:1.7}
+}
+@media(max-width:700px){
+ .sound-interlude{padding:20px 16px;border-radius:22px;min-height:0}
+ .sound-interlude>header{font-size:7px;letter-spacing:0;gap:8px}
+ .interlude-main{flex-direction:column;padding:29px 8px 24px;gap:19px}
+ .interlude-device{width:74%;max-width:255px}
+ .interlude-copy{text-align:center;max-width:100%}
+ .interlude-frequency{font-size:43px}
+ .interlude-copy h3{font-size:22px}
+ .interlude-copy>p:last-child{font-size:13px;max-width:300px;margin-inline:auto}
+ .sound-interlude>footer{gap:16px;padding-top:16px}
+ .sound-interlude>footer>div{width:100%}
+ .sound-interlude>footer span{font-size:8px;overflow-wrap:anywhere}
+ .sound-interlude>footer small{font-size:11px}
+ .interlude-actions button{flex:1;min-height:44px;font-size:12px}
+ .single-handbook .journal-page{padding:9% 5% 8% 11%;border-radius:0}
+ .codex-heading{grid-template-columns:20px minmax(0,1fr) 23px;gap:4px}
+ .codex-heading h4{font-size:clamp(24px,8cqw,34px)}
+ .codex-the{font-size:16px}
+ .codex-index>span{width:18px;min-height:22px;font-size:13px}
+ .codex-index>small{width:18px;min-height:18px;font-size:8px}
+ .codex-volume{font-size:4px}
+ .codex-heading p{font-size:10px;letter-spacing:0}
+ .codex-subtitle{font-size:11px;line-height:1.6;margin-bottom:13px}
+ .codex-subtitle>span{font-size:6px}
+ .codex-body{display:flex;flex-direction:column-reverse;gap:19px}
+ .codex-portrait{min-height:0;width:100%;box-sizing:border-box;padding:3px}
+ .codex-knight-art{min-height:0;aspect-ratio:3/4;flex:none;width:100%}
+ .codex-portrait figcaption{font-size:6px;padding:6px 0 2px}
+ .codex-portrait figcaption>span{font-size:9px}
+ .codex-copy h5{font-size:12px;margin-bottom:5px}
+ .codex-copy h5>span{display:inline;margin-left:6px;font-size:11px}
+ .codex-copy .journal-summary,.codex-ability>p,.codex-origin>p{font-size:14px;line-height:1.85}
+ .codex-property,.codex-ability{margin-bottom:17px}
+ .codex-copy .journal-section-label{padding:8px 5px}
+ .codex-copy .journal-section-label h5{font-size:11px}
+ .codex-copy .journal-section-label h5>span{font-size:10px}
+ .codex-copy .genre-timeline li{padding:10px;margin:0}
+ .codex-copy .genre-timeline li>span{font-size:10px}
+ .codex-copy .genre-timeline li b{font-size:14px;line-height:1.6}
+ .codex-copy .genre-timeline li p{font-size:13px;line-height:1.8}
+ .codex-detail{margin-block:18px}
+ .codex-detail>div{height:95px}
+ .codex-detail figcaption{font-size:7px}
+ .codex-origin .history-caveat{font-size:11px;margin-top:8px}
+ .single-handbook .journal-tail{grid-template-columns:1fr;gap:13px;margin-top:16px;padding-top:12px}
+ .single-handbook .journal-tail .book-sources{font-size:12px}
+ .single-handbook .journal-tail .book-sources summary{min-height:44px;padding-top:10px}
+ .single-handbook .journal-tail .book-listen{font-size:13px;min-height:44px}
+ .single-handbook .journal-tail .stamp-space{min-height:130px}
+ .single-handbook .journal-tail .stamp-space>span{font-size:8px;padding:8px}
+ .single-handbook .journal-tail .placed-postmark{width:82px;height:109px}
+ .codex-colophon{font-size:6px;margin-top:18px;padding-top:8px;gap:5px}
+}
+@media(prefers-reduced-motion:reduce){
+ .interlude-device img{animation:none!important;transition:none!important;will-change:auto}
+}

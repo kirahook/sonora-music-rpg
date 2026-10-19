@@ -1,0 +1,17 @@
+// Guide-only flavour text and specimen curation; never part of RPG progress.
+const record=(index)=>({kind:'record',index});
+const equipment=(id)=>({kind:'gear',id});
+const creature=(index)=>({kind:'creature',index});
+const plate=(index)=>({kind:'plate',index});
+const terrain=(index)=>({kind:'terrain',index});
+export const guideEditorial={
+ welcome:{words:['A RECORD','A LITTLE COURAGE','SOMEWHERE NEW'],quotes:['别看我穿着盔甲，我的超能力其实是认真听歌。','先别急着拯救世界，先挑一张好唱片。','地图没有催我。今天，慢慢走也算冒险。'],specimens:[{kind:'knight'},record(0),equipment('echo-blade'),creature(0),plate(0)],captions:['旅人 / THE LISTENER','起点 / FIRST RECORD','回声 / A SMALL BLADE','相遇 / A STRANGER','远方 / FIELD NOTES']},
+ listen:{words:['PRESS PLAY','STAY A WHILE','HEAR SOMETHING'],quotes:['我的剑还没热身，耳朵已经准备好了。','认真听二十秒，比把进度条拉满更有魔法。','这次不是背景音乐，是我们的出发信号。'],specimens:[record(0),record(5),equipment('record-shield'),record(10),plate(1)],captions:['落针 / NEEDLE DOWN','节拍 / FIND THE BEAT','共鸣 / RESONANCE','停留 / STAY HERE','余音 / AFTER SOUND']},
+ archive:{words:['FOLLOW A SPINE','OPEN A RECORD','FIND AN ISLAND'],quotes:['别问我要去哪儿，问这张唱片。','传说好唱片会藏在最不起眼的书脊之间。','我的航海图，是一整架唱片封面。'],specimens:[record(0),record(4),record(10),record(11),record(23)],captions:['蓝调 / FIRST PORT','电子 / A NEW SIGNAL','转弯 / ANOTHER SIDE','发现 / OFF THE SHELF','远行 / KEEP DIGGING']},
+ gear:{words:['CHOOSE A SOUND','WEAR A STORY','TRAVEL LIGHT'],quotes:['盾牌负责挡住噪音，斗篷负责帅。','今天的穿搭关键词：听起来很能打。','这把剑不挑曲风，我也一样。'],specimens:[equipment('reed-blade'),equipment('wood-lute'),equipment('leaf-shield'),equipment('gold-compass'),equipment('rose-cloak')],captions:['旋律 / REED BLADE','和弦 / WOOD LUTE','守护 / LEAF SHIELD','方向 / COMPASS','花信 / ROSE CLOAK']},
+ world:{words:['LEAVE THE SHORE','LIFT THE FOG','TAKE THE LONG WAY'],quotes:['前方有雾？说不定只是世界还没戴上耳机。','出发前先看钥匙，别把回形针当成通行证。','我的罗盘，永远指向好听的地方。'],specimens:[terrain(0),terrain(1),terrain(2),terrain(3),terrain(5)],captions:['港湾 / BLUE PORT','晶岛 / ELECTRIC SEA','湿地 / MIST ISLANDS','梦岸 / DREAM COAST','冰原 / QUIET NORTH']},
+ harvest:{words:['LISTEN TODAY','BRING IT HOME','KEEP A SOUVENIR'],quotes:['我带回来的不是战利品，是今天听见的好天气。','请不要摇晃宝箱，里面可能正在放爵士。','每种行囊，都装得下今天的小发现。'],specimens:[{kind:'harvest',name:'traveler'},equipment('amber-scarf'),{kind:'harvest',name:'navigator'},equipment('star-blade'),{kind:'harvest',name:'legend'}],captions:['旅人 / SMALL FINDS','温度 / AMBER SCARF','领航 / FURTHER OUT','星光 / STAR BLADE','传奇 / A FULL JOURNEY']},
+ tales:{words:['MEET A STRANGER','SHARE A FREQUENCY','KEEP THE STORY'],quotes:['打完这架，能不能推荐一下你的歌单？','小怪兽看起来凶，故事倒是挺温柔。','有些支线任务，其实是一封等人听见的信。'],specimens:[creature(0),creature(1),creature(2),creature(3),creature(4)],captions:['偷拍鸦 / PORT TALE','水母 / TAPE SIGNAL','灯蛾 / NIGHT FERRY','云眠兔 / DREAM LETTER','吉他蜥 / LAST ENCORE']},
+ quests:{words:['ONE SMALL SEED','THREE LITTLE SONGS','A DAY WELL SPENT'],quotes:['远征只带三首歌，行李刚好够装一颗好心情。','花还没开？再送它一段旋律试试。','第一站找节拍，第二站找风，第三站找自己。'],specimens:[{kind:'flower',index:0},{kind:'flower',index:1},{kind:'flower',index:2},record(1),record(8)],captions:['来信 / LETTER 01','频率 / FREQUENCY 02','岛屿 / ISLAND 03','一站 / FIRST STOP','终点 / NEXT HORIZON']},
+ journal:{words:['TURN A PAGE','LEAVE A MARK','REMEMBER THE SOUND'],quotes:['等我退休，就开一家盖章比卖唱片还忙的小店。','这一页记下的，是声音来过的证据。','有些旋律，值得一枚不太端正的邮戳。'],specimens:[plate(0),plate(1),plate(3),plate(5),plate(7)],captions:['根系 / ROOTS','节奏 / RHYTHM','回响 / ECHOES','分支 / BRANCHES','留痕 / REMEMBER']},
+};

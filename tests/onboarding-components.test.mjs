@@ -5,6 +5,7 @@ import {createServer} from 'vite';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {guideSteps,cleanGuide,moveGuide} from '../src/onboarding.js';
+import {guideEditorial} from '../src/guideEditorial.js';
 test('all nine guide chapters render their explanations, safe demos and links as accessible HTML',async()=>{
  const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
  try{
@@ -15,6 +16,9 @@ test('all nine guide chapters render their explanations, safe demos and links as
    assert.ok(html.includes('暂停动画'));assert.ok(html.includes('跳转引导章节'));assert.ok(html.includes('跳过新手引导'));assert.ok(!html.includes('<audio'));
    assert.equal((html.match(/aria-current="step"/g)||[]).length,1);assert.ok(html.includes('进度保存在当前设备和浏览器'));
    assert.ok(html.includes('guide-tip-phone'));assert.ok(html.includes('guide-tip-desktop'));
+   assert.ok(html.includes(guideEditorial[guideSteps[step].id].quotes[0]));assert.ok(html.includes('换一句骑士对白'));
+   assert.equal((html.match(/<figure/g)||[]).length,5);assert.equal((html.match(/guide-fact-number/g)||[]).length,3);
+   for(const [,title,body] of guideSteps[step].cards){assert.ok(html.includes(title));assert.ok(html.includes(body));}
    if(step===0)assert.ok(html.includes('用底部五个入口切换页面，随行播放条始终在手边。'));
    if(step===8)assert.ok(html.includes('点页签或上下页翻阅；点盖章按钮，再点留白处。'));
   }
