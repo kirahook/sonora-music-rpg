@@ -10,7 +10,7 @@ export function Adventure({game,onQuest,onEdit,onStart,onCancel,onClaim,power,ha
   const frozen=voyage.status==='active'||voyage.status==='complete'||game.voyageClaimed;
   function edit(index,id){const next=[...slots];next[index]=id;onEdit(next);}
   return <section id="adventure" className="adventure-section">
-    <div className="section-heading"><div><p className="eyebrow">04 / 把聆听变成一次小冒险</p><h2>MORE WAYS TO WANDER.</h2></div><span className="capsule">3 WAYS TO WANDER</span></div>
+    <div className="section-heading"><div><p className="eyebrow">04 / 把聆听变成一次小冒险</p><h2>MORE WAYS TO WANDER.</h2><p className="section-chinese-title">把聆听变成一次小冒险</p></div><span className="capsule">3 WAYS TO WANDER</span></div>
     <div className="play-grid">
       <div className="quest-column">
       <article className="quest-panel"><div className="play-panel-heading"><span className="game-number">01</span><div><p className="eyebrow">DAILY LISTENING QUESTS</p><h3>每日探索委托</h3></div><span className="capsule">每日刷新</span></div><p className="panel-description">三封来自世界海的来信。听见不同声音，领取额外经验。</p>

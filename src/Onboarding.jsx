@@ -6,6 +6,7 @@ import {gear,rewardTiers} from './equipment';
 import {albums} from './catalog';
 import {tales} from './encounters';
 import {GuideSpeech,GuideEditorial} from './GuideEditorial.jsx';
+import {GuideBattle,GuideWorld,GuideSettlement,GuideGear} from './GuideFeatures.jsx';
 
 export function useOnboarding(){
  const storage=()=>{try{return window.localStorage;}catch{return null;}};
@@ -24,10 +25,10 @@ function GuideDemo({id}){
  const [choice,setChoice]=useState(0);
  if(id==='listen')return <div className="guide-demo"><div className="guide-demo-meter"><span>实际聆听（演示）</span><progress aria-label="达标聆听演示" max="20" value={choice?20:0}/><b>{choice?'20 / 20 SEC · +120 XP 待结算':'00 / 20 SEC'}</b></div><button onClick={()=>setChoice(v=>v?0:1)}>{choice?'重看达标前':'演示达标反馈'}</button></div>;
  if(id==='archive')return <div className="guide-demo guide-record-demo"><div>{albums.slice(0,3).map((a,i)=><button key={a.code} aria-label={'示范查看 '+a.title} aria-pressed={choice===i} onClick={()=>setChoice(i)}><img src={a.cover} alt=""/><span>{a.genre}</span></button>)}</div><p><b>{albums[choice].title}</b><span>{albums[choice].artist} · 点选只在指南里预览，不播放、不计查阅。</span></p></div>;
- if(id==='gear')return <div className="guide-demo guide-gear-demo">{['echo-blade','reed-blade','wood-lute'].map((id,i)=><button key={id} aria-pressed={choice===i} onClick={()=>setChoice(i)}><GearArt item={gear.find(g=>g.id===id)}/><span>{gear.find(g=>g.id===id).name}</span></button>)}<p>不同武器，不同声音。正式换装请到装备栏选择。</p></div>;
- if(id==='world')return <div className={'guide-demo guide-map-demo '+(choice?'revealed':'')}><div className="guide-mini-route" aria-hidden="true"><i/><span/><i/><span/><i className="guide-mini-fog"/></div><button onClick={()=>setChoice(v=>v?0:1)}>{choice?'迷雾已散开 · 重看':'演示驱散迷雾'}</button><p>演示不消耗你的探索钥匙。</p></div>;
- if(id==='harvest'){const tier=rewardTiers[choice];return <div className="guide-demo guide-loot-demo"><div className="guide-tier-buttons">{rewardTiers.map((t,i)=><button key={t.id} aria-pressed={choice===i} onClick={()=>setChoice(i)}>{t.name}</button>)}</div><p><b>{tier.min}–{Number.isFinite(tier.max)?tier.max:'∞'} XP</b><span>钥匙 ×{tier.keys} / 强化 +{tier.upgrade} / 基础碎片 +{tier.shards} / 档位装备或重复转化</span></p></div>;}
- if(id==='tales')return <div className="guide-demo guide-comic-demo"><img src={tales[0].art} alt="蓝调港湾漫画封面示例"/><div><b>交战 → 接取 → 聆听 → 收藏</b><p>故事奖励来自真实任务进度，示例漫画不会加入收藏。</p><button aria-pressed={!!choice} onClick={()=>setChoice(v=>v?0:1)}>{choice?'被偷走的蓝色拍子 · 第 1 章':'查看漫画示例标题'}</button></div></div>;
+ if(id==='gear')return <GuideGear/>;
+ if(id==='world')return <GuideWorld/>;
+ if(id==='harvest')return <GuideSettlement/>;
+ if(id==='tales')return <GuideBattle/>;
  if(id==='quests')return <div className="guide-demo guide-expedition-demo"><div>{[0,1,2].map(i=><button key={i} disabled={choice!==i} onClick={()=>setChoice(i+1)} aria-label={'演示远征第'+(i+1)+'站'}>{choice>i?'✓':'0'+(i+1)}<span>{choice>i?'已抵达':'点选抵达'}</span></button>)}</div><p>{choice===3?'三站抵达，正式远征还要手动领取宝箱。':'按顺序点选三站，了解路线推进。'}</p>{choice===3&&<button onClick={()=>setChoice(0)}>重看路线</button>}</div>;
  if(id==='journal')return <div className="guide-demo guide-stamp-demo"><div className={choice?'guide-demo-stamp stamped':'guide-demo-stamp'} aria-label={choice?'引导演示邮戳已盖好':'引导演示邮戳留白区'}>{choice?<span>SONORA<br/><b>READ / 01</b><br/>SOUND JOURNAL</span>:<small>给阅读留一个记号</small>}</div><div><button onClick={()=>setChoice(v=>v?0:1)}>{choice?'收起演示邮戳':'试盖一枚邮戳'}</button><p>只作演示，不改变真实手账。</p></div></div>;
  return <div className="guide-demo guide-welcome-demo">{[['聆听','LET IT PLAY'],['积累','LET IT GROW'],['结算','BRING IT HOME'],['探索','WANDER ON']].map(([title,en],i)=><div key={en}><small>0{i+1} / {en}</small><b>{title}</b></div>)}<p>没有倒计时，也不强制播放。旅程由你按下开始。</p></div>;
@@ -46,7 +47,7 @@ export function Onboarding({tour,state,onNavigate}){
  },[open]);
  useEffect(()=>{if(open){scroll.current?.scrollTo({top:0,behavior:'instant'});heading.current?.focus({preventScroll:true});}},[guide.step,open]);
  function visit(target){close(last?'completed':'skipped');requestAnimationFrame(()=>onNavigate(target));}
- function keys(e){if(e.target.closest('select,input,textarea'))return;if(e.key==='ArrowRight'&&!last){e.preventDefault();go(guide.step+1);}if(e.key==='ArrowLeft'&&guide.step>0){e.preventDefault();go(guide.step-1);}}
+ function keys(e){if(e.defaultPrevented||e.target.closest('select,input,textarea,.atlas-deck'))return;if(e.key==='ArrowRight'&&!last){e.preventDefault();go(guide.step+1);}if(e.key==='ArrowLeft'&&guide.step>0){e.preventDefault();go(guide.step-1);}}
  return <dialog ref={ref} className={'guide-dialog '+(guide.paused?'guide-paused':'')} aria-labelledby="guide-title" aria-describedby="guide-intro" onCancel={e=>{e.preventDefault();close('skipped');}} onKeyDown={keys}>
   {open&&<div className="guide-shell">
    <header className="guide-header"><div className="guide-wordmark"><span aria-hidden="true">✳</span><div>SONORA<small>旅人入门手册 / FIELD GUIDE</small></div></div><div className="guide-header-actions"><span className="guide-edition guide-edition-phone">POCKET / 手机版</span><span className="guide-edition guide-edition-desktop">DESKTOP / 网页版</span><button onClick={()=>close('skipped')} aria-label="跳过新手引导">稍后再看 <span aria-hidden="true">×</span></button></div></header>
@@ -54,7 +55,7 @@ export function Onboarding({tour,state,onNavigate}){
    <nav className="guide-chapters" aria-label="新手引导章节">{guideSteps.map((s,i)=><button key={s.id} aria-current={guide.step===i?'step':undefined} onClick={()=>go(i)}><small>{String(i+1).padStart(2,'0')}</small>{s.label}</button>)}</nav>
    <label className="guide-jump">阅读章节<select aria-label="跳转引导章节" value={guide.step} onChange={e=>go(+e.target.value)}>{guideSteps.map((s,i)=><option key={s.id} value={i}>{String(i+1).padStart(2,'0')} / {s.label}</option>)}</select></label>
    <div className="guide-scroll" ref={scroll}>
-    <div className="guide-intro" key={step.id+'intro'}><div><p className="guide-kicker">{step.en}</p><h2 id="guide-title" tabIndex={-1} ref={heading}>{step.title}</h2></div><p id="guide-intro">{step.lead}</p></div>
+    <div className="guide-intro" key={step.id+'intro'}><div><p className="guide-kicker">{String(guide.step+1).padStart(2,'0')} / FIELD GUIDE</p><p className="guide-pixel-title function-pixel-title">{step.en.replace(/^\d+\s*\/\s*/,'')}.</p><h2 id="guide-title" tabIndex={-1} ref={heading}>{step.title}</h2></div><p id="guide-intro">{step.lead}</p></div>
     <div className={'guide-stage stage-'+step.id} style={{'--journey':guide.step/(guideSteps.length-1)*100+'%','--traveller-left':22+guide.step*6+'%'}} aria-label="米白黑灰剪影音乐世界旅程插画">
      <div className="guide-city guide-city-far"/><div className="guide-city guide-city-near"/>
      <div className="guide-scene-top"><span>THE WORLD IS WAITING.</span><button onClick={pause} aria-pressed={guide.paused}>{guide.paused?'恢复动画':'暂停动画'}</button></div>

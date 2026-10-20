@@ -1,0 +1,15 @@
+/* UI copy only. Existing display, semantic headings and pixel numerals are excluded. */
+@font-face{font-family:SonoraUI;src:url('/assets/SpaceGrotesk-Variable.woff2') format('woff2');font-style:normal;font-weight:300 700;font-display:swap;unicode-range:U+0000-024F,U+2000-206F,U+20A0-20CF}
+@font-face{font-family:SonoraUI;src:url('/assets/NotoSansSC-Variable.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap;unicode-range:U+2E80-9FFF,U+F900-FAFF,U+FE10-FE6F,U+FF00-FFEF,U+20000-2FA1F}
+:root{--font-ui:SonoraUI,'Microsoft YaHei',Arial,sans-serif}
+/* Leaf-level application leaves original heading inheritance intact. */
+:where(button,input,select,option,optgroup,textarea,p,span,small,strong,b,em,label,dt,dd,summary,li,a,output,figcaption,th,td,blockquote,code,time):not(:is(h1,h2,h3,h4,h5,h6,.function-pixel-title,.console-brand strong,.xp-total strong,.flash-title,.gear-grid strong,.comic-grid strong,.holo-raster-fallback>strong,.wardrobe-preview>p,.codex-the) *):not(:is(h1,h2,h3,h4,h5,h6,.function-pixel-title,.console-brand strong,.xp-total strong,.flash-title,.gear-grid strong,.comic-grid strong,.holo-raster-fallback>strong,.wardrobe-preview>p,.codex-the)){font-family:var(--font-ui)!important}
+:where(button,input,select,option,textarea){font-weight:500}
+:where(div,section,article,aside,header,footer,nav,details):not(:has(*)):not(:empty){font-family:var(--font-ui)!important}
+:where(.panel-description,.region-note,.battle-log,.handbook-intro,.armory-introduction p,.comic-grid p,.flash-selected-note){font-weight:450}
+.section-chinese-title{font-size:16px;line-height:1.5;letter-spacing:.035em;font-weight:600;color:#465c4e;margin-top:9px}
+.function-pixel-title,.play-panel-heading .eyebrow{font-family:DotoLocal,'DM Mono',monospace!important;font-size:clamp(13px,1.45vw,19px);font-weight:600;line-height:1.3;letter-spacing:.025em}
+.landscape-heading .function-pixel-title{font-size:clamp(20px,2.7vw,38px);margin:11px 0 12px;color:#36574e}
+.section-heading+.console{margin-top:0}
+.landscape-heading{align-items:flex-end}
+@media(max-width:700px){.section-chinese-title{font-size:14px;margin-top:7px}.landscape-heading .function-pixel-title{font-size:clamp(20px,5.5vw,30px);line-height:1.2}.play-panel-heading .eyebrow{font-size:13px}.section-heading+.console{margin-top:0}}

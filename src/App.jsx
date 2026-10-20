@@ -4,6 +4,9 @@ import {claimRewards,recordListen,rewards,unlockRegion} from './progression';
 import {FieldNotes,HarvestCard,ComicCard} from './FieldNotes';
 import {tales,creatures,journalFor,strike,retryBattle,acceptTale,hearTale,claimTale} from './encounters';
 import {Armory,CreatureArt} from './Armory';
+import {SettlementPanel} from './SettlementPanel.jsx';
+import {FieldProp} from './FieldMarks.jsx';
+import {MapStatusBar,MapWorldNotes} from './WorldStatus.jsx';
 import {WardrobeAvatar} from './Wardrobe';
 import {equip,forge,equipped,tierFor} from './equipment';
 import {usePlayer} from './usePlayer';
@@ -12,6 +15,9 @@ import {turnPage,bookmarkPage,stampPage,notePage} from './handbook';
 import {SoundLandscape} from './SoundLandscape';
 import {MobileDock,mobileDestinations} from './MobileDock';
 import {Onboarding,useOnboarding} from './Onboarding.jsx';
+import {HeroPixels} from './HeroPixels.jsx';
+import {RegionExplorer} from './RegionExplorer.jsx';
+import {canExploreRegion} from './regionAtlas.js';
 import {recordSound,archiveSound} from './soundHistory';
 import {gameFor,recordAdventure,claimQuest,editVoyage,beginVoyage,cancelVoyage,claimVoyage} from './gameplay';
 
@@ -27,7 +33,7 @@ function readState(){
 }
 const glyphs={audio:0,world:1,knight:2,search:3,play:4,power:5,lock:6,spark:7};
 function Icon({name='spark',className=''}){const cell=glyphs[name];return <span aria-hidden="true" className={`dot-icon ${className}`} style={{'--icon-x':`${(cell%4)*100/3}%`,'--icon-y':`${Math.floor(cell/4)*100}%`}}/>;}
-function SectionTitle({number,icon,title,subtitle,children}){return <div className="section-heading"><div className="section-title"><Icon name={icon}/><div><p className="eyebrow">{number} / {subtitle}</p><h2>{title}</h2></div></div>{children}</div>;}
+function SectionTitle({number,icon,title,subtitle,children}){return <div className="section-heading"><div className="section-title"><Icon name={icon}/><div><p className="eyebrow">{number} / {subtitle}</p><h2>{title}</h2><p className="section-chinese-title">{subtitle.split('/')[0].trim()}</p></div></div>{children}</div>;}
 
 export function App(){
   const [state,setState]=useState(readState);
@@ -43,6 +49,7 @@ export function App(){
   const [filter,setFilter]=useState('all');
   const [hovered,setHovered]=useState(null);
   const [selectedRegion,setSelectedRegion]=useState(3);
+  const [explorerRegion,setExplorerRegion]=useState(null);
   const [selectedTale,setSelectedTale]=useState(null);
   const [zoom,setZoom]=useState(1);
   const [receiptOpen,setReceiptOpen]=useState(false);
@@ -110,10 +117,11 @@ export function App(){
     <input className="visually-hidden" type="file" ref={fileInput} multiple accept="audio/*,.mp3,.m4a,.aac,.wav,.ogg,.flac" onChange={e=>{player.importFiles(e.target.files);e.target.value='';setScreen('music');}} aria-label="导入本地音乐文件"/>
     <header className="topbar"><a href="#terminal" className="brand" onClick={e=>{e.preventDefault();navigate('terminal');}}><Icon name="spark"/><span>SONORA<small>声之旷野 / MUSIC RPG</small></span></a><nav aria-label="主导航">{[['terminal','knight','TERMINAL','骑士终端'],['archive','audio','ARCHIVE','专辑档案'],['world','world','EXPLORE','音乐世界'],['adventure','play','PLAY','玩法远征']].map(([id,icon,en,cn])=><button key={id} aria-current={nav===id?'location':undefined} className={nav===id?'active':''} onClick={()=>navigate(id)}><Icon name={icon}/><span>{en}<small>{cn}</small></span></button>)}</nav><button className="guide-launcher" onClick={tour.replay}>旅人指南 ↗</button><span className={`system-state ${power==='on'?'online':''}`}><i/>{statusLabel}</span></header>
 
-    <section className="intro"><div><p className="eyebrow">A PERSONAL SOUND EXPLORATION SYSTEM — VOL. 003</p><h1>LISTEN. LEVEL UP.<br/><span>GO BEYOND.</span></h1></div><div className="intro-aside"><p>把每一次聆听，<br/>变成向世界边界迈出的一步。</p><div className="color-key"><span><i className="green"/>在线 / 已解锁</span><span><i className="amber"/>待领取</span><span><i/>锁定 / 待机</span></div></div></section>
+    <section className="intro"><div><p className="eyebrow">A PERSONAL SOUND EXPLORATION SYSTEM — VOL. 003</p><h1>LISTEN. LEVEL UP.<br/><span>GO BEYOND.</span></h1></div><div className="intro-aside"><p>把每一次聆听，<br/>变成向世界边界迈出的一步。</p><div className="color-key"><span><i className="green"/>在线 / 已解锁</span><span><i className="amber"/>待领取</span><span><i/>锁定 / 待机</span></div></div><HeroPixels/></section>
 
     <Armory state={state} onEquip={id=>{setState(p=>id==='upgrade'?forge(p):equip(p,id));setScreen('knight');setNotice(id==='upgrade'?'强化完成 · 装备等级 +1':'实时穿搭已更新 · 已保存到骑士档案');}}/>
 
+    <SectionTitle number="01" icon="knight" title="PERSONAL LISTENING STATION." subtitle="个人聆听终端 / YOUR SOUND, YOUR JOURNEY"/>
     <section id="terminal" className={`console ${power}`} aria-label="复古音乐骑士终端">
       <div className="console-label"><span>01 / PERSONAL LISTENING STATION</span><span>STEREO · MODEL S—07</span></div>
       <div className="console-brand"><span className="engraved-lines"/><strong>SONORA SYSTEMS<small>HIGH FIDELITY ADVENTURE</small></strong><span className="engraved-lines"/><button className={`power-key ${power==='on'?'active':''}`} onClick={togglePower} disabled={power==='booting'||power==='closing'} aria-label={power==='on'?'关闭终端电源':'打开终端电源'}><Icon name="power"/><small>{power==='on'?'ON':'OFF'}</small></button></div>
@@ -160,9 +168,9 @@ export function App(){
     </section>
 
     <section id="world" className="world-section"><SectionTitle number="03" icon="world" title="THE WORLD OF SOUND" subtitle="音乐世界海 / EVERY SOUND IS A PLACE"><div className="map-summary"><span>{state.frontier} / 6 DISCOVERED</span><span><Icon name="lock"/>{state.keys} KEY{state.keys!==1?'S':''}</span></div></SectionTitle>
-      <div className="world-layout" style={{'--map-zoom':zoom}}><div className="map-view"><div className="map-toolbar"><span>SONORA ATLAS / SEASON 01</span><div><button aria-label="缩小地图" onClick={()=>setZoom(z=>Math.max(1,z-.25))} disabled={zoom===1}>−</button><span>{Math.round(zoom*100)}%</span><button aria-label="放大地图" onClick={()=>setZoom(z=>Math.min(1.75,z+.25))} disabled={zoom===1.75}>+</button><button onClick={()=>setZoom(1)}>复位</button></div></div><p className="mobile-hint map-hint">左右滑动探索海域 · 点选图钉查看详情</p><div className="map-scroll" tabIndex={0} aria-label="音乐地图，可左右滑动"><div className="map-canvas" style={{width:`${zoom*100}%`}}><img className="relief-map" src="/assets/world-biomes.png" alt="六个地形各异的立体音乐海域：暖港、晶洞、紫色湿地、粉色梦境、火山岩与冰川灯塔"/><div className="fog-grid" aria-hidden="true">{regions.map((r,i)=><div key={r.name} className={`fog-cell ${i<state.frontier?'revealed':''}`}/>)}</div>{regions.map((r,i)=><button key={r.name} className={`map-pin ${i<state.frontier?'unlocked':'locked'} ${selectedRegion===i?'selected':''}`} style={{left:`${r.x}%`,top:`${r.y}%`}} onClick={()=>{setSelectedRegion(i);setSelectedTale(null);}} aria-label={`${r.name}，${i<state.frontier?'已解锁':'未解锁'}`}><span className="pin-picture">{i<state.frontier?<img src={albums[r.album].cover} alt=""/>:<Icon name="lock"/>}</span><strong>{i<state.frontier?r.name:`未知海域 0${i+1}`}</strong><small>{i<state.frontier?r.genre:'FOG OF WAR'}</small></button>)}{regions.map((r,i)=>i<state.frontier&&<button className="creature-pin" key={'creature'+i} style={{left:`${r.x+9}%`,top:`${r.y-10}%`}} aria-label={`遇见${creatures[i].name}`} onClick={()=>{setSelectedRegion(i);setSelectedTale(null);document.querySelector('.field-notes')?.scrollIntoView({behavior:'smooth'});}}><CreatureArt region={i}/><span>奇闻</span></button>)}</div></div><div className="map-legend"><span><i className="green"/>已发现</span><span><i className="amber"/>可探索</span><span><i/>迷雾区域</span><span>六种差异地貌 · 放大后可横向滚动</span></div></div>
-        <aside className="world-sidebar"><div className="region-details"><div className="region-kicker"><Icon name={unlocked?'world':'lock'}/><span>REGION 0{selectedRegion+1} / {unlocked?'UNLOCKED':'UNMAPPED'}</span></div><h3>{currentRegion.name}</h3><p>{currentRegion.en}</p><span className="region-genre">{currentRegion.genre}</span><p className="region-note">{unlocked?albums[currentRegion.album].note:'浓雾遮住了远处的声音。使用一枚探索钥匙，点亮下一段航线。'}</p>{unlocked?<button className="outline-button" onClick={()=>choose(albums[currentRegion.album],true)}>聆听这片海域</button>:<button className="outline-button amber-button" onClick={unlock} disabled={selectedRegion!==state.frontier||state.keys<1}>{selectedRegion!==state.frontier?'请先解锁前一海域':state.keys<1?'钥匙不足 · 先完成结算':'消耗 1 枚钥匙 · 驱散迷雾'}</button>}<small>{unlocked?'探索进度已保存':`持有 ${state.keys} 枚钥匙 · 每日分档收获获得 1–3 枚`}</small></div>
-        <div id="settlement" className="settlement"><p className="reward-preview-label">{state.claimed?(state.receipt?.loot?.title||'探索收获'):reward.total?tierFor(reward.total).name:'开始聆听，积攒收获'} / 每日收获等级</p><p className="eyebrow">DAILY EXPEDITION / {state.day}</p><div className="xp-total"><strong>+{fmt(displayReward?.total||0)}</strong><span>XP</span></div><dl><div><dt>真实聆听 {state.listened.length} 首</dt><dd>+{displayReward?.listen||0}</dd></div><div><dt>查阅 CD {state.viewed.length} 张</dt><dd>+{displayReward?.browse||0}</dd></div><div><dt>发现新流派</dt><dd>+{displayReward?.discovery||0}</dd></div></dl><button className="settle-button" disabled={!reward.total&&!state.claimed} onClick={claim}>{state.claimed?'查看今日战报':'结算 · 向边界进攻'}<Icon name="knight"/></button><p>{state.claimed?'今日已领取 · 奖励与装备已保存':'有效播放 20 秒计入聆听；短于 25 秒的音轨需实际听完 80%。'}</p><details><summary>查看今日聆听记录</summary>{state.listened.length?state.listened.map(t=><div className="log-entry" key={t.id}><span>{t.title}</span><small>+120 XP</small></div>):<p>播放一首音乐，开始今天的远征。</p>}</details></div></aside>
+      <div className="world-layout" style={{'--map-zoom':zoom}}><div className="map-view"><MapStatusBar state={state}/><div className="map-toolbar"><span>SONORA ATLAS / SEASON 01</span><div><button aria-label="缩小地图" onClick={()=>setZoom(z=>Math.max(1,z-.25))} disabled={zoom===1}>−</button><span>{Math.round(zoom*100)}%</span><button aria-label="放大地图" onClick={()=>setZoom(z=>Math.min(1.75,z+.25))} disabled={zoom===1.75}>+</button><button onClick={()=>setZoom(1)}>复位</button></div></div><p className="mobile-hint map-hint">左右滑动探索海域 · 点选已解锁海域进入音乐城市</p><div className="map-scroll" tabIndex={0} aria-label="音乐地图，可左右滑动"><div className="map-canvas" style={{width:`${zoom*100}%`}}><img className="relief-map" src="/assets/world-biomes.png" alt="六个地形各异的立体音乐海域：暖港、晶洞、紫色湿地、粉色梦境、火山岩与冰川灯塔"/><div className="fog-grid" aria-hidden="true">{regions.map((r,i)=><div key={r.name} className={`fog-cell ${i<state.frontier?'revealed':''}`}/>)}</div>{regions.map((r,i)=><button key={r.name} className={`map-pin ${i<state.frontier?'unlocked':'locked'} ${selectedRegion===i?'selected':''}`} style={{left:`${r.x}%`,top:`${r.y}%`}} onClick={()=>{setSelectedRegion(i);setSelectedTale(null);if(canExploreRegion(state,i))setExplorerRegion(i);}} aria-label={`${r.name}，${i<state.frontier?'已解锁':'未解锁'}`}><span className="pin-picture">{i<state.frontier?<img src={albums[r.album].cover} alt=""/>:<Icon name="lock"/>}</span><strong>{i<state.frontier?r.name:`未知海域 0${i+1}`}</strong><small>{i<state.frontier?r.genre:'FOG OF WAR'}</small></button>)}{regions.map((r,i)=>i<state.frontier&&<button className="creature-pin" key={'creature'+i} style={{left:`${r.x+9}%`,top:`${r.y-10}%`}} aria-label={`遇见${creatures[i].name}`} onClick={()=>{setSelectedRegion(i);setSelectedTale(null);document.querySelector('.field-notes')?.scrollIntoView({behavior:'smooth'});}}><CreatureArt region={i}/><span>奇闻</span></button>)}</div></div><MapWorldNotes state={state} selected={selectedRegion} onSelect={i=>{setSelectedRegion(i);setSelectedTale(null);}} onExplore={i=>{if(canExploreRegion(state,i))setExplorerRegion(i);}} onInspect={()=>document.querySelector('.region-details')?.scrollIntoView({behavior:'smooth',block:'start'})}/><div className="map-legend"><span><i className="green"/>已发现</span><span><i className="amber"/>可探索</span><span><i/>迷雾区域</span><span>六种差异地貌 · 放大后可横向滚动</span></div></div>
+        <aside className="world-sidebar"><div className="region-details"><div className="region-kicker"><Icon name={unlocked?'world':'lock'}/><span>REGION 0{selectedRegion+1} / {unlocked?'UNLOCKED':'UNMAPPED'}</span></div><h3>{currentRegion.name}</h3><p>{currentRegion.en}</p><span className="region-genre">{currentRegion.genre}</span><p className="region-note">{unlocked?albums[currentRegion.album].note:'浓雾遮住了远处的声音。使用一枚探索钥匙，点亮下一段航线。'}</p>{unlocked?<><button className="outline-button region-explore-action" onClick={()=>setExplorerRegion(selectedRegion)}>进入海域 · 像素地图与音乐索引</button><button className="outline-button" onClick={()=>choose(albums[currentRegion.album],true)}>聆听这片海域</button></>:<button className="outline-button amber-button" onClick={unlock} disabled={selectedRegion!==state.frontier||state.keys<1}>{selectedRegion!==state.frontier?'请先解锁前一海域':state.keys<1?'钥匙不足 · 先完成结算':'消耗 1 枚钥匙 · 驱散迷雾'}</button>}<small>{unlocked?'探索进度已保存':`持有 ${state.keys} 枚钥匙 · 每日分档收获获得 1–3 枚`}</small></div>
+        <SettlementPanel state={state} reward={reward} onClaim={claim}/></aside>
       </div>
     </section>
 
@@ -178,6 +186,7 @@ export function App(){
     <MobileDock player={player} power={power} album={displayAlbum} nav={nav} onNavigate={navigate} onDisplay={()=>setScreen('music')} Icon={Icon}/>
     <HarvestCard open={receiptOpen} onClose={()=>setReceiptOpen(false)} state={state} onExplore={()=>{setReceiptOpen(false);navigate('world');}}/>
     <ComicCard id={comicId} onClose={()=>setComicId(null)}/>
+    {explorerRegion!==null&&canExploreRegion(state,explorerRegion)&&<RegionExplorer key={explorerRegion} state={state} region={explorerRegion} onClose={()=>setExplorerRegion(null)} onAlbum={a=>choose(a,true)}/>}
     <Onboarding tour={tour} state={state} onNavigate={navigate}/>
   </main>;
 }

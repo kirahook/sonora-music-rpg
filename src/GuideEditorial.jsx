@@ -4,6 +4,7 @@ import {WardrobeAvatar} from './Wardrobe';
 import {GearArt,CreatureArt} from './Armory';
 import {gear} from './equipment';
 import {albums} from './catalog';
+import {BattlePortrait} from './BattleEncounter.jsx';
 
 export function GuideSpeech({id,index}){
  const [line,setLine]=useState(0),quotes=guideEditorial[id].quotes;
@@ -15,6 +16,7 @@ export function GuideSpeech({id,index}){
 }
 
 function Specimen({item,state}){
+ if(item.kind==='companion')return <BattlePortrait region={item.index} role="companion"/>;
  if(item.kind==='knight')return <WardrobeAvatar state={state}/>;
  if(item.kind==='record')return <img src={albums[item.index].cover} alt={albums[item.index].title+' 专辑封面'} loading="lazy"/>;
  if(item.kind==='gear')return <GearArt item={gear.find(g=>g.id===item.id)}/>;

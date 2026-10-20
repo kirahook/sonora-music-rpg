@@ -1,5 +1,7 @@
 # 素材与音频说明
 
+V17 新增六片海域的原创生成式战斗场景，合并在 `public/assets/v17-battle-scenes.png` 的 2×3 图集内。角色沿用 V16 原创状态图，仅使用透明度测量得出的主体边界作等比显示与朝向调整，未重绘或冒充音乐家本人；背景为虚构地域，不是实景或真实地理复原。新增新手练习使用明确标记的样例，不读取或修改真实游戏存档。
+
 Sonora 的原创世界插画、像素穿搭、漫画和装饰素材属于本项目生成式美术成果。专辑封面、艺人、曲目及试听元数据来自 Apple 公开音乐目录；来源记录保存在 `public/assets/cover-sources.json` 与 `extra-cover-sources.json`。
 
 仓库不包含商业音乐完整音频。网页通过外部官方试听地址播放短片段，并提供 Apple Music 专辑链接。第三方封面、录音及商标的权利属于相应权利人，公开仓库不代表获得转售或自由再许可这些第三方内容的权利。
@@ -7,3 +9,13 @@ Sonora 的原创世界插画、像素穿搭、漫画和装饰素材属于本项�
 用户导入的本地音频只在其浏览器中使用，不上传 GitHub 或任何服务器。游戏进度、手账笔记与聆听记录保存在用户设备，不包含在本仓库。
 
 手账英文标题使用 UnifrakturCook Bold（Google Fonts / google/fonts）。字体按 SIL Open Font License 1.1 使用；原始授权文件随字体保留于 `public/assets/UnifrakturCook-OFL.txt`。V13 的流派骑士、花边纸底与复古显示器为本项目生成式插画，骑士意象不代表历史人物或可领取装备。
+
+V14 的像素粒子背景与六座音乐城市模型为原创生成式插画。模型是流派意象，并非真实城市测绘或可旋转的三维场景。音乐索引提供原始资料／官方唱片链接，年代路线为简化阅读线索，旁支作品不意味着严格师承。音乐家卡片上的流派骑士为象征插画，不是本人肖像。外部参考视频不被复制、下载或随仓库再发布。
+
+V15 的六组流派建筑与透明守护者为原创生成式美术。卡牌采用真实 WebGL 倒角卡体、前后分层、视角 UV 偏移、凹凸与角度相关光栅反射；城市地图仍是原创二维模型插画，不是可旋转的城市三维引擎。`art-source/build_holo_cards.py` 可在 Blender 重建可编辑分层材质场景，网页轻量材质与 Blender 原理对应，但不宣称两个渲染器输出完全相同。守护者不是音乐家本人肖像，也不是可领取装备。
+
+网页使用 Three.js，按 MIT 许可提供，Copyright © 2010-2026 three.js authors；完整声明保存在 `public/assets/three-MIT.txt` 并随站点发布。Blender 仅为本地创作工具，其可执行程序、下载包与生成场景不被打包进网页。
+
+V16 的六组双角色状态图、两组卡纸版画与八枚像素道具均为本项目原创生成式美术；状态图为五列（待机、攻击、受击、低体力、落败）与两行（小怪兽、同行伙伴），并非历史音乐家肖像。装备故事为虚构世界观，来源与奖励数值仍按实际游戏规则显示。卡牌正反面文字为可更新内容；专辑封面、音乐家资料和史料链接仍遵循上述第三方来源说明。
+
+界面正文采用本地打包的 [Space Grotesk](https://github.com/google/fonts/tree/main/ofl/spacegrotesk) 与 [Noto Sans SC](https://github.com/google/fonts/tree/main/ofl/notosanssc) 可变字体，按 SIL Open Font License 1.1 使用；相应授权保存在 `public/assets/SpaceGrotesk-OFL.txt` 和 `NotoSansSC-OFL.txt`。WOFF2 是原始官方 TTF 的无损网页封装，未删改字形。中文采用参考字标的现代黑体方向，不宣称重现参考图的定制字标或获得其字体文件。既有 Doto 点阵与 UnifrakturCook 哥特展示字未替换。

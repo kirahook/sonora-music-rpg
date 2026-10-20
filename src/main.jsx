@@ -11,6 +11,12 @@ import "./v9.css";
 import "./mobile.css";
 import "./onboarding.css";
 import "./v13.css";
+import "./v14.css";
+import "./v15.css";
+import "./v16.css";
+import "./typography.css";
+import "./v17.css";
+import "./v18.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>

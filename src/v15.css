@@ -1,0 +1,69 @@
+/* Actual, continuously integrated pixel flow. The old two-image stepped loop is retired. */
+.hero-flow-canvas{display:block;width:100%;height:100%;opacity:.9}
+.hero-flow-control{position:absolute;z-index:2;left:6px;bottom:6px;min-height:44px;padding:0 10px;border:0;border-radius:8px;background:#f2f1eceb;color:#526c65;font:9px 'DM Mono',monospace}
+.live-pixel-field{max-width:none!important;margin:0!important}
+/* Native top-layer dialogs must not put a backdrop-filter above a GPU canvas. */
+.region-explorer::backdrop{backdrop-filter:none}
+.atlas-history-illustration{position:relative;height:160px;border:1px solid #52615e;border-radius:8px;margin:16px 0 0;overflow:hidden;background:#102430}
+.atlas-scene-art{position:absolute;inset:0;background-repeat:no-repeat;background-size:200% auto!important;background-position-y:43%!important}
+.atlas-history-illustration:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#091b28cf,transparent 90%)}
+.atlas-history-illustration figcaption{position:absolute;z-index:1;left:16px;bottom:16px;display:flex;flex-direction:column;gap:7px;color:#f0dfbe}
+.atlas-history-illustration small{font:7px 'DM Mono',monospace;letter-spacing:.10em}.atlas-history-illustration strong{font:23px Georgia,'Microsoft YaHei',serif;font-weight:400}
+.atlas-history-illustration figcaption>span{font-size:9px;letter-spacing:.08em;color:#d2d6be}
+.atlas-caveat{margin-top:12px}
+.flash-layout{max-width:1000px;grid-template-columns:minmax(0,1fr) minmax(300px,1fr);gap:45px;margin-top:30px}
+.flash-stage{width:min(100%,355px);height:540px;perspective:none;margin-bottom:28px}
+.flash-stack,.flash-stack.second{display:none}
+.holographic-card{box-shadow:none;perspective:none;border-radius:18px;isolation:isolate}
+.holographic-card.holo-ready{transform:translateX(var(--drag))!important}
+.holo-render-surface{position:absolute;inset:-6%;display:block;pointer-events:none}
+.holo-render-surface:before{content:'';position:absolute;left:14%;right:14%;bottom:8%;height:7%;border-radius:50%;background:radial-gradient(ellipse,#21382e29,transparent 70%)}
+.holo-webgl-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;opacity:0}
+.holo-render-surface.ready .holo-webgl-canvas{opacity:1}
+.holo-render-surface.ready .holo-raster-fallback{visibility:hidden}
+.holo-raster-fallback{position:absolute;inset:6%;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;overflow:hidden;padding:22px;border:3px solid var(--holo-ink);border-radius:14px;background-repeat:no-repeat;background-size:auto 100%!important;color:#fff3d8;box-shadow:inset 0 0 0 4px #17292b,inset 0 0 0 5px var(--holo-ink)}
+.holo-raster-fallback:after{content:'';position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#08151ced);z-index:0}
+.holo-raster-fallback>span,.holo-raster-fallback>strong,.holo-raster-fallback>small{position:relative;z-index:1}
+.holo-raster-fallback>.holo-raster-guardian{position:absolute;inset:0;z-index:0;background-repeat:no-repeat;background-size:auto 100%!important}
+.holo-raster-fallback>span{font:9px 'DM Mono',monospace;letter-spacing:.08em;color:var(--holo-ink)}
+.holo-raster-fallback>strong{font:28px/1.2 Georgia,'Microsoft YaHei',serif;overflow-wrap:anywhere}.holo-raster-fallback>small{font-size:9px}
+.holographic-card .flash-turner{opacity:0;pointer-events:none;position:absolute;inset:0;transition:none}
+.holographic-card:not(.holo-ready).is-flipped .flash-turner{opacity:1;transform:none}
+.holographic-card:not(.holo-ready).is-flipped .flash-back{transform:none}
+.holographic-card .flash-front{display:none}
+.holographic-card:focus-visible{outline-offset:10px}
+.flash-reading h4{font-size:33px;color:#263d35}
+.flash-reading>.flash-selected-note{margin:17px 0 18px;font:13px/1.9 'Microsoft YaHei',sans-serif;color:#506458}
+.holo-material-badges{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:18px;border-bottom:1px solid #cdd3c4}
+.holo-material-badges span{border:1px solid #cbd2bf;background:#e9eddf;color:#4b6750;border-radius:5px;padding:5px 8px;font:8px 'DM Mono','Microsoft YaHei',monospace}
+.holo-material-badges span:last-child{background:#223c34;border-color:#223c34;color:#f5edce}
+.holo-inspect-controls{display:flex;flex-direction:column;gap:14px;margin:18px 0}
+.holo-inspect-controls>div{display:flex;gap:6px}
+.holo-inspect-controls button{min-height:44px;padding:7px 12px;border:1px solid #bcc8b7;background:#faf9f0;color:#3d5948;border-radius:7px;font-size:10px}
+.holo-inspect-controls label{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px;font-size:10px;color:#576f5c}
+.holo-inspect-controls output{font:10px 'DM Mono',monospace}.holo-inspect-controls input{grid-column:1/-1;margin:0;accent-color:#426b60;height:22px}
+.holo-inspect-controls .holo-auto{align-self:flex-start;background:#e7ecde;font-size:9px}
+.flash-controls{margin-top:20px;margin-bottom:15px}
+.flash-reading>.primary-button{margin-top:9px}
+.flash-instructions{max-width:360px}
+@media(max-width:1000px){
+ .flash-layout{gap:28px;grid-template-columns:minmax(0,1fr) minmax(270px,1fr)}
+ .flash-stage{height:500px;width:min(100%,325px)}.flash-reading h4{font-size:28px}
+}
+@media(max-width:700px){
+ .hero-flow-control{font-size:7px;left:0;bottom:0;padding-inline:5px}.hero-motion-control{padding-inline:5px}
+ .flash-layout{display:flex;gap:12px;margin:23px 4px 30px}
+ .flash-stage{width:min(100%,320px);height:485px;margin:10px auto 20px}
+ .holo-render-surface{inset:-4%}.holographic-card:focus-visible{outline-offset:3px}
+ .flash-reading h4{font-size:29px}.flash-reading>.flash-selected-note{font-size:13px}
+ .holo-inspect-controls button{font-size:12px;flex:1}.holo-inspect-controls>div{width:100%}
+ .holo-inspect-controls .holo-auto{flex:none;font-size:11px}.holo-inspect-controls label{font-size:12px}
+ .holo-material-badges span{font-size:9px}.atlas-history-illustration{height:155px;margin-top:16px}
+ .flash-layout .flash-instructions{font-size:11px}.atlas-history-illustration small{font-size:8px}
+}
+@media(max-width:359px){
+ .flash-stage{height:425px}.flash-reading h4{font-size:25px}.holo-inspect-controls button{padding:7px 8px;font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){
+ .holographic-card{transition:none!important}.holo-raster-fallback{transform:none}
+}
