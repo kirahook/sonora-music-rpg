@@ -1,13 +1,13 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {createGame} from '../src/gameplay.js';
 import {equip} from '../src/equipment.js';
 
 test('production JSX renders synchronized home/CRT avatars and accessible garden states',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {WardrobeAvatar}=await server.ssrLoadModule('/src/Wardrobe.jsx');
   const {QuestGarden}=await server.ssrLoadModule('/src/QuestGarden.jsx');

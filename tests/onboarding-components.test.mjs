@@ -1,13 +1,13 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,stat} from 'node:fs/promises';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {guideSteps,cleanGuide,moveGuide} from '../src/onboarding.js';
 import {guideEditorial} from '../src/guideEditorial.js';
 test('all nine guide chapters render their explanations, safe demos and links as accessible HTML',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {Onboarding}=await server.ssrLoadModule('/src/Onboarding.jsx');
   for(let step=0;step<guideSteps.length;step++){

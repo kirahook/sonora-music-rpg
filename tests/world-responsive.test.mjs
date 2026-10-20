@@ -3,10 +3,26 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
+
+test('SSR harness does not load client warmup, watchers or dependency optimizers',async()=>{
+ const server=await createSSRServer();
+ try{
+  assert.equal(server.config.configFile,undefined);
+  assert.equal(server.config.esbuild.jsx,'automatic');
+  assert.equal(server.config.server.watch,null);
+  assert.equal(server.config.optimizeDeps.noDiscovery,true);
+  assert.deepEqual(server.config.optimizeDeps.include,[]);
+  assert.equal(server.config.ssr.optimizeDeps.noDiscovery,true);
+  assert.deepEqual(server.config.ssr.optimizeDeps.include,[]);
+  assert.ok(!(server.config.server.warmup?.clientFiles||[]).length);
+  const {MapStatusBar}=await server.ssrLoadModule('/src/WorldStatus.jsx');
+  assert.ok(renderToStaticMarkup(React.createElement(MapStatusBar,{state:{frontier:3,keys:1}})).includes('CHARTED WATERS.'));
+ }finally{await server.close();}
+});
 
 test('world status uses real, bounded, unique progress and never exposes locked dossiers or mutates saves',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {worldStatus,worldNotes}=await server.ssrLoadModule('/src/worldStatus.js');
   const {MapStatusBar,MapWorldNotes}=await server.ssrLoadModule('/src/WorldStatus.jsx');

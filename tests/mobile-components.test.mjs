@@ -1,12 +1,12 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 
 test('mobile dock mirrors player state, protects power and track boundaries, and labels five destinations',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {MobileDock,mobileDestinations}=await server.ssrLoadModule('/src/MobileDock.jsx');
   assert.deepEqual(mobileDestinations.map(x=>x[0]),['terminal','armory','archive','world','adventure']);

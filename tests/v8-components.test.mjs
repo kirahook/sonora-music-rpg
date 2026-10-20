@@ -1,12 +1,12 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {createGame} from '../src/gameplay.js';
 import {stampPage,bookmarkPage,notePage,turnPage} from '../src/handbook.js';
 test('handbook renders below expedition with live stamps, notes, sources and boundary navigation',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {Adventure}=await server.ssrLoadModule('/src/Adventure.jsx');
   let s={day:'2026-10-08'};s=notePage(bookmarkPage(stampPage(turnPage(s,7),'ambient'),'ambient'),'ambient','慢慢聆听');

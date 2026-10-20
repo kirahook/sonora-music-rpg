@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {companions,portraitStates,portraitStyle,battlePortraits,equipmentNote,settlementLedger,cardPrintFor} from '../src/fieldPresentation.js';
@@ -59,7 +59,7 @@ test('three card categories use three distinct back prints and physical front co
 });
 
 test('real UI renders all companions, state portraits, owned comics and a complete reward checklist',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {FieldNotes}=await server.ssrLoadModule('/src/FieldNotes.jsx');const {SettlementPanel}=await server.ssrLoadModule('/src/SettlementPanel.jsx');
   const s={...sample(),journal:{battles:{0:{hp:0,enemy:20,won:false}},quests:{},comics:[0,7]}};

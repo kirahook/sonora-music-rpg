@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 import {regionAtlas,canExploreRegion,cityArt,atlasCards,nextCard,swipeDirection} from '../src/regionAtlas.js';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {unlockRegion} from '../src/progression.js';
@@ -44,7 +44,7 @@ test('swiping ignores taps and predominantly vertical scrolling',()=>{
  assert.equal(swipeDirection(80,120),0);assert.equal(swipeDirection(10,200),0);
 });
 test('all six real components render the correct city, landmarks, album and independent card deck',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {RegionExplorer}=await server.ssrLoadModule('/src/RegionExplorer.jsx');
   const {HeroPixels}=await server.ssrLoadModule('/src/HeroPixels.jsx');

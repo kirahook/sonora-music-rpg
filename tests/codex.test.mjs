@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,stat} from 'node:fs/promises';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {codexPortraits,codexArtStyle,interludeChannels} from '../src/codexArt.js';
@@ -17,7 +17,7 @@ test('eight distinct music knights map to exact non-stretched atlas centers',()=
 });
 
 test('all eight illuminated pages retain real history, source links and saved reader content',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {MusicHandbook}=await server.ssrLoadModule('/src/MusicHandbook.jsx');
   for(let i=0;i<8;i++){
@@ -36,7 +36,7 @@ test('all eight illuminated pages retain real history, source links and saved re
 });
 
 test('decorative interlude sits below quests and keeps local pause/channel controls separate from audio and rewards',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {Adventure}=await server.ssrLoadModule('/src/Adventure.jsx');
   const html=renderToStaticMarkup(React.createElement(Adventure,{game:createGame('2026-10-15'),power:'on',handbook:{state:{}}}));

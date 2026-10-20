@@ -1,11 +1,11 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
 import {recordSound} from '../src/soundHistory.js';
 test('single-page notebook contains history and stamp space together; landscape uses real counts',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {MusicHandbook}=await server.ssrLoadModule('/src/MusicHandbook.jsx');
   const {SoundLandscape}=await server.ssrLoadModule('/src/SoundLandscape.jsx');

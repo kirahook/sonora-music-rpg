@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import React from 'react';
 import {renderToStaticMarkup} from 'react-dom/server';
-import {createServer} from 'vite';
+import {createSSRServer} from './ssr-server.mjs';
 import frames from '../src/battleFrames.json' with {type:'json'};
 import {battleScenes,battleSceneStyle,portraitBodyStyle} from '../src/battleArt.js';
 import {guideSteps,guideVersion,guideStorageKey} from '../src/onboarding.js';
@@ -43,7 +43,7 @@ test('nine existing guide chapters retain progress IDs and explain new cards, sc
 });
 
 test('real scenes, safe guide exercises, map and report render with bilingual typography and no reward mutations',async()=>{
- const server=await createServer({server:{middlewareMode:true,hmr:false},appType:'custom'});
+ const server=await createSSRServer();
  try{
   const {BattleScene}=await server.ssrLoadModule('/src/BattleEncounter.jsx');
   const {GuideBattle,GuideWorld,GuideSettlement,GuideGear}=await server.ssrLoadModule('/src/GuideFeatures.jsx');
