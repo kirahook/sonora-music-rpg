@@ -1,0 +1,55 @@
+/* A quiet regional letter, using the existing measured companion portraits. */
+.companion-letters{min-width:0;padding:26px 22px;background:#f6f4e9;border-top:1px solid #cdd2c3;color:#355345}
+.companion-letters>header{display:flex;align-items:center;gap:10px}
+.companion-letters>header>.field-prop{width:32px;flex:none}
+.companion-letters>header>div{min-width:0}
+.companion-letters .function-pixel-title{font-size:21px;line-height:1.25;margin:0;color:#315446;overflow-wrap:anywhere}
+.companion-letters h3{font-size:19px;font-weight:500;margin:7px 0 0;line-height:1.7}
+.letters-intro{font-size:12px;line-height:1.9;color:#596b55;margin:12px 0 20px}
+.letters-select{display:block;font-size:11px;line-height:1.8;color:#52694e}
+.letters-select select{display:block;width:100%;min-width:0;min-height:44px;margin-top:6px;padding:9px 10px;border:1px solid #b7c4ab;border-radius:6px;background:#fcfbf5;color:#355345;font-size:13px}
+.letters-fog-note{font-size:11px;line-height:1.8;color:#596b55;margin:10px 0 0}
+.letters-sender{display:flex;align-items:center;gap:16px;margin:22px 0 18px}
+.letters-portrait{display:flex;align-items:flex-end;justify-content:center;width:86px;min-height:112px;flex:none}
+.letters-portrait .battle-portrait{--portrait-unit:108px;filter:none;opacity:1}
+.letters-sender>div:last-child{min-width:0}
+.letters-sender small,.letters-sender span{display:block;font-size:10px;line-height:1.8;color:#5d7157}
+.letters-sender strong{display:block;font-size:18px;line-height:1.7;font-weight:500;margin:4px 0}
+.letters-postmark{display:flex;align-items:center;gap:8px;border-block:1px solid #ccd3c0;padding:12px 0;font-size:12px;line-height:1.7}
+.letters-postmark>.dot-icon{width:26px;height:26px;flex:none}
+.letters-postmark small{display:block;font-size:9px;line-height:1.7;color:#607354}
+.letters-postmark>.letters-edition{margin-left:auto;text-align:right;font-size:24px;line-height:1.1;color:#8c603e}
+.letters-edition small{font-size:7px;letter-spacing:.08em;margin-top:5px}
+.letters-page{margin:23px 0 20px}
+.letters-page>small{font-size:9px;line-height:1.7;color:#68735a}
+.letters-page h4{font-size:19px;line-height:1.6;font-weight:500;margin:10px 0 14px}
+.letters-page>p{font-size:14px;line-height:2.05;margin:0;min-height:144px;color:#3f5948;overflow-wrap:anywhere}
+.letters-page>footer{font-size:11px;line-height:1.8;text-align:right;color:#607354;margin-top:16px}
+.letters-tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0 0 20px}
+.letters-tags li{font-size:10px;line-height:1.7;padding:4px 8px;border:1px solid #c5d0b8;background:#eaf0e0;color:#47613f;border-radius:4px}
+.companion-letters .letters-next{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:48px;border:1px solid #9caf90;border-radius:7px;padding:10px 13px;background:#e9eedf;color:#35523c;font-size:13px}
+.letters-next:hover{background:#dee7d3}.letters-next>.dot-icon{width:22px;height:22px}
+#companion-letters .letters-next{min-height:48px}
+.companion-letters :is(button,select):focus-visible{outline:2px solid #9b5c34;outline-offset:3px}
+.letters-footnote{display:flex;align-items:center;gap:9px;margin-top:24px;padding-top:16px;border-top:1px solid #cdd2c3}
+.letters-footnote>.field-prop{width:27px;flex:none}
+.letters-footnote p{font-size:9px;line-height:1.9;color:#617056;margin:0}
+.letters-footnote small{display:block;font-size:9px;line-height:1.9}
+.letters-awaiting{padding:28px 0;color:#52694e;line-height:1.9}
+.letters-awaiting>.dot-icon{width:40px;height:40px}.letters-awaiting h4{font-size:16px;font-weight:500;margin:14px 0 9px}.letters-awaiting p{font-size:13px}
+@media(min-width:1251px){
+ .world-sidebar{align-self:stretch;display:flex;flex-direction:column}
+ .companion-letters{flex:1;display:flex;flex-direction:column;padding-block:22px}
+ .companion-letters>header{margin-bottom:14px}.companion-letters .function-pixel-title{font-size:18px}.companion-letters h3{font-size:18px;margin-top:4px}
+ .companion-letters>.letters-intro{display:none}
+ .companion-letters .letters-sender{margin:16px 0 14px}.companion-letters .letters-portrait{min-height:90px}.companion-letters .battle-portrait{--portrait-unit:88px}
+ .companion-letters .letters-postmark{padding-block:9px}
+ .companion-letters .letters-page{margin:16px 0 14px}.companion-letters .letters-page h4{font-size:18px;margin:6px 0 10px}
+ .companion-letters .letters-page>p{min-height:0;font-size:13.5px;line-height:1.95}.companion-letters .letters-page>footer{margin-top:10px}
+ .companion-letters .letters-tags{margin-bottom:14px}
+ .companion-letters>.letters-footnote{margin-top:auto;padding-top:14px}.companion-letters>.letters-next{margin-bottom:14px}
+}
+@media(min-width:901px) and (max-width:1250px){.companion-letters{grid-column:1/-1;display:grid;grid-template-columns:220px minmax(0,1fr);gap:0 28px}.companion-letters>header,.letters-intro,.letters-select,.letters-fog-note,.letters-sender{grid-column:1}.letters-reading{grid-column:2;grid-row:1/7;align-self:center;border-left:1px solid #ccd3c0;padding-left:28px}.letters-page>p{min-height:0;max-width:48ch}.letters-next{grid-column:1;align-self:end}.letters-footnote{grid-column:1/-1}}
+@media(max-width:900px){.world-sidebar{display:block}.world-sidebar .settlement{border-left:0;border-top:1px solid var(--line)}}
+@media(max-width:700px){#companion-letters .letters-next{font-size:14px}}
+@media(max-width:700px){.companion-letters{padding:25px 18px}.companion-letters .function-pixel-title{font-size:25px}.companion-letters h3{font-size:21px}.letters-intro{font-size:14px}.letters-select{font-size:13px}.letters-select select{font-size:16px;min-height:48px}.letters-fog-note{font-size:12px}.letters-sender{margin:22px 0}.letters-sender small,.letters-sender span{font-size:12px}.letters-sender strong{font-size:20px}.letters-postmark{font-size:14px}.letters-postmark small{font-size:11px}.letters-edition small{font-size:8px}.letters-page>small{font-size:11px}.letters-page h4{font-size:21px}.letters-page>p{font-size:15px;line-height:2;min-height:0}.letters-page>footer{font-size:12px}.letters-tags li{font-size:12px}.letters-next{font-size:14px}.letters-footnote p,.letters-footnote small{font-size:11px}}
