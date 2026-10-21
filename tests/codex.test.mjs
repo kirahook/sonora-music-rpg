@@ -43,7 +43,7 @@ test('decorative interlude sits below quests and keeps local pause/channel contr
   assert.ok(html.indexOf('每日探索委托')<html.indexOf('声音中场循环动画'));
   assert.ok(html.includes('quest-column'));assert.ok(html.includes('voyage-column'));
   assert.ok(html.includes('暂停中场动画'));assert.ok(html.includes('切换中场装饰频道'));assert.ok(html.includes('不播放音频 · 不计经验'));
-  assert.equal(interludeChannels.length,4);assert.equal(new Set(interludeChannels.map(c=>c.title)).size,4);
+  assert.equal(interludeChannels.length,7);assert.equal(new Set(interludeChannels.map(c=>c.title)).size,7);
   const source=await readFile(new URL('../src/SoundInterlude.jsx',import.meta.url),'utf8');
   assert.ok(!/localStorage|\.play\(|claimRewards|onClaim|<audio|setInterval/.test(source));
   const css=await readFile(new URL('../src/v13.css',import.meta.url),'utf8');

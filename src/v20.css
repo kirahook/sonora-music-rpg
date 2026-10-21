@@ -1,0 +1,110 @@
+/* A playable printed field table occupies the former map-column whitespace. */
+.map-view{align-self:stretch}
+.map-view>.field-signals{flex:1}
+.field-signals{min-width:0;display:flex;flex-direction:column;gap:18px;padding:24px 25px 20px;background:#f4f2e7;border-top:1px solid #c9cfbd;color:#334f41}
+.signals-heading{display:flex;align-items:center;gap:15px}
+.signals-heading>.field-prop{width:44px;flex:none}
+.signals-heading>div{min-width:0;flex:1}
+.signals-heading .function-pixel-title{font-size:29px;line-height:1.25;letter-spacing:.015em;color:#284d3e}
+.signals-heading h3{font-size:17px;line-height:1.7;font-weight:500;margin:8px 0 5px}
+.signals-heading>div>p:last-child{font-size:12px;line-height:1.9;color:#61715a}
+.signal-session-count{display:flex;align-items:center;gap:6px;font:500 41px/1 DotoLocal,monospace;color:#507557;flex:none}
+.signal-session-count small{font-size:9px;line-height:1.6;font-family:SonoraUI,sans-serif;color:#6c7c62;letter-spacing:.04em}
+.signals-navigation{display:flex;align-items:center;gap:16px;border-block:1px solid #cfd5c3;padding-block:13px}
+.signals-navigation label,.signal-card-tools label{font-size:11px;line-height:1.7;color:#61735b}
+.signals-navigation select,.signal-card-tools select{display:block;background:#faf9ef;color:#395540;border:1px solid #adbfa0;border-radius:5px;padding:9px 12px;min-height:44px;font-size:14px;margin-top:4px;max-width:100%}
+.signals-navigation>span{font-size:9px;line-height:1.9;letter-spacing:.03em;min-width:0;color:#51694e;overflow-wrap:anywhere}
+.signals-navigation>span small{display:block;font-size:9px;color:#74806a;letter-spacing:0}
+.field-signals button{cursor:pointer;transition:background .18s,color .18s;line-height:1.6}
+.field-signals button:focus-visible,.field-signals select:focus-visible,.field-signals input:focus-visible{outline:2px solid #a86642;outline-offset:3px}
+.field-signals button:disabled{cursor:not-allowed;opacity:.48}
+.signal-motion{margin-left:auto;border:1px solid #bfcbb0;background:#eef2e5;color:#527044;font-size:10px;min-height:44px;padding:9px 12px;border-radius:5px;flex:none}
+.signals-workbench{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:21px;align-items:start}
+.signal-scene{position:relative;width:100%;aspect-ratio:3/2;overflow:hidden;border:1px solid #aab79e;background:#e6e9dc;isolation:isolate}
+.signal-scene-art{position:absolute;inset:0;background-repeat:no-repeat;transform-origin:50% 50%;animation:field-sea-drift 18s ease-in-out infinite alternate;z-index:-1}
+.signal-scene-caption{position:absolute;left:12px;top:11px;color:#425e4c;background:#faf6e8e8;border:1px solid #b9c1a3;padding:5px 7px;font-size:8px;line-height:1.7;letter-spacing:.03em;max-width:calc(100% - 24px)}
+.signal-pins>button{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:4px;background:transparent;border:0;padding:0;min-width:70px;max-width:29%;color:#38543d}
+.signal-pins>button>span{position:relative;display:flex;align-items:center;justify-content:center;width:46px;height:46px;background:#f5f5e8f5;border:1px solid #708866;border-radius:7px;box-shadow:0 3px 7px #293f3130}
+.signal-pins .dot-icon{width:29px;height:29px}.signal-pins .field-prop{width:25px}
+.signal-pins b{position:absolute;left:-7px;top:-7px;background:#294c3c;color:#fff9e9;font:600 11px/1.7 DotoLocal,monospace;padding:2px 4px;border:1px solid #f0ead6}
+.signal-pins strong{font-size:10px;font-weight:500;line-height:1.7;background:#f4f2e4f5;border:1px solid #bdc5ad;padding:3px 6px;border-radius:4px;text-align:center}
+.signal-pins>button[aria-pressed=true]>span{outline:3px solid #c37b485e;border-color:#b97043}
+.signal-pins>button.signal-found>span{background:#dae4ca;border-color:#5b8053}.signal-pins>button.signal-found strong{background:#e2ead7;color:#355d32}
+.signal-tuner{padding:15px 16px;background:#e9eddf;border:1px solid #bfcab2;min-width:0}
+.signal-tuner-title{display:flex;gap:10px;align-items:center}.signal-tuner-title>.field-prop{width:34px;flex:none}
+.signal-tuner-title>div{min-width:0}.signal-tuner-title small{font-size:8px;line-height:1.7;color:#677a5d;letter-spacing:.025em}
+.signal-tuner h4{font-size:17px;line-height:1.6;font-weight:500;margin:3px 0 0}
+.signal-tuner>p{font-size:12px;line-height:1.9;color:#5a6f50;min-height:46px;margin:12px 0}
+.signal-dial-values{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-block:11px;border-block:1px solid #c1ccb1}
+.signal-dial-values small{display:block;font-size:10px;line-height:1.7;color:#627958}
+.signal-dial-values output{display:block;font:600 37px/1.35 DotoLocal,monospace;color:#294d36;margin-top:3px;letter-spacing:-.03em}
+.signal-dial-values strong{display:block;font-size:23px;line-height:1.7;font-weight:400;color:#b06e3e;margin-top:4px}
+.signal-range{display:block;font-size:10px;line-height:1.7;color:#627657;margin-top:13px}
+.signal-range input{display:block;min-height:44px;width:100%;accent-color:#55754b;cursor:ew-resize;margin-top:3px}
+.signal-tune-steps{display:flex;align-items:center;gap:7px;justify-content:space-between}
+.signal-tune-steps button{min-height:44px;background:#f3f5eb;color:#46693d;border:1px solid #b0c09e;border-radius:4px;padding:7px 9px;font-size:10px}
+.signal-tune-steps>span{font-size:10px;color:#5d7354;line-height:1.6;text-align:center}
+.signal-capture{margin-top:13px;display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:46px;width:100%;background:#294d3b;color:#f7f4e7;border:1px solid #294d3b;border-radius:5px;padding:10px 12px;font-size:12px}
+.signal-capture>.dot-icon{width:23px;height:23px}.signal-tuner details{font-size:10px;line-height:1.8;color:#5e7355;margin-top:5px}
+.signal-tuner summary{min-height:44px;cursor:pointer;padding-block:11px}.signal-tuner details p{font-size:11px;line-height:1.9;padding-block:3px 7px}
+.signal-scrapbook{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.signal-scrapbook button{display:flex;align-items:center;gap:10px;text-align:left;background:#eceee2;border:1px dashed #aebb9e;color:#637755;padding:12px 10px;min-height:82px;min-width:0}
+.signal-scrapbook button.collected{background:#fdfaf0;border-style:solid;border-color:#a4b38e}
+.signal-scrapbook .field-prop{width:30px;flex:none}.signal-scrapbook button>span:not(.field-prop){min-width:0}
+.signal-scrapbook small{display:block;font-size:9px;line-height:1.7;color:#647652}.signal-scrapbook strong{display:block;font-weight:400;font-size:11px;line-height:1.8;margin-top:5px;overflow-wrap:anywhere}
+.signal-compose-row{display:flex;align-items:center;gap:14px;border-top:1px solid #d0d4c1;padding-top:16px}
+.signal-compose-row>p{font-size:11px;line-height:1.8;flex:1;color:#5e7353}
+.signal-compose-row>button{display:flex;align-items:center;justify-content:center;gap:9px;min-height:48px;background:#35573f;color:#f6f3e5;border:1px solid #35573f;padding:10px 13px;border-radius:5px;font-size:11px}
+.signal-compose-row .field-prop{width:23px;filter:brightness(1.2)}
+.signals-footnote{display:flex;align-items:flex-start;gap:8px;border-top:1px solid #cfd5c2;padding-top:15px;margin-top:auto;color:#5a7051;font-size:11px;line-height:1.9}
+.signals-footnote>.dot-icon{width:24px;height:24px;flex:none;color:#82906f}.signals-footnote small{display:block;font-size:10px;line-height:1.8;color:#68785d;margin-top:3px}
+.signals-awaiting{display:flex;align-items:center;gap:15px;min-height:240px;padding:30px;background:#e9eddf;border:1px dashed #adbba0;font-size:14px;line-height:1.9}.signals-awaiting>.dot-icon{width:45px;height:45px;flex:none}
+.signal-postcard-workshop{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:24px;align-items:start}
+.signal-postcard{min-width:0;border:1px solid #adb89b;background:#fdf9ec;box-shadow:3px 5px 0 #d8ddc7;padding:17px;animation:field-card-arrive .45s ease-out both}
+.signal-postcard>header{display:flex;align-items:center;gap:12px;border-bottom:1px solid #c9cbb3;padding-bottom:13px;margin-bottom:15px}
+.signal-postcard .function-pixel-title{font-size:24px;line-height:1.3;color:#345844}.signal-postcard h4{font-size:15px;font-weight:500;line-height:1.8;margin-top:5px}
+.signal-postcard>header>.field-prop{width:42px;margin-left:auto;flex:none;transform:rotate(8deg)}
+.signal-postcard-art{width:100%;aspect-ratio:3/2;background-repeat:no-repeat;border:1px solid #bfc4aa}
+.signal-poem{padding:15px 4px 12px}.signal-poem>small{font-size:8px;color:#6f7a5b;line-height:1.8;display:block;margin-bottom:12px;letter-spacing:.04em}
+.signal-poem p{font-size:13px;line-height:1.9;color:#405e43;margin:7px 0;overflow-wrap:anywhere}
+.signal-postcard>footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;border-top:1px solid #c9ccb5;padding-top:12px;font-size:8px;line-height:1.8;color:#687859}
+.signal-card-notes>section{padding:13px 4px;border-bottom:1px dashed #c7cdb7}.signal-card-notes>section:last-child{border-bottom:0}
+.signal-card-notes small{font-size:9px;color:#8a704d;line-height:1.8}.signal-card-notes h5{font-size:16px;font-weight:500;color:#416541;margin:6px 0}
+.signal-card-notes p{font-size:13px;line-height:1.95;color:#617454;margin-bottom:7px}
+.signal-card-tools .function-pixel-title{font-size:23px;line-height:1.4;color:#476442}.signal-card-tools h4{font-size:16px;line-height:1.8;font-weight:500;margin-top:10px}
+.signal-card-tools>p:not(.function-pixel-title){font-size:12px;line-height:1.9;margin:12px 0 15px;color:#637453}
+.signal-card-tools label{display:block;margin-top:15px}.signal-card-tools select{width:100%}
+.signal-card-tools>button{display:block;width:100%;min-height:46px;font-size:12px;padding:10px 12px;border:1px solid #aabd99;background:#e9eedf;color:#41613b;border-radius:4px;margin-top:11px}
+@keyframes field-sea-drift{from{transform:scale(1.016) translateX(-.3%)}to{transform:scale(1.025) translateX(.3%)}}
+@keyframes field-card-arrive{from{opacity:0;transform:translateY(9px) rotate(-.5deg)}to{opacity:1;transform:translateY(0) rotate(0)}}
+.signals-paused .signal-scene-art{animation-play-state:paused}
+@media(min-width:801px){.signals-navigation{padding-block:10px}.signals-navigation label{display:flex;align-items:center;gap:9px}.signals-navigation select{margin-top:0;min-width:160px}}
+@media(max-width:1250px){.signals-workbench{grid-template-columns:minmax(0,1fr) 285px}.signals-heading .function-pixel-title{font-size:30px}}
+@media(max-width:800px){.signals-workbench,.signal-postcard-workshop{grid-template-columns:1fr}.signal-tuner{display:block}.signal-scene{max-width:680px;margin-inline:auto}.signal-tuner>p{min-height:0}.signal-card-tools{padding:8px 0}.signal-tuner-title small{font-size:10px}}
+@media(max-width:700px){
+ .field-signals{padding:23px 14px 20px;gap:18px}
+ .signals-heading{gap:9px;align-items:flex-start;flex-wrap:wrap}.signals-heading>.field-prop{width:31px;margin-top:3px}
+ .signals-heading>div{flex-basis:calc(100% - 45px)}.signals-heading .function-pixel-title{font-size:25px;line-height:1.3}
+ .signals-heading h3{font-size:16px;line-height:1.8}.signals-heading>div>p:last-child{font-size:13px;line-height:1.9}
+ .signal-session-count{font-size:33px;margin-left:40px;gap:9px}.signal-session-count small{font-size:10px}
+ .signals-navigation{flex-wrap:wrap;gap:11px 10px}.signals-navigation label{flex:1;min-width:140px;font-size:12px}
+ .signals-navigation select,.signal-card-tools select{font-size:16px;min-height:48px;width:100%}
+ .signals-navigation>span{order:3;flex-basis:100%;font-size:10px}.signals-navigation>span small{font-size:11px}
+ .signal-motion{font-size:11px;max-width:100px;min-height:48px;margin-top:20px}
+ .signals-workbench{gap:14px}.signal-scene-caption{font-size:7px;left:7px;top:7px;padding:3px 5px}
+ .signal-pins>button{min-width:63px}.signal-pins>button>span{width:44px;height:44px}.signal-pins strong{font-size:10px;padding:2px 4px}
+ .signal-tuner{padding:17px 14px}.signal-tuner h4{font-size:19px}.signal-tuner>p{font-size:14px;line-height:1.9}
+ .signal-dial-values small,.signal-range{font-size:12px}.signal-dial-values output{font-size:39px}.signal-dial-values strong{font-size:27px}
+ .signal-range input{min-height:48px}.signal-tune-steps button{font-size:12px;min-height:46px;padding:9px}.signal-tune-steps>span{font-size:11px}
+ .signal-capture{font-size:14px;min-height:48px}.signal-tuner details{font-size:12px}.signal-tuner details p{font-size:13px;line-height:1.9}
+ .signal-scrapbook{grid-template-columns:1fr;gap:8px}.signal-scrapbook button{min-height:70px;padding:11px 12px;gap:12px}.signal-scrapbook small{font-size:11px}.signal-scrapbook strong{font-size:13px;line-height:1.8}
+ .signal-compose-row{flex-direction:column;align-items:stretch;gap:11px}.signal-compose-row>p{font-size:13px;line-height:1.9}.signal-compose-row>button{min-height:48px;font-size:13px}
+ .signals-footnote{font-size:12px;line-height:1.9}.signals-footnote small{font-size:11px;line-height:1.9}
+ .signal-postcard{padding:13px;box-shadow:2px 3px 0 #d8ddc7}.signal-postcard .function-pixel-title{font-size:23px}.signal-postcard>header>.field-prop{width:31px}.signal-postcard h4{font-size:14px}
+ .signal-poem>small{font-size:9px;line-height:1.8}.signal-poem p{font-size:14px;line-height:1.9}.signal-postcard>footer{font-size:9px;line-height:1.8}
+ .signal-card-notes small{font-size:10px}.signal-card-notes h5{font-size:16px}.signal-card-notes p{font-size:14px;line-height:1.9}
+ .signal-card-tools h4{font-size:17px}.signal-card-tools>p:not(.function-pixel-title){font-size:14px;line-height:1.9}.signal-card-tools label{font-size:13px}.signal-card-tools>button{font-size:13px;min-height:48px}
+ .signals-awaiting{font-size:14px;padding:20px 14px;min-height:200px;gap:10px}.signals-awaiting>.dot-icon{width:30px;height:30px}
+}
+@media(max-width:360px){.field-signals{padding-inline:12px}.signals-heading .function-pixel-title{font-size:23px}.signal-tune-steps{gap:4px}.signal-tune-steps button{padding-inline:6px;font-size:11px}.signal-pins>button{min-width:58px}.signal-pins strong{font-size:9px}.signal-session-count{margin-left:0}.signal-scene-caption{font-size:6px}.signal-postcard>header{gap:8px}.signal-postcard .function-pixel-title{font-size:21px}}
+@media(prefers-reduced-motion:reduce){.signal-scene-art,.signal-postcard{animation:none!important;transform:none}.field-signals button{transition:none}}

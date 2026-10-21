@@ -1,0 +1,27 @@
+/* Regional close-ups use the same dimensional sea/stone language as the world map. */
+.signal-scene-frame{margin:0;min-width:0;overflow:hidden;border:1px solid #b4c1b6;background:#f5f6ef}
+.signal-relief-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:43px;padding:9px 12px;background:#f6f7f0;color:#425b50;border-bottom:1px solid #b4c1b6}
+.signal-relief-toolbar>span{display:flex;align-items:center;gap:7px;font-size:11px;line-height:1.6}
+.signal-relief-toolbar .dot-icon{width:22px;height:22px;flex:none}
+.signal-relief-toolbar>small{font-size:8px;line-height:1.7;letter-spacing:.04em;text-align:right}
+.signal-scene-frame .signal-scene{border:0;background:#176779}
+.signal-scene-art{animation:field-sea-drift 24s ease-in-out infinite alternate}
+.signal-pins>button>span{border-radius:3px;background:#f4f5eaf5;box-shadow:0 3px 8px #153e4660;border-color:#819c90}
+.signal-pins>button>span::after{content:'';position:absolute;left:50%;top:100%;width:2px;height:8px;background:#f3f3e3}
+.signal-pins>button{gap:10px}
+.signal-pins strong{border-radius:3px;box-shadow:0 2px 6px #153c4336;background:#f5f5eaf5;color:#304e42}
+.signal-pins b{left:-6px;top:-6px;border-color:#eff0e2;background:#305447}
+.signal-pins>button[aria-pressed=true]>span{outline:3px solid #d7b487a8;border:1px solid #a97047}
+.signal-relief-legend{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:9px 12px;font-size:10px;line-height:1.8;background:#ecf0e6;border-top:1px solid #b6c2b1;color:#4b6655}
+.signal-relief-legend>span:first-child{display:flex;align-items:center;gap:6px}
+.signal-relief-legend .dot-icon{width:18px;height:18px;flex:none}
+.signal-postcard-art{border-color:#8ea99e}
+.signals-paused .signal-scene-art{animation-play-state:paused}
+@media(max-width:800px){.signal-scene-frame{max-width:680px;width:100%;margin-inline:auto}}
+@media(max-width:700px){
+ .signal-relief-toolbar{padding:8px 9px;min-height:44px;gap:7px}
+ .signal-relief-toolbar>span{font-size:11px}.signal-relief-toolbar>small{font-size:7px;max-width:100px}
+ .signal-relief-legend{padding:8px 9px;font-size:10px;gap:5px 8px}
+ .signal-pins>button{gap:9px}
+}
+@media(prefers-reduced-motion:reduce){.signal-scene-art{animation:none!important;transform:none}}
