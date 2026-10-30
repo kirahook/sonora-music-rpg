@@ -20,7 +20,10 @@ test('production JSX renders synchronized home/CRT avatars and accessible garden
   const armory=renderToStaticMarkup(React.createElement(Armory,{state:s,onEquip:()=>{}}));assert.ok(armory.includes('10 / 24'));assert.equal((armory.match(/<option/g)||[]).length,24);
   const game=createGame('2026-10-08');
   const blank=renderToStaticMarkup(React.createElement(QuestGarden,{game}));assert.ok(blank.includes('每日声音花园'));assert.ok(blank.includes('0/1'));assert.equal((blank.match(/class="pixel-flower"/g)||[]).length,3);assert.ok(blank.includes('暂停漂浮'));
-  const ready=renderToStaticMarkup(React.createElement(QuestGarden,{game:{...game,heard:[{id:'a',genre:'JAZZ',albumCode:'one'}]}}));assert.ok(ready.includes('第一封声音来信，可领取'));assert.ok(ready.includes('bloom'));
-  const done=renderToStaticMarkup(React.createElement(QuestGarden,{game:{...game,heard:[{id:'a',genre:'JAZZ',albumCode:'one'}],claimed:['first']}}));assert.ok(done.includes('第一封声音来信，已领取'));assert.ok(done.includes('harvested'));
+  const heardOnly={...game,heard:[{id:'a',genre:'JAZZ',albumCode:'one'}]};
+  const listening=renderToStaticMarkup(React.createElement(QuestGarden,{game:heardOnly}));assert.ok(!listening.includes('，可领取'));
+  const observed={...heardOnly,observations:[{trackId:'a',focus:'pulse'}]};
+  const ready=renderToStaticMarkup(React.createElement(QuestGarden,{game:observed}));assert.ok(ready.includes('听见一枚声音线索，可领取'));assert.ok(ready.includes('bloom'));
+  const done=renderToStaticMarkup(React.createElement(QuestGarden,{game:{...observed,claimed:['first']}}));assert.ok(done.includes('听见一枚声音线索，已领取'));assert.ok(done.includes('harvested'));
  }finally{await server.close();}
 });

@@ -3,9 +3,10 @@ import assert from 'node:assert/strict';
 import {guideStorageKey,guideSteps,cleanGuide,readGuide,saveGuide,shouldOpenGuide,moveGuide,finishGuide} from '../src/onboarding.js';
 
 const memory=()=>{const items=new Map();return {getItem:k=>items.get(k)||null,setItem:(k,v)=>items.set(k,v),items};};
-test('first visit opens the nine-chapter guide without a login or RPG save dependency',()=>{
+test('first visit opens the first-listen route and preserves the nine-chapter handbook without login',()=>{
  const storage=memory();const g=readGuide(storage);assert.equal(g.status,'new');assert.equal(g.step,0);assert.ok(shouldOpenGuide(g));
  assert.equal(guideSteps.length,9);assert.equal(new Set(guideSteps.map(s=>s.id)).size,9);
+ assert.equal(g.route,'first-listen');assert.equal(g.first.step,0);
  assert.ok(guideSteps.every(s=>s.cards.length===3&&s.target&&s.action));assert.notEqual(guideStorageKey,'sonora-terminal-v3');
 });
 test('progress resumes, skip suppresses automatic opening, and replay is independent of game progress',()=>{

@@ -1,5 +1,5 @@
 import {useEffect,useRef,useState} from 'react';
-import {guideSteps,readGuide,saveGuide,shouldOpenGuide,moveGuide,finishGuide} from './onboarding';
+import {guideSteps,readGuide,saveGuide,shouldOpenGuide,moveGuide,finishGuide,replayGuide} from './onboarding';
 import {WardrobeAvatar} from './Wardrobe';
 import {GearArt} from './Armory';
 import {gear,rewardTiers} from './equipment';
@@ -7,6 +7,9 @@ import {albums} from './catalog';
 import {tales} from './encounters';
 import {GuideSpeech,GuideEditorial} from './GuideEditorial.jsx';
 import {GuideBattle,GuideWorld,GuideSettlement,GuideGear} from './GuideFeatures.jsx';
+import {FirstListen} from './ListeningDiscovery.jsx';
+import {gameFor} from './gameplay.js';
+import {GuideCinema} from './GuideCinema.jsx';
 
 export function useOnboarding(){
  const storage=()=>{try{return window.localStorage;}catch{return null;}};
@@ -16,9 +19,9 @@ export function useOnboarding(){
  function persist(next){setGuide(next);setSaved(saveGuide(storage(),next));}
  function go(step){persist(moveGuide(guide,step));}
  function close(status){persist(finishGuide(guide,status));setOpen(false);}
- function replay(){persist(moveGuide(guide,guide.status==='completed'?0:guide.step));setOpen(true);}
+ function replay(){persist(replayGuide(guide));setOpen(true);}
  useEffect(()=>{if(open&&guide.status==='new'){const next=moveGuide(guide,0);setGuide(next);setSaved(saveGuide(storage(),next));}},[open,guide.status]);
- return {guide,open,saved,go,close,replay,pause:()=>persist({...guide,paused:!guide.paused})};
+ return {guide,open,saved,go,close,replay,resume:()=>{persist({...guide,status:'in-progress'});setOpen(true);},handbook:()=>persist({...moveGuide(guide,guide.step),route:'handbook'}),setFirst:first=>persist({...guide,status:'in-progress',route:'first-listen',first}),pause:()=>persist({...guide,paused:!guide.paused})};
 }
 
 function GuideDemo({id}){
@@ -34,10 +37,11 @@ function GuideDemo({id}){
  return <div className="guide-demo guide-welcome-demo">{[['聆听','LET IT PLAY'],['积累','LET IT GROW'],['结算','BRING IT HOME'],['探索','WANDER ON']].map(([title,en],i)=><div key={en}><small>0{i+1} / {en}</small><b>{title}</b></div>)}<p>没有倒计时，也不强制播放。旅程由你按下开始。</p></div>;
 }
 
-export function Onboarding({tour,state,onNavigate}){
+export function Onboarding({tour,state,onNavigate,player,power,onChoose,onObserve,onLocate}){
  const ref=useRef(null),scroll=useRef(null),heading=useRef(null),returnTarget=useRef(null);
  const {guide,open,saved,go,close,pause}=tour;
  const step=guideSteps[guide.step],last=guide.step===guideSteps.length-1;
+ const firstRoute=guide.route==='first-listen'&&!!player&&!!onChoose;
  useEffect(()=>{
   if(!open){if(ref.current?.open)ref.current.close();return;}
   returnTarget.current=document.activeElement;
@@ -45,25 +49,27 @@ export function Onboarding({tour,state,onNavigate}){
   const overflow=document.body.style.overflow;document.body.style.overflow='hidden';
   return()=>{document.body.style.overflow=overflow;if(ref.current?.open)ref.current.close();returnTarget.current?.focus?.({preventScroll:true});};
  },[open]);
- useEffect(()=>{if(open){scroll.current?.scrollTo({top:0,behavior:'instant'});heading.current?.focus({preventScroll:true});}},[guide.step,open]);
+ useEffect(()=>{if(open){scroll.current?.scrollTo({top:0,behavior:'instant'});(firstRoute?ref.current?.querySelector('#guide-title'):heading.current)?.focus({preventScroll:true});}},[guide.step,guide.route,guide.first?.step,open]);
  function visit(target){close(last?'completed':'skipped');requestAnimationFrame(()=>onNavigate(target));}
- function keys(e){if(e.defaultPrevented||e.target.closest('select,input,textarea,.atlas-deck'))return;if(e.key==='ArrowRight'&&!last){e.preventDefault();go(guide.step+1);}if(e.key==='ArrowLeft'&&guide.step>0){e.preventDefault();go(guide.step-1);}}
+ function keys(e){if(firstRoute||e.defaultPrevented||e.target.closest('select,input,textarea,.atlas-deck,.guide-cinema,.guide-portal'))return;if(e.key==='ArrowRight'&&!last){e.preventDefault();go(guide.step+1);}if(e.key==='ArrowLeft'&&guide.step>0){e.preventDefault();go(guide.step-1);}}
  return <dialog ref={ref} className={'guide-dialog '+(guide.paused?'guide-paused':'')} aria-labelledby="guide-title" aria-describedby="guide-intro" onCancel={e=>{e.preventDefault();close('skipped');}} onKeyDown={keys}>
-  {open&&<div className="guide-shell">
+  {open&&firstRoute?<div className="guide-shell first-guide-shell"><header className="guide-header"><div className="guide-wordmark">SONORA<small>旅人指南 / FIRST LISTEN</small></div><button className="first-guide-motion" aria-pressed={guide.paused} onClick={pause}>{guide.paused?'恢复动效':'暂停动效'}</button><button className="first-guide-close" onClick={()=>close('skipped')} aria-label="稍后完成第一次聆听">稍后再听 ×</button></header><div className="guide-scroll first-guide-scroll" ref={scroll}><FirstListen tour={tour} state={state} game={gameFor(state)} player={player} power={power} onChoose={onChoose} onObserve={onObserve} onNavigate={onNavigate} onLocate={onLocate}/>{!saved&&<p className="guide-storage-warning" role="status">当前不能保存引导进度，仍可继续体验。</p>}</div></div>:open&&<div className="guide-shell">
    <header className="guide-header"><div className="guide-wordmark"><span aria-hidden="true">✳</span><div>SONORA<small>旅人入门手册 / FIELD GUIDE</small></div></div><div className="guide-header-actions"><span className="guide-edition guide-edition-phone">POCKET / 手机版</span><span className="guide-edition guide-edition-desktop">DESKTOP / 网页版</span><button onClick={()=>close('skipped')} aria-label="跳过新手引导">稍后再看 <span aria-hidden="true">×</span></button></div></header>
    <div className="guide-progress"><progress aria-label="新手引导阅读进度" max={guideSteps.length} value={guide.step+1}/><span>{String(guide.step+1).padStart(2,'0')} / {String(guideSteps.length).padStart(2,'0')}</span></div>
+   {tour.replay&&<button className="first-guide-return" onClick={tour.replay}>先完成一次小聆听 · 四步启程</button>}
    <nav className="guide-chapters" aria-label="新手引导章节">{guideSteps.map((s,i)=><button key={s.id} aria-current={guide.step===i?'step':undefined} onClick={()=>go(i)}><small>{String(i+1).padStart(2,'0')}</small>{s.label}</button>)}</nav>
    <label className="guide-jump">阅读章节<select aria-label="跳转引导章节" value={guide.step} onChange={e=>go(+e.target.value)}>{guideSteps.map((s,i)=><option key={s.id} value={i}>{String(i+1).padStart(2,'0')} / {s.label}</option>)}</select></label>
    <div className="guide-scroll" ref={scroll}>
     <div className="guide-intro" key={step.id+'intro'}><div><p className="guide-kicker">{String(guide.step+1).padStart(2,'0')} / FIELD GUIDE</p><p className="guide-pixel-title function-pixel-title">{step.en.replace(/^\d+\s*\/\s*/,'')}.</p><h2 id="guide-title" tabIndex={-1} ref={heading}>{step.title}</h2></div><p id="guide-intro">{step.lead}</p></div>
-    <div className={'guide-stage stage-'+step.id} style={{'--journey':guide.step/(guideSteps.length-1)*100+'%','--traveller-left':22+guide.step*6+'%'}} aria-label="米白黑灰剪影音乐世界旅程插画">
+    <GuideCinema key={step.id+'movie'} id={step.id} onLocate={onLocate} paused={guide.paused} embeddedInChapter/>
+    <details className="guide-story-fold"><summary>旅伴旁白与世界插画 · 展开看看</summary><div className={'guide-stage stage-'+step.id} style={{'--journey':guide.step/(guideSteps.length-1)*100+'%','--traveller-left':22+guide.step*6+'%'}} aria-label="米白黑灰剪影音乐世界旅程插画">
      <div className="guide-city guide-city-far"/><div className="guide-city guide-city-near"/>
      <div className="guide-scene-top"><span>THE WORLD IS WAITING.</span><button onClick={pause} aria-pressed={guide.paused}>{guide.paused?'恢复动画':'暂停动画'}</button></div>
      <div className="guide-traveller" key={step.id}><WardrobeAvatar state={state} className="guide-knight"/><span className="guide-traveller-shadow"/></div>
      <GuideSpeech key={step.id+'speech'} id={step.id} index={guide.step}/>
      <div className="guide-sound-trail" aria-hidden="true"><i>♪</i><i>·</i><i>♫</i><i>·</i><i>✦</i></div>
      <div className="guide-scene-caption"><span>0{guide.step+1} / {step.label}</span><b>{['一张唱片，就是一个世界。','让旋律成为你的第一步。','沿着唱片的书脊，发现远方。','带上你的声音。','迷雾背后，还有新的频率。','每一次归航，都有收获。','和陌生的声音，交换一个故事。','三首歌，三站旅途。','把喜欢的声音，留在纸上。'][guide.step]}</b></div>
-    </div>
+    </div></details>
     <div className="guide-device-tip"><div className="guide-tip-desktop"><span>POINTER + KEYS / 网页操作</span><p>{['用顶部导航切换页面；本指南可用 ← / → 翻阅。','在终端右侧选择曲目，使用 PLAY 或上一首 / 下一首。','鼠标悬停看唱片信息；滚轮横向循环，支持搜索筛选。','在角色预览旁选择装备，首页与 CRT 同步变化。','点击海域 / 怪兽图钉；放大后可横向滚动地图。','在地图右侧查看每日清单，再点击结算。','图鉴选择区域，用回声斩或守拍完成首次交战。','花卡支持指针倾斜与换位；远征歌单在右侧选择。','页签与 ← / → 翻页；选择印泥，在留白处盖章。'][guide.step]}</p></div><div className="guide-tip-phone"><span>TOUCH / 手机操作</span><p>{['用底部五个入口切换页面，随行播放条始终在手边。','点按播放 / 暂停；音乐需要由你亲手启动。','左右滑动唱片架；点封面查看，再装载播放。','点「装备」进入，使用下拉框选择已拥有的装备。','左右滑动地图，点 + / − 缩放，再点图钉看详情。','到「世界」页往下滑，查看每日结算。','点怪兽图钉或图鉴，再点交战与任务按钮。','点「远征」进入，选择三站曲目；花卡也可点按。','点页签或上下页翻阅；点盖章按钮，再点留白处。'][guide.step]}</p></div></div>
     <GuideEditorial step={step} index={guide.step} state={state}/>
     <section className="guide-practice" aria-label="不计入存档的交互演示"><div className="guide-practice-label"><div><span>FIELD EXERCISE / 纸上练习</span><h3>把这一页，试着走一遍。</h3></div><small>演示不计经验、不消耗道具、不修改游戏存档</small></div><GuideDemo key={step.id} id={step.id}/></section>

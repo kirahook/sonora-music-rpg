@@ -1,10 +1,23 @@
-export const createGame=day=>({day,heard:[],claimed:[],voyage:{slots:[],cursor:0,status:'draft'},voyageClaimed:false});
+import {listeningClues,listeningContrasts,observationsFor,comparisonFor,notedGenresFor} from './listeningDiscovery.js';
+export const createGame=day=>({day,rulesVersion:2,heard:[],observations:[],comparison:null,claimed:[],voyage:{slots:[],cursor:0,status:'draft'},voyageClaimed:false});
 export function gameFor(state){return state.game?.day===state.day?state.game:createGame(state.day);}
 export const quests=[
-  {id:'first',title:'第一封声音来信',description:'有效聆听 1 首音乐',target:1,xp:60,measure:g=>g.heard.length},
-  {id:'genres',title:'跨越两种频率',description:'有效聆听 2 种不同流派',target:2,xp:120,measure:g=>new Set(g.heard.map(t=>t.genre)).size},
+  {id:'first',title:'听见一枚声音线索',description:'听一段音乐，记录一个特点或一个还没听清的问题',target:1,xp:60,measure:g=>g.rulesVersion===2?observationsFor(g).length:g.heard.length},
+  {id:'genres',title:'带着线索跨越两片海',description:'记录两种流派的观察，再留下一处相似或不同',target:2,xp:120,measure:g=>g.rulesVersion===2?(comparisonFor(g)?2:Math.min(1,notedGenresFor(g).size)):new Set(g.heard.map(t=>t.genre)).size},
   {id:'albums',title:'三座唱片岛屿',description:'有效聆听 3 张不同专辑',target:3,xp:180,measure:g=>new Set(g.heard.map(t=>t.albumCode)).size},
 ];
+export function observeTrack(state,trackId,focus){
+ const game=gameFor(state),track=game.heard.find(t=>t.id===trackId);
+ if(!track||!listeningClues.some(c=>c.id===focus)||observationsFor(game).some(o=>o.trackId===trackId))return state;
+ const note={trackId,focus};
+ return {...state,firstSoundNote:state.firstSoundNote||{...note,day:state.day,title:track.title,albumCode:track.albumCode,genre:track.genre},game:{...game,observations:[...observationsFor(game),note]}};
+}
+export function compareSounds(state,left,right,contrast){
+ const game=gameFor(state);
+ if(comparisonFor(game)||!listeningContrasts.some(c=>c.id===contrast))return state;
+ const next={...game,comparison:{left,right,contrast}};
+ return comparisonFor(next)?{...state,game:next}:state;
+}
 export function recordAdventure(state,track){
   const game=gameFor(state),heard=game.heard.some(t=>t.id===track.id)?game.heard:[...game.heard,track];
   let voyage=game.voyage;

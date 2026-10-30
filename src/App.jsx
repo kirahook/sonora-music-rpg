@@ -18,11 +18,12 @@ import {turnPage,bookmarkPage,stampPage,notePage} from './handbook';
 import {SoundLandscape} from './SoundLandscape';
 import {MobileDock,mobileDestinations} from './MobileDock';
 import {Onboarding,useOnboarding} from './Onboarding.jsx';
+import {GuideSpotlight} from './GuideSpotlight.jsx';
 import {HeroPixels} from './HeroPixels.jsx';
 import {RegionExplorer} from './RegionExplorer.jsx';
 import {canExploreRegion} from './regionAtlas.js';
 import {recordSound,archiveSound} from './soundHistory';
-import {gameFor,recordAdventure,claimQuest,editVoyage,beginVoyage,cancelVoyage,claimVoyage} from './gameplay';
+import {gameFor,recordAdventure,claimQuest,editVoyage,beginVoyage,cancelVoyage,claimVoyage,observeTrack,compareSounds} from './gameplay';
 
 const storageKey='sonora-terminal-v3';
 const fresh=()=>({day:dateKey(),xp:7420,equipment:1,frontier:3,keys:1,listened:[],viewed:[],knownGenres:['JAZZ','ELECTRONIC','LOCAL'],claimed:false,receipt:null});
@@ -41,6 +42,7 @@ function SectionTitle({number,icon,title,subtitle,children}){return <div classNa
 export function App(){
   const [state,setState]=useState(readState);
   const tour=useOnboarding();
+  const [guideLocation,setGuideLocation]=useState(null);
   const [albumIndex,setAlbumIndex]=useState(4);
   const [power,setPower]=useState('booting');
   const [screen,setScreen]=useState('knight');
@@ -77,7 +79,7 @@ export function App(){
   useEffect(()=>{if(!notice)return;const timer=setTimeout(()=>setNotice(''),5000);return()=>clearTimeout(timer);},[notice]);
   useEffect(()=>{if(power!=='booting'&&power!=='closing')return;const timer=setTimeout(()=>setPower(power==='booting'?'on':'off'),power==='booting'?1500:380);return()=>clearTimeout(timer);},[power]);
   useEffect(()=>{
-    const mobile=window.matchMedia('(max-width: 700px)');let frame;
+    const mobile=window.matchMedia('(max-width: 1024px)');let frame;
     const update=()=>{
       frame=null;if(!mobile.matches)return;
       const sections=mobileDestinations.map(([id])=>({id,top:document.getElementById(id)?.getBoundingClientRect().top??Infinity})).sort((a,b)=>a.top-b.top);
@@ -95,7 +97,7 @@ export function App(){
     element.addEventListener('wheel',wheel,{passive:false});return()=>element.removeEventListener('wheel',wheel);
   },[results]);
 
-  function navigate(id){setNav(id);document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});}
+  function navigate(id){setNav(id==='quest-first'?'adventure':id);document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});}
   function choose(next,goToPlayer=false){setAlbumIndex(albums.indexOf(next));player.switchAlbum();setHovered(null);setState(p=>p.claimed||p.viewed.includes(next.code)?p:{...p,viewed:[...p.viewed,next.code]});if(goToPlayer){setScreen('music');navigate('terminal');}}
   function wrapShelf(){const element=shelf.current;if(!element?.firstElementChild)return;const width=element.firstElementChild.offsetWidth;if(element.scrollLeft<width/2)element.scrollLeft+=width;else if(element.scrollLeft>width*1.5)element.scrollLeft-=width;}
   function togglePower(){if(power==='on'){player.audio.current?.pause();setPower('closing');}else if(power==='off')setPower('booting');}
@@ -179,7 +181,7 @@ export function App(){
 
     <FieldNotes state={state} region={selectedRegion} taleId={taleId} onSelectTale={selectTale} onStrike={move=>setState(p=>strike(p,selectedRegion,move))} onRetry={()=>setState(p=>retryBattle(p,selectedRegion))} onAccept={id=>{setState(p=>acceptTale(p,id));setNotice('已接取奇闻，聆听任务流派即可推进。');}} onListen={listenTale} onClaim={id=>{setState(p=>claimTale(p,id));setComicId(id);}} onComic={setComicId}/>
 
-    <Adventure handbook={{state,onPage:n=>setState(p=>turnPage(p,n)),onBookmark:id=>setState(p=>bookmarkPage(p,id)),onStamp:(id,x,y,ink)=>setState(p=>stampPage(p,id,x,y,ink)),onNote:(id,text)=>setState(p=>notePage(p,id,text)),onAlbum:code=>{const next=albums.find(a=>a.code===code);if(next)choose(next,true);}}} game={game} power={power} onQuest={id=>{setState(p=>claimQuest(p,id));setNotice('探索委托完成 · 经验已加入骑士档案。');}} onEdit={slots=>setState(p=>editVoyage(p,slots))} onStart={startExpedition} onCancel={()=>{player.audio.current?.pause();setState(p=>cancelVoyage(p));setNotice('远征已暂停，三站路线仍保留。');}} onClaim={()=>{setState(p=>claimVoyage(p));setNotice('远征宝箱已开启 · +300 XP · +1 探索钥匙。');}} />
+    <Adventure handbook={{state,onPage:n=>setState(p=>turnPage(p,n)),onBookmark:id=>setState(p=>bookmarkPage(p,id)),onStamp:(id,x,y,ink)=>setState(p=>stampPage(p,id,x,y,ink)),onNote:(id,text)=>setState(p=>notePage(p,id,text)),onAlbum:code=>{const next=albums.find(a=>a.code===code);if(next)choose(next,true);}}} game={game} power={power} onObserve={(id,focus)=>setState(p=>observeTrack(p,id,focus))} onCompare={(a,b,contrast)=>setState(p=>compareSounds(p,a,b,contrast))} onQuest={id=>{setState(p=>claimQuest(p,id));setNotice('探索委托完成 · 经验已加入骑士档案。');}} onEdit={slots=>setState(p=>editVoyage(p,slots))} onStart={startExpedition} onCancel={()=>{player.audio.current?.pause();setState(p=>cancelVoyage(p));setNotice('远征已暂停，三站路线仍保留。');}} onClaim={()=>{setState(p=>claimVoyage(p));setNotice('远征宝箱已开启 · +300 XP · +1 探索钥匙。');}} />
 
     <SoundLandscape state={state} playing={player.playing}/>
 
@@ -190,6 +192,7 @@ export function App(){
     <HarvestCard open={receiptOpen} onClose={()=>setReceiptOpen(false)} state={state} onExplore={()=>{setReceiptOpen(false);navigate('world');}}/>
     <ComicCard id={comicId} onClose={()=>setComicId(null)}/>
     {explorerRegion!==null&&canExploreRegion(state,explorerRegion)&&<RegionExplorer key={explorerRegion} state={state} region={explorerRegion} onClose={()=>setExplorerRegion(null)} onAlbum={a=>choose(a,true)}/>}
-    <Onboarding tour={tour} state={state} onNavigate={navigate}/>
+    <Onboarding onLocate={id=>{tour.close('skipped');setGuideLocation(id);}} tour={tour} state={state} onNavigate={navigate} player={player} power={power} onChoose={a=>{choose(a);setScreen('music');}} onObserve={(id,focus)=>setState(p=>observeTrack(p,id,focus))}/>
+    {guideLocation&&<GuideSpotlight id={guideLocation} onStep={setGuideLocation} onClose={()=>setGuideLocation(null)} onReturn={()=>{setGuideLocation(null);tour.resume();}}/>}
   </main>;
 }

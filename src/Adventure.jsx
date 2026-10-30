@@ -3,9 +3,10 @@ import {quests} from './gameplay';
 import {QuestGarden} from './QuestGarden';
 import {MusicHandbook} from './MusicHandbook';
 import {SoundInterlude} from './SoundInterlude.jsx';
+import {ListeningDiscovery} from './ListeningDiscovery.jsx';
 const defaults=[albums[0].tracks[0].id,albums[10].tracks[0].id,albums[11].tracks[0].id];
 export const allTracks=albums.flatMap(a=>a.tracks.map(t=>({...t,albumCode:a.code,albumTitle:a.title,genre:a.genre,cover:a.cover})));
-export function Adventure({game,onQuest,onEdit,onStart,onCancel,onClaim,power,handbook}){
+export function Adventure({game,onQuest,onObserve,onCompare,onEdit,onStart,onCancel,onClaim,power,handbook}){
   const voyage=game.voyage,slots=voyage.slots.length===3?voyage.slots:defaults;
   const frozen=voyage.status==='active'||voyage.status==='complete'||game.voyageClaimed;
   function edit(index,id){const next=[...slots];next[index]=id;onEdit(next);}
@@ -15,7 +16,8 @@ export function Adventure({game,onQuest,onEdit,onStart,onCancel,onClaim,power,ha
       <div className="quest-column">
       <article className="quest-panel"><div className="play-panel-heading"><span className="game-number">01</span><div><p className="eyebrow">DAILY LISTENING QUESTS</p><h3>每日探索委托</h3></div><span className="capsule">每日刷新</span></div><p className="panel-description">三封来自世界海的来信。听见不同声音，领取额外经验。</p>
         <QuestGarden game={game}/>
-        <div className="quest-list">{quests.map(q=>{const progress=Math.min(q.measure(game),q.target),claimed=game.claimed.includes(q.id);return <div id={'quest-'+q.id} className={`quest-row ${claimed?'claimed':''}`} key={q.id}><div className="quest-copy"><strong>{q.title}</strong><span>{q.description} · {progress}/{q.target}</span><progress value={progress} max={q.target} aria-label={q.title}/></div><button disabled={claimed||progress<q.target} onClick={()=>onQuest(q.id)}>{claimed?'已领取':progress>=q.target?'领取奖励':`+${q.xp} XP`}</button></div>;})}</div><p className="game-rule">以真实播放进度计数 · 每项每日限领一次 · 与每日结算独立</p>
+        <ListeningDiscovery game={game} onObserve={onObserve} onCompare={onCompare} firstNote={handbook?.state?.firstSoundNote}/>
+        <div className="quest-list">{quests.map(q=>{const progress=Math.min(q.measure(game),q.target),claimed=game.claimed.includes(q.id);return <div id={'quest-'+q.id} className={`quest-row ${claimed?'claimed':''}`} key={q.id}><div className="quest-copy"><strong>{q.title}</strong><span>{game.rulesVersion!==2?'旧版当天进度已保留':q.description} · {progress}/{q.target}</span><progress value={progress} max={q.target} aria-label={q.title}/></div><button disabled={claimed||progress<q.target} onClick={()=>onQuest(q.id)}>{claimed?'已领取':progress>=q.target?'领取奖励':`+${q.xp} XP`}</button></div>;})}</div><p className="game-rule">真实播放 + 自己的听觉观察 · 无标准答案 · 每项每日限领一次 · 与每日结算独立</p>
       </article>
       <SoundInterlude/>
       </div>

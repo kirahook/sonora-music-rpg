@@ -1,0 +1,117 @@
+/* V23: the same web app, adapted to pocket, unfolded and short viewports.
+   No device-name/DPR sniffing, no forced zoom, no replacement artwork. */
+.mobile-dock[hidden]{display:none!important}
+@media(max-width:1024px){
+ html{scroll-padding-top:max(14px,env(safe-area-inset-top,0px));scroll-padding-bottom:calc(114px + env(safe-area-inset-bottom,0px));-webkit-text-size-adjust:100%}
+ body{--dock-space:calc(114px + env(safe-area-inset-bottom,0px))}
+ .app-shell{display:flex;flex-direction:column;gap:0;padding:0 max(14px,env(safe-area-inset-right,0px)) var(--dock-space) max(14px,env(safe-area-inset-left,0px))}
+ .app-shell>section,.app-shell>header,.app-shell>footer,.app-shell>.section-heading{width:100%;min-width:0}
+ .topbar{order:0;height:auto;min-height:70px;padding:10px 0 0;gap:10px;flex-wrap:nowrap}
+ .topbar nav{display:none}.topbar .system-state{display:none}.topbar .guide-launcher{margin-left:auto;min-height:44px;font-size:11px;padding:9px 13px;white-space:nowrap}
+ .brand{gap:8px}.brand>span{font-size:23px}.brand .dot-icon{width:32px;height:32px}.brand small{font-size:9px}
+ .intro{order:1;min-height:0;padding:24px 0 30px}.intro h1{font-size:clamp(29px,5.7vw,45px);line-height:1.15;margin-top:12px}
+ .intro-aside{padding-top:17px;gap:25px}.intro-aside>p{font-size:14px;line-height:1.8}
+ .app-shell>.section-heading{order:2;padding:18px 0 14px}
+ .app-shell>.console{order:2;margin-top:0}.armory{order:3}.archive-section{order:4}.world-section{order:5}.field-notes{order:6}.adventure-section{order:7}.sound-landscape{order:8}.icon-directory{order:9}.footer{order:10}
+ .section-heading{padding:24px 0 16px;gap:12px}.section-title{min-width:0;gap:10px}.section-title>div{min-width:0}.section-title .dot-icon{width:30px;height:30px}
+ .section-title h2,.adventure-section h2{font-size:clamp(23px,3.5vw,31px);line-height:1.15;overflow-wrap:normal}
+ .section-title .eyebrow,.section-heading .eyebrow{font-size:10px;line-height:1.7}.section-chinese-title{font-size:14px;line-height:1.6;margin-top:6px}
+ .archive-section,.world-section,.adventure-section,.icon-directory{margin-top:30px;padding-top:0}
+ .console{padding:0 14px 15px;border-radius:20px}.console-label{padding-block:12px 8px;font-size:8px}.console-brand{padding-block:16px 14px;min-height:70px}
+ .console-brand strong{font-size:15px}.power-key{width:44px;height:44px;top:10px}.power-key small{top:43px}
+ :is(.device-left,.device-right,.console-body,.seek-control,.flash-reading,.atlas-history,.letters-reading){min-width:0}
+ .track-queue button{min-height:46px}.track-queue button strong{font-size:13px;line-height:1.5}.track-queue button>span,.track-queue button small{font-size:10px}
+ .device-right h3{font-size:24px;line-height:1.3}.device-artist{font-size:12px;line-height:1.7}
+ .source-note span,.source-note a,.source-note button{font-size:11px;line-height:1.7}.sound-controls label{font-size:11px}
+ input:not([type=range]):not([type=file]),select,textarea{font-size:16px!important}
+ .app-shell :is(.gear-filters,.guide-strip,.garden-toolbar,.garden-caption,.book-navigation,.stamp-tools,.landscape-range,.footer) button,.app-shell :is(.book-jump,.book-listen,.landscape-pause,.hero-motion-control){min-width:44px;min-height:44px}
+ .app-shell .device-left .colors .physical-key{min-height:44px}.app-shell .mobile-player .mobile-track{min-height:44px}
+ .app-shell .single-handbook .journal-tail .book-listen{min-height:44px}
+ :is(.map-toolbar,.atlas-map-toolbar) button{min-width:44px;min-height:44px}
+ .map-status,.map-world-notes{padding:18px}.map-world-notes h3{font-size:15px}.map-lore-copy{font-size:14px;line-height:1.85}
+ .map-dossier-bottom p{font-size:13px;line-height:1.85}.map-region-index button{min-height:46px}.map-region-index strong{font-size:12px}
+ .region-details,.settlement{padding:22px 18px}.region-note{font-size:14px;line-height:1.85}.region-details>small{font-size:11px;line-height:1.7}
+ .region-details>.outline-button{min-height:48px;font-size:13px;white-space:normal;line-height:1.6}
+ .region-briefing .function-pixel-title{font-size:23px}.region-briefing h4{font-size:14px}.region-listening-lens p,.region-fog-note p,.region-next-note{font-size:13px;line-height:1.85}
+ .ledger-lines dt span{font-size:13px}.ledger-lines dt small,.ledger-lines dd{font-size:11px}.ledger-equation{font-size:12px;line-height:1.8;overflow-wrap:anywhere}.settle-button{min-height:48px;font-size:13px}
+ .field-signals{padding:20px 16px;gap:15px}.signals-heading .function-pixel-title{font-size:26px}.signals-heading h3{font-size:16px}.signals-heading>div>p:last-child{font-size:13px;line-height:1.8}
+ .signal-tuner h4{font-size:20px}.signal-tuner>p{font-size:13px;line-height:1.85;min-height:0}.signal-tuner details{font-size:12px}.signal-tuner details p{font-size:13px;line-height:1.8}
+ .signal-tune-steps button{min-height:46px;font-size:12px}.field-signals .signal-capture{min-height:48px;font-size:13px}.signals-footnote{font-size:12px;line-height:1.8}
+ .field-signals .signal-scrapbook{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+ .signal-scrapbook>button{min-width:0;min-height:84px;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;padding:10px}
+ .signal-scrapbook .field-prop{width:25px}.signal-scrapbook small{font-size:10px;line-height:1.6}.signal-scrapbook strong{font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+ .signal-compose-row>button{min-height:48px;font-size:13px}.signal-compose-row>p{font-size:12px;line-height:1.8}
+ .bestiary-strip button,.companion-roster button{min-width:0}.bestiary-strip b,.companion-roster strong{font-size:12px}.bestiary-strip small,.companion-roster small{font-size:10px;line-height:1.6;white-space:normal}
+ .tale-story{font-size:14px;line-height:1.85}.quest-instruction small,.tale-footnote{font-size:12px;line-height:1.8}.episode-tabs button{min-height:44px;font-size:12px}
+ .comic-grid strong{font-size:15px;line-height:1.5}.comic-grid small,.comic-grid p{font-size:11px;line-height:1.7}
+ .region-explorer{width:calc(100vw - 16px);height:calc(100dvh - 16px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));max-height:none}
+ .atlas-header{padding:16px 18px;height:auto;min-height:104px;flex:none}.atlas-pixel-title{font-size:25px!important}.atlas-header h2{font-size:23px}
+ .atlas-scroll{padding:18px 16px 0;min-height:0;flex:1;height:auto;overscroll-behavior:contain}.region-explorer[open]{display:flex;flex-direction:column}
+ .atlas-map-toolbar{flex-wrap:wrap;font-size:10px}.atlas-map-toolbar>span{max-width:none}.atlas-route small,.atlas-map-caption{font-size:10px;line-height:1.6}.atlas-route strong{font-size:12px}
+ .atlas-node-copy p{font-size:14px;line-height:1.85}.atlas-caveat,.atlas-history details{font-size:12px;line-height:1.8}.atlas-related strong{font-size:13px}.atlas-related small,.atlas-related span span{font-size:11px}
+ .flash-stage{width:min(100%,280px);height:auto;aspect-ratio:355/540;margin:10px auto 22px}.flash-reading>p,.flash-selected-note{font-size:14px;line-height:1.8}.flash-reading>small,.flash-instructions{font-size:12px;line-height:1.8}
+ .flash-reading>.primary-button{min-height:48px;white-space:normal;font-size:13px}.holo-inspect-controls button{min-height:44px;font-size:12px}
+ .guide-dialog{height:calc(100dvh - 12px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));max-height:none}.guide-header{padding:15px 18px 0}.guide-scroll{min-height:0;padding-inline:18px;overscroll-behavior:contain}
+ .guide-chapters{overflow:auto;scrollbar-width:thin}.guide-chapters button{min-width:58px;min-height:44px}.guide-title-row h2{font-size:28px}.guide-intro,.guide-description{font-size:14px;line-height:1.8}
+ .guide-jump{align-items:center;gap:12px;padding:0 16px 12px;font-size:12px}.guide-jump select{min-height:44px;flex:1;min-width:0;background:#f9f7ee;border:1px solid #d9d9c9;color:#60734f;border-radius:9px;padding:9px 12px}
+ .guide-footer{padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.guide-footer button{min-height:44px}.guide-footer .guide-next{min-height:48px}
+ .mobile-dock{display:block;position:fixed;z-index:40;inset:auto 0 0;border-top:1px solid #d3d7cb;background:#fbfaf7f7;color:#24392f;padding:0 max(10px,env(safe-area-inset-right,0px)) env(safe-area-inset-bottom,0px) max(10px,env(safe-area-inset-left,0px));backdrop-filter:blur(16px);box-shadow:0 -5px 22px #1b352910}
+ .mobile-player{display:flex;align-items:center;gap:5px;min-height:54px;padding:5px 2px;border-bottom:1px solid #deded4}
+ .mobile-player button{border:0;background:none;color:inherit;border-radius:9px;padding:0}.mobile-track{display:flex;align-items:center;gap:8px;min-width:0;flex:1;text-align:left}
+ .mobile-track img,.mobile-track>.dot-icon{width:34px;height:34px;flex:none;border-radius:6px}.mobile-track>span{min-width:0}.mobile-track strong{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:12px;line-height:1.5;font-weight:500}.mobile-track small{display:block;font-size:10px;line-height:1.5;margin-top:2px;color:#5f715f}
+ .mobile-player .mobile-play,.mobile-player .mobile-next{width:44px;height:44px;min-height:44px;flex:none;font-size:21px}.mobile-player .mobile-play{background:#243f34;color:#f6f8f0}
+ .mobile-navigation{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding:3px 0 4px}.mobile-navigation button{display:flex;align-items:center;flex-direction:column;justify-content:center;gap:2px;min-height:46px;padding:3px 1px;border:0;border-radius:8px;background:none;color:#61755e;font-size:10px}
+ .mobile-navigation .dot-icon{width:21px;height:21px}.mobile-navigation button[aria-current=location]{color:#345c45;background:#e7ede0}.mobile-navigation button:focus-visible{outline-offset:-2px}
+ .toast{bottom:calc(var(--dock-space) + 8px);max-width:calc(100% - 28px)}
+}
+@media(min-width:701px) and (max-width:1024px){
+ body{--dock-space:calc(82px + env(safe-area-inset-bottom,0px))}
+ html{scroll-padding-bottom:calc(82px + env(safe-area-inset-bottom,0px))}
+ .app-shell{padding-inline:max(22px,env(safe-area-inset-left,0px)) max(22px,env(safe-area-inset-right,0px))}
+ .intro{padding-block:19px 30px}.intro .eyebrow{font-size:10px}.intro-aside{padding-top:12px;display:flex;justify-content:center}.intro-aside>p{display:none}.color-key{gap:15px;flex-direction:row}.color-key span{font-size:10px}
+ .console-body{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:14px 18px;max-width:none;align-items:start}
+ .console-body>.crt-housing{grid-column:1;grid-row:1;width:100%;max-width:none;margin:0}
+ .console-body>.device-left{grid-column:1;grid-row:2;display:grid;width:auto;grid-template-columns:1fr 1fr;gap:10px;align-items:end;padding:0}
+ .device-left>.device-label,.device-left>.hardware-group:nth-of-type(4){display:none}.device-left>.key-row{grid-column:1;grid-row:1}.device-left>.hardware-group:nth-of-type(2){grid-column:2;grid-row:1}.device-left>.hardware-group:nth-of-type(3){grid-column:1/-1;grid-row:2}
+ .device-left>.hardware-group{margin:0}.device-left .device-label{font-size:9px;line-height:1.5;margin-bottom:5px}.device-left .physical-key{min-height:44px;padding:7px 3px;font-size:10px}.device-left>.import-key{grid-column:1/-1;display:flex;flex-direction:row;justify-content:center;gap:8px;margin:0;min-height:44px}.import-key small{font-size:10px}
+ .console-body>.device-right{grid-column:2;grid-row:1/3;display:flex;flex-direction:column;width:auto;border:0;padding:7px 0 0;gap:0}
+ .device-right h3{max-height:none;margin-top:12px}.device-right .device-artist{max-height:none;margin:8px 0 12px}.device-right .queue-heading .device-label{font-size:10px}.queue-heading>span{font-size:9px}.device-right .track-queue{max-height:276px;width:100%;overscroll-behavior:contain}.device-right .source-note{margin-top:12px}.sound-controls{max-width:none;margin-top:12px;padding-right:50px}.mute-key{width:44px;height:44px}
+ .deck-transport{display:grid;grid-template-columns:210px minmax(0,1fr);gap:16px;padding-top:16px;margin-top:18px}.transport-keys{gap:7px}.transport-keys .physical-key{min-width:0;flex:1;min-height:44px;font-size:10px}.seek-control>div{font-size:11px}.deck-stamp{display:none}
+ .armory{padding:22px 18px;margin-top:28px}.wardrobe-layout{grid-template-columns:165px minmax(0,1fr);gap:14px}.wardrobe-preview{padding:16px 10px}.wardrobe-preview .wardrobe-avatar{width:120px;margin-inline:auto}.equipped-grid article{padding:13px;gap:12px}.equipped-grid h3{font-size:20px}.equipped-grid p,.gear-spec>span,.gear-spec>small{font-size:12px;line-height:1.8}.equipped-grid select{min-height:44px}
+ .archive-tools{gap:9px;flex-wrap:wrap}.search-field{flex:1 1 350px}.archive-tools select{min-width:140px}.archive-caption{gap:14px;flex-wrap:wrap}.archive-caption>span{font-size:14px;line-height:1.8;max-width:none}.guide-strip{flex-wrap:wrap}.guide-strip p{font-size:13px}
+ .world-layout{grid-template-columns:minmax(0,1fr)}.world-sidebar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-left:0;border-top:1px solid var(--line);align-items:start}.world-sidebar .settlement{border-top:0;border-left:1px solid var(--line)}
+ .map-canvas{min-width:640px}.map-scroll{overflow:auto;overscroll-behavior-x:contain;touch-action:pan-x pan-y}.map-pin{min-width:86px}.map-pin .pin-picture{width:40px;height:48px}.map-pin strong{font-size:11px}.map-pin small{font-size:8px}.creature-pin{width:44px}.map-status-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.map-status-grid dt{font-size:11px}.map-legend{font-size:11px}
+ .map-region-index{grid-template-columns:repeat(3,minmax(0,1fr))}.map-dossier-bottom details{font-size:12px}.map-dossier-bottom button{font-size:12px;white-space:normal}
+ .signals-workbench,.signal-postcard-workshop{grid-template-columns:minmax(0,1fr) minmax(240px,.75fr);gap:14px}.signals-navigation{flex-wrap:wrap;gap:10px}.signals-navigation label{font-size:12px}.signals-navigation select{font-size:16px;min-height:46px}.signals-navigation>span{flex:1;font-size:10px}.signal-motion{font-size:11px}.signal-tuner{padding:16px 13px}.signal-dial-values output{font-size:35px}.signal-dial-values strong{font-size:24px}.signal-dial-values small{font-size:11px}.signal-range{font-size:12px}.signal-session-count{font-size:34px}.signal-tune-steps{gap:5px}.signal-tune-steps button{padding-inline:7px;font-size:11px}.signal-tune-steps>span{font-size:10px}
+ .companion-letters{grid-column:1/-1;display:grid;grid-template-columns:190px minmax(0,1fr);gap:0 22px;padding:22px 18px}.companion-letters>header,.letters-intro,.letters-select,.letters-fog-note,.letters-sender{grid-column:1}.letters-reading{grid-column:2;grid-row:1/7;align-self:center;border-left:1px solid #ccd3c0;padding-left:22px}.letters-page>p{min-height:0;font-size:14px;line-height:1.9;max-width:45ch}.letters-next{grid-column:1;align-self:end}.letters-footnote{grid-column:1/-1}.letters-select select{font-size:16px;min-height:46px}
+ .field-notes{padding:22px 18px}.encounter-layout{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.monster-copy{padding:18px 14px}.live-battle .battle-log{font-size:13px!important}.battle-stage{--arena-height:250px}.battle-stage .combatant{--portrait-unit:115px;bottom:70px}.monster-copy>p:not(.eyebrow){font-size:13px;line-height:1.8}.comic-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.comic-grid button>div{padding:13px 11px}
+ .play-grid{grid-template-columns:1fr}.quest-column,.voyage-column{gap:20px}.quest-panel,.voyage-panel,.sound-interlude,.music-handbook{padding:22px 20px}.panel-description,.game-rule{font-size:13px;line-height:1.8}.quest-copy strong{font-size:15px}.quest-copy span{font-size:12px}.voyage-slot{grid-template-columns:28px 48px minmax(0,1fr);gap:11px}.stop-state{grid-column:3;font-size:11px}.book-tabs button{min-height:44px;font-size:12px}
+ .interlude-main{flex-direction:row;gap:24px;padding:20px 4px}.interlude-device{width:40%;max-width:250px;flex:none}.interlude-copy{text-align:left}.interlude-band-list{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .terrain-deck{grid-template-columns:repeat(3,minmax(0,1fr))}.terrain-index,.terrain-count-label{font-size:11px}
+ .atlas-introduction>span{font-size:22px}.atlas-introduction>p{font-size:13px}.atlas-city{min-width:640px}.atlas-top{grid-template-columns:1fr}.atlas-history{padding:18px}.flash-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin:22px auto}.flash-reading h4{font-size:27px}.atlas-filters button{font-size:13px;min-height:46px}.atlas-section-head>span{font-size:12px}
+ .mobile-dock{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);align-items:center;gap:12px;padding-top:5px;padding-bottom:calc(5px + env(safe-area-inset-bottom,0px))}.mobile-player{border-bottom:0;border-right:1px solid #d3d7cb;padding-right:10px;min-width:0}.mobile-navigation{padding:0;min-width:0}.mobile-navigation button{min-height:52px}.mobile-navigation .dot-icon{width:22px;height:22px}
+ :is(.holo-inspect-controls,.stamp-tools,.book-navigation,.book-tabs,.episode-tabs,.voyage-actions,.interlude-actions,.atlas-filters) button{min-height:44px}
+}
+@media(max-width:700px){
+ .topbar{min-height:64px;padding-top:8px}.topbar .guide-launcher{max-width:110px;font-size:10px;padding-inline:10px}.brand>span{font-size:21px}.brand small{font-size:8px}
+ .intro{padding:17px 0 31px;text-align:left}.intro .eyebrow{font-size:8px;line-height:1.6;max-width:none}.intro h1{font-size:clamp(27px,7.1vw,36px);line-height:1.13;margin-top:9px}.intro-aside{padding:10px 0 0}.intro-aside>p{display:none}.color-key{gap:10px}.color-key span{font-size:9px}.hero-motion-control{font-size:8px;min-height:30px}
+ .app-shell>.section-heading{padding:15px 0 12px}.section-heading{gap:9px}.section-title{gap:8px}.section-title h2,.adventure-section h2{font-size:clamp(21px,5.4vw,27px)}.section-title .eyebrow{font-size:8px}.section-title .dot-icon{width:27px;height:27px}.section-chinese-title{font-size:13px}
+ .console{padding-inline:10px}.console-label{padding-block:10px 7px}.console-brand{min-height:68px;padding:13px 49px 12px 0}.console-brand strong{font-size:14px}.power-key{right:1px;top:8px}.console-body{gap:12px}.crt-housing{width:100%;max-width:440px}.device-left{gap:10px 12px}.device-left .physical-key{min-height:44px}.device-right{padding-top:14px}.device-right .track-queue{max-height:184px}.device-right .device-artist{margin-bottom:10px}.deck-transport{margin-top:12px;padding-top:12px;gap:10px}.deck-stamp{display:none}
+ .armory{padding:20px 14px}.armory-introduction p{font-size:13px;line-height:1.8}.wardrobe-preview{padding:13px 11px;grid-template-columns:90px minmax(0,1fr)}.armory .wardrobe-preview>.wardrobe-avatar{width:90px}.equipped-grid article{padding:12px}.gear-spec>span,.gear-spec>small{font-size:11px}
+ .archive-caption{padding-block:16px}.field-signals{padding:19px 12px}.signals-heading{gap:8px;position:relative;padding-right:0}.signals-heading>.field-prop{width:27px}.signals-heading>div{flex-basis:calc(100% - 38px)}.signals-heading .function-pixel-title{font-size:24px}.signals-heading h3{font-size:15px}.signals-heading>div>p:last-child{font-size:12px}.signal-session-count{margin:0 0 0 36px;font-size:29px}.signal-session-count small{font-size:9px}.signals-navigation>span small{font-size:10px}.signals-workbench{gap:12px}.signal-tuner{padding:15px 12px}.signal-tuner>p{font-size:13px}.signal-dial-values{padding-block:12px}.signal-dial-values output{font-size:35px}
+ .signal-compose-row{gap:9px}.signal-compose-row>p{font-size:12px}.signals-footnote{font-size:11px}.signals-footnote small{font-size:10px}.signal-scrapbook>button{padding:9px 7px}.signal-scrapbook small{font-size:9px}.signal-scrapbook strong{font-size:11px}
+ .companion-letters{padding:22px 16px}.letters-sender{margin:17px 0}.letters-portrait{min-height:94px}.letters-portrait .battle-portrait{--portrait-unit:92px}.letters-page{margin-block:18px}.letters-page>p{font-size:14px;line-height:1.95}.letters-footnote{margin-top:18px}
+ .field-notes{padding:20px 13px}.bestiary-strip{gap:7px}.companion-roster button{min-height:96px}.comic-grid{gap:10px}.comic-grid button>div{padding:11px 9px}.comic-grid strong{font-size:14px}.comic-tag{font-size:10px}
+ .region-explorer{width:calc(100vw - 10px)}.atlas-header{padding:14px 96px 10px 12px}.atlas-header .atlas-close{right:10px;top:13px;min-height:44px;font-size:11px;padding-inline:10px;white-space:nowrap}.atlas-header .atlas-pixel-title{font-size:22px!important}.atlas-scroll{padding:14px 12px 0}.atlas-introduction{margin-bottom:14px}.atlas-introduction>span{font-size:19px}.atlas-introduction>p{font-size:12px}.atlas-route button{min-height:54px;padding:8px}.atlas-route strong{font-size:11px}
+ .flash-stage{width:min(100%,260px);height:auto;aspect-ratio:355/540}.flash-layout{margin-inline:3px}.flash-reading h4{font-size:26px}.flash-controls{margin-block:12px}.holo-inspect-controls>div{gap:6px}.holo-inspect-controls button{padding:7px 5px;font-size:11px}
+ .guide-header{padding:12px 13px 0}.guide-scroll{padding-inline:13px}.guide-stage{min-height:270px}.guide-pixel-title{font-size:22px!important}.guide-content .guide-title-row h2{font-size:26px}.guide-footer{gap:8px;padding-inline:12px}.guide-footer .guide-next{padding-inline:10px}.guide-footer .guide-visit{font-size:10px}
+}
+@media(max-width:360px){
+ .app-shell{padding-left:max(10px,env(safe-area-inset-left,0px));padding-right:max(10px,env(safe-area-inset-right,0px))}.brand>span{font-size:19px}.brand .dot-icon{width:28px;height:28px}.topbar .guide-launcher{padding-inline:8px;font-size:10px}
+ .signals-heading .function-pixel-title{font-size:21px}.signals-navigation label{min-width:120px}.signal-motion{padding-inline:7px;max-width:95px}.signal-scrapbook strong{font-size:10px}.signal-scrapbook small{font-size:8px}.companion-letters .function-pixel-title{font-size:23px}.letters-sender{gap:10px}.letters-sender strong{font-size:19px}
+}
+@media(max-width:1024px) and (max-height:500px){
+ body{--dock-space:calc(72px + env(safe-area-inset-bottom,0px))}.intro{padding-block:14px 27px}.intro-aside{display:none}.mobile-dock{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);align-items:center;gap:10px;padding-block:4px calc(4px + env(safe-area-inset-bottom,0px))}.mobile-player{border-bottom:0;border-right:1px solid #d3d7cb;padding-right:8px}.mobile-navigation{padding:0}.mobile-navigation button{min-height:48px}
+ .guide-stage{min-height:220px}.guide-footer .guide-visit{display:none}.guide-title-row{padding-block:12px}.guide-pixel-title{font-size:22px!important}.atlas-header{min-height:86px}.atlas-header .atlas-pixel-title{font-size:21px!important}
+}
+@media(prefers-reduced-motion:reduce){.mobile-dock{scroll-behavior:auto}}

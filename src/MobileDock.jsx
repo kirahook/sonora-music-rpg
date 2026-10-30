@@ -1,4 +1,5 @@
 import {clock} from './catalog';
+import {useViewportKeyboard} from './useViewportKeyboard.js';
 
 export const mobileDestinations=[
  ['terminal','audio','聆听'],['armory','knight','装备'],['archive','search','唱片'],
@@ -7,8 +8,9 @@ export const mobileDestinations=[
 
 // This is a second view of the existing player, never a second audio engine.
 export function MobileDock({player,power,album,nav,onNavigate,onDisplay,Icon}){
+ const keyboardOpen=useViewportKeyboard();
  const ready=power==='on'&&!!player.track;
- return <aside className="mobile-dock" aria-label="手机快捷操作">
+ return <aside className="mobile-dock" aria-label="手机快捷操作" hidden={keyboardOpen}>
   <div className="mobile-player" aria-label="随行播放器">
    <button className="mobile-track" onClick={()=>{onDisplay();onNavigate('terminal');}} aria-label="查看当前曲目与完整播放器">
     {player.source==='local'?<Icon name="audio"/>:<img src={album.cover} alt=""/>}

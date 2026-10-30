@@ -1,0 +1,401 @@
+{
+  "version": 25,
+  "clips": [
+    {
+      "id": "welcome",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 473085,
+      "captureSizes": [
+        [
+          800,
+          600
+        ],
+        [
+          800,
+          600
+        ],
+        [
+          800,
+          600
+        ],
+        [
+          800,
+          600
+        ]
+      ],
+      "labels": [
+        "挑一张真实唱片",
+        "亲手开始真实试听，停留时长已压缩",
+        "留下一条自己的听觉观察",
+        "展开并保存第一张声音札记"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "listen",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 564762,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "终端中的真实唱片与曲目",
+        "亲手按下播放，音频留在静音录制环境",
+        "手动切换琥珀荧光，播放状态可见",
+        "暂停后不会继续累计聆听"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "archive",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 398105,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "输入音乐人关键词，筛出对应唱片",
+        "查看唱片标题、音乐人和装载入口",
+        "选中 Moon Safari，装载不会自动播放",
+        "唱片已装载，仍等待你按下播放"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "gear",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 458903,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "查看角色、装备来历与实际数值",
+        "芦笛短剑换装后角色同步变化",
+        "更换叶脉轻盾并查看说明",
+        "三件已拥有装备组合完成，未消耗碎片"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "world",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 613720,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          800,
+          600
+        ],
+        [
+          800,
+          600
+        ],
+        [
+          800,
+          600
+        ]
+      ],
+      "labels": [
+        "已解锁海域与迷雾区域同屏展示",
+        "进入海港微缩城市，沿四处年代地标探索",
+        "阅读 Blue Train 年代地标的简化音乐脉络",
+        "翻看黑金唱片闪卡背面，知识索引不发奖"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "tales",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 537594,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "观察面对面伙伴、海域场景与双方状态",
+        "一次回声斩后，共鸣与体力按真实规则变化",
+        "守拍降低反击，随时观察双方状态",
+        "共鸣获胜后接取支线，听歌条件清楚可见"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "quests",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 355483,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "为真正听过的电子音乐选择自己的观察",
+        "听觉比较归藏后，委托奖励仍需手动领取",
+        "三站唱片可自己选择，出发按钮由用户按下",
+        "三站真实聆听完成，宝箱仍由用户手动领取"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "journal",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 514589,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "翻开声音手账，阅读历史与真实资料来源",
+        "切换电子流派，画像、听法与时间线一起更新",
+        "苔绿邮戳和书签保存在本浏览器",
+        "填写明确标注为演示的听觉笔记，自动保存"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "harvest",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 833025,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "领取前核对经验、钥匙、碎片与装备计算",
+        "展开实际曲目记录，逐项核对基础经验",
+        "手动领取后生成当日归航战报",
+        "战报保存领取时的分项，重看不重复发奖"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "letters",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 404045,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "选择已测绘海域，查看实际寄信人和首封故事",
+        "手动换到第二封来信，保留伙伴和海域标签",
+        "第三封原创来信与声音标签",
+        "切换已测绘海域，新伙伴与来信同步更新"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "signals",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 583497,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "立体海港场景、三处讯号与手动调频器",
+        "当前频点与目标相同后，可以手动收下回声",
+        "三段回声拼成一张带海域插画的明信片",
+        "翻面阅读三段海域短篇，正式探索与奖励不变"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    },
+    {
+      "id": "landscape",
+      "width": 800,
+      "height": 600,
+      "frames": 4,
+      "durationMs": 7300,
+      "bytes": 533724,
+      "captureSizes": [
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ],
+        [
+          785,
+          589
+        ]
+      ],
+      "labels": [
+        "今日真实足迹与六种流派地形",
+        "累计视图来自真实记录，不推断旧历史",
+        "选择电子晶原，查看真实流派数量",
+        "展开曲目、流派和日期，足迹有据可查"
+      ],
+      "source": "Real browser keyframes from an independent demo save; holds compressed, no audio. Native pixels preserved; ivory letterbox only."
+    }
+  ]
+}

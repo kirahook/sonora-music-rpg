@@ -1,19 +1,24 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {createGame,gameFor,recordAdventure,claimQuest,editVoyage,beginVoyage,cancelVoyage,claimVoyage} from '../src/gameplay.js';
+import {createGame,gameFor,recordAdventure,claimQuest,editVoyage,beginVoyage,cancelVoyage,claimVoyage,observeTrack,compareSounds} from '../src/gameplay.js';
 
 const base=()=>({day:'2026-09-28',xp:1000,keys:1,game:createGame('2026-09-28')});
 const song=(id,genre,albumCode)=>({id,title:id,genre,albumCode});
 
-test('daily quests measure unique heard tracks, genres and albums and cannot double claim',()=>{
+test('daily quests require listening clues and a cross-genre comparison, with unique album and claim counts',()=>{
   let state=base();
   state=recordAdventure(state,song('a','JAZZ','A-1'));
   state=recordAdventure(state,song('a','JAZZ','A-1'));
   assert.equal(gameFor(state).heard.length,1);
+  assert.equal(claimQuest(state,'first'),state,'listening alone does not finish the discovery quest');
+  state=observeTrack(state,'a','pulse');
   state=claimQuest(state,'first');
   assert.equal(state.xp,1060);
   assert.equal(claimQuest(state,'first'),state);
   state=recordAdventure(state,song('b','IDM','A-2'));
+  assert.equal(claimQuest(state,'genres'),state,'two genres without observations are not a comparison');
+  state=observeTrack(state,'b','texture');
+  state=compareSounds(state,'a','b','texture');
   state=claimQuest(state,'genres');
   assert.equal(state.xp,1180);
   state=recordAdventure(state,song('c','SOUL','A-3'));

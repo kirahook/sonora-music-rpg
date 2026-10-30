@@ -21,6 +21,9 @@ import "./v19.css";
 import "./v20.css";
 import "./v21.css";
 import "./v22.css";
+import "./v23.css";
+import "./v24.css";
+import "./v25.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
